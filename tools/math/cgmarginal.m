@@ -33,8 +33,6 @@ function M = cgmarginal(ndim, axes)
        error('Error. AXES contains an invalid permutation index.')
     end
     
-    
-    
     % Create index array A= [1, 2, 3, ..., 2^N]
     ini_len = 2^ndim;
     A = 1:ini_len;
@@ -46,21 +44,15 @@ function M = cgmarginal(ndim, axes)
         A = A(:);
     end
     
-    % Swap axes so that unselected axes are ahead of selected axes
-    rest = setdiff(1:ndim, axes); 
-    A = permute(A, [rest axes]); 
-    
-    % Taking the (1,1,..,1,:,:,..,:) slice
-    for i = rest
-        A = A(1, :);
-        ndim = ndim - 1;
-        if ndim>1
-            A = reshape(A, ones(1, ndim)*2);
-        end
-    end 
+    % Permute and reshape into 2D matrix with shape (m,n)
+    rest = setdiff(1:ndim, axes);
+    A = permute(A, [axes rest]); 
+    m = 2^length(axes);
+    n = 2^length(rest);
+    A = reshape(A, [m, n]);
+    A = A(:,1); % Take the first slice
     
     % Create filter matrix with shape (fin_len, ini_len)
-    A = A(:);
     fin_len = length(A);
     M=sparse(1:fin_len, A, ones(1,fin_len), fin_len, ini_len);
     
