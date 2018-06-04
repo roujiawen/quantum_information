@@ -2,6 +2,7 @@
 % Without using Kronecker Delta
 % Optimization variable in the shape of (2,2,2)
 % Handwritten rules
+% Conditions still in original P coordinates
 
 zero_vector = zeros(2,2,2);
 cvx_begin

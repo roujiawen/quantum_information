@@ -1,3 +1,6 @@
+% Using kron but not cgmarginal function yet
+% The conditions are still writen in original P coordinate
+
 P_ABC = [0.5;0;0;0;0;0;0;0.5]; %(000, 100, 010, 110, 001, 101, 011, 111)
 
 % Used for taking marginals of P_ABC
@@ -19,7 +22,7 @@ M_B = [1 1 0 0 1 1 0 0;
 
 % Change of basis matrix
 S = [1 1;
-     1 0]
+     1 0];
 % Inverse change of basis matrix
 S_inv = inv(S);
 
@@ -27,21 +30,21 @@ S_inv = inv(S);
 F_AC = [1 0 0 0 0 0 0 0;
         0 1 0 0 0 0 0 0;
         0 0 0 0 1 0 0 0;
-        0 0 0 0 0 1 0 0]
+        0 0 0 0 0 1 0 0];
 F_BC = [1 0 0 0 0 0 0 0;
         0 0 1 0 0 0 0 0;
         0 0 0 0 1 0 0 0;
-        0 0 0 0 0 0 1 0]
+        0 0 0 0 0 0 1 0];
 F_AB = [1 0 0 0 0 0 0 0;
         0 1 0 0 0 0 0 0;
         0 0 1 0 0 0 0 0;
-        0 0 0 1 0 0 0 0]
+        0 0 0 1 0 0 0 0];
     
 zero_vector = zeros(8,1);
 
 cvx_begin
     variable x(8);
-    maximize(zero_vector.' * x); % x is G_ABC
+    maximize(zero_vector.' * x); % x is G_A2B1C1
     subject to 
         % Equality conditions
         kpow(S_inv, 2) * (F_AC * x) == M_AC * P_ABC; % (00, 10, 01, 11)
