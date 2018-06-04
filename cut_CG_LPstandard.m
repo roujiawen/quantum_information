@@ -1,3 +1,6 @@
+% Wrong conditions (still in P coordinate)
+% Also no need to split into X+ and X- since X>=0 already
+
 P_ABC = [0.5;0;0;0;0;0;0;0.5]; %(000, 100, 010, 110, 001, 101, 011, 111)
 
 % Used for taking marginals of P_ABC
