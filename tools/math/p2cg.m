@@ -1,12 +1,11 @@
-function G = p2cg(P)
-    % input can be flat or nonflat
-    % output will be a flattened column vector
-    % only for binary variables
-    P = P(:); % in case P is not flattened
-    ndim = log2(length(P));
+function SN = p2cg(ndim)
+    % input is the dimension (number of variables)
+    % variables are binary
+    % output will be the change of basis matrix
+
     if floor(ndim) ~= ndim
-       error('Error. Length of P must be a power of 2.')
+       error('Error. Dimension must be an integer.')
     end
-    S = [1 1; 1 0]; % change of basis matrix
-    G = kpow(S, ndim) * P;
+    S = [1 1; 1 0]; % change of basis matrix for two vars
+    SN = kpow(S, ndim);
 end
