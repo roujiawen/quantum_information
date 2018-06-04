@@ -1,73 +1,57 @@
 % Add parent folder to path
 addpath(fileparts(pwd))
 
-% create an input example
-A = linspace(0,7, 8);
-A = 2.^A;
-A = reshape(A,2,2,2)
-% A(:,:,1) =
-% 
-%      1     4
-%      2     8
-% 
-% 
-% A(:,:,2) =
-% 
-%     16    64
-%     32   128
+% selecting one axis
+full(cgmarginal(3, 1))
+full(cgmarginal(3, 2))
+full(cgmarginal(3, 3))
+% selecting two axes
+full(cgmarginal(3, [1 3]))
+full(cgmarginal(3, [3 2]))
+% selecting three axes
+full(cgmarginal(3, [3 1 2]))
 
-
-% test: selecting one variable
-cgmarginal(A, [1])
-cgmarginal(A, [2])
-cgmarginal(A, [3])
 % ans =
 % 
-%      1
-%      2
+%      1     0     0     0     0     0     0     0
+%      0     1     0     0     0     0     0     0
 % 
 % 
 % ans =
 % 
-%      1
-%      4
+%      1     0     0     0     0     0     0     0
+%      0     0     1     0     0     0     0     0
 % 
 % 
 % ans =
 % 
-%      1
-%     16
-
-
-
-% test: selecting two variables
-cgmarginal(A, [1 3])
+%      1     0     0     0     0     0     0     0
+%      0     0     0     0     1     0     0     0
+% 
+% 
 % ans =
 % 
-%      1
-%      2
-%     16
-%     32
-
-cgmarginal(A, [3 2])
+%      1     0     0     0     0     0     0     0
+%      0     1     0     0     0     0     0     0
+%      0     0     0     0     1     0     0     0
+%      0     0     0     0     0     1     0     0
+% 
+% 
 % ans =
 % 
-%      1
-%     16
-%      4
-%     64
-
-
-
-% test: selecting three variables
-cgmarginal(A, [3 1 2])
+%      1     0     0     0     0     0     0     0
+%      0     0     0     0     1     0     0     0
+%      0     0     1     0     0     0     0     0
+%      0     0     0     0     0     0     1     0
+% 
+% 
 % ans =
 % 
-%      1
-%     16
-%      2
-%     32
-%      4
-%     64
-%      8
-%    128
+%      1     0     0     0     0     0     0     0
+%      0     0     0     0     1     0     0     0
+%      0     1     0     0     0     0     0     0
+%      0     0     0     0     0     1     0     0
+%      0     0     1     0     0     0     0     0
+%      0     0     0     0     0     0     1     0
+%      0     0     0     1     0     0     0     0
+%      0     0     0     0     0     0     0     1
