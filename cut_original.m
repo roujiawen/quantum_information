@@ -24,20 +24,41 @@ M_B = [1 1 0 0 1 1 0 0;
     
 zero_vector = zeros(8,1);
 
+
+% cvx_begin
+%     variable x(8);
+%     subject to 
+%         M_AC * x == M_AC * P_ABC;
+%         M_BC * x == M_BC * P_ABC;
+%         M_AB * x == kron(M_A * P_ABC, M_B * P_ABC);
+%         x >= 0;
+% cvx_end
+
+%--------------LP standard form---------------
+A = [M_AC;
+     M_BC;
+     M_AB];
+ 
+b = [M_AC * P_ABC;
+     M_BC * P_ABC;
+     kron(M_A * P_ABC, M_B * P_ABC)];
+
 cvx_begin
     variable x(8);
-    maximize(zero_vector.' * x);
     subject to 
-        M_AC * x == M_AC * P_ABC;
-        M_BC * x == M_BC * P_ABC;
-        M_AB * x == kron(M_A * P_ABC, M_B * P_ABC);
+        A * x == b;
         x >= 0;
 cvx_end
 
-% RESULTS
+% ------------Results---------------
 % Status: Infeasible
-% Optimal value (cvx_optval): -Inf
+% Optimal value (cvx_optval): +Inf
 
+
+%-----------Analysis----------------
+
+%rref(A)
+rank(A)%rank=7
 
 
 
