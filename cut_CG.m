@@ -17,7 +17,7 @@ M_AB = cgmarginal(3, [1 2]);
 %         M_AC * x == M_AC * G_ABC;
 %         % G_B1C1 = G_BC
 %         M_BC * x == M_BC * G_ABC;
-%         % G_A2B1 = S * P_A * P_B
+%         % G_A2B1 = G_A * G_B
 %         M_AB * x == kron(cgmarginal(3, [1]) * G_ABC, cgmarginal(3, [2]) * G_ABC);
 %         % Nonnegative conditions
 %         cg2p(3)*x >= 0;

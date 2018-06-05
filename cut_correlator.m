@@ -10,14 +10,14 @@ M_BC = comarginal(3, [2 3]);
 M_AB = comarginal(3, [1 2]);
 
 % cvx_begin
-%     variable x(8); % x is G_A2B1C1
+%     variable x(8); % x is C_A2B1C1
 %     subject to 
 %         % Equality conditions
-%         % G_A2C1 = G_AC
+%         % C_A2C1 = C_AC
 %         M_AC * x == M_AC * C_ABC;
-%         % G_B1C1 = G_BC
+%         % C_B1C1 = C_BC
 %         M_BC * x == M_BC * C_ABC;
-%         % G_A2B1 = S * P_A * P_B
+%         % C_A2B1 = C_A * C_B
 %         M_AB * x == kron(comarginal(3, [1]) * C_ABC, comarginal(3, [2]) * C_ABC);
 %         % Nonnegative conditions
 %         co2p(3)*x >= 0;

@@ -5,7 +5,7 @@ P_ABC = [0;1/3;1/3;0;1/3;0;0;0];%(000, 100, 010, 110, 001, 101, 011, 111)
 C_ABC = p2co(3)*P_ABC;
 
 % cvx_begin
-%     variable x(64);%G_A1B1C1A2B2C2
+%     variable x(64);%C_A1B1C1A2B2C2
 %     subject to
 %         % Marginal equivalence conditions
 %         comarginal(6, [1 2 3]) * x == C_ABC;
