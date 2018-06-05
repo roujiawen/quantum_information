@@ -3,8 +3,8 @@ P_ABC = [0.5;0;0;0;0;0;0;0.5]; %(000, 100, 010, 110, 001, 101, 011, 111)
  
 % P_ABC in CG coordinate:
 G_ABC = p2cg(3)*P_ABC;
-P_A = pmarginal(P_ABC, 1);
-P_B = pmarginal(P_ABC, 2);
+P_A = pmarginal(3, 1) * P_ABC;
+P_B = pmarginal(3, 2) * P_ABC;
 
 % Filter matrices
 M_AC = cgmarginal(3, [1 3]);
@@ -38,14 +38,14 @@ b = [M_AC * G_ABC;
 G = -cg2p(3);
 h = 0;
  
-% cvx_begin
-%     variable x(8);
-%     subject to 
-%         % Equality conditions
-%         A * x == b;
-%         % Nonnegative conditions
-%         G * x <= h;
-% cvx_end
+cvx_begin
+    variable x(8);
+    subject to 
+        % Equality conditions
+        A * x == b;
+        % Nonnegative conditions
+        G * x <= h;
+cvx_end
 
 
 %--------------LP standard form---------------
@@ -54,14 +54,14 @@ A_ = [G eye(8);
 b_ = [zeros(8,1);
       b];
 
-cvx_begin
-    variable x(16);
-    subject to
-        % Equality conditions
-        A_ * x - b_ == 0;
-        % Nonnegative conditions
-        x >= 0;
-cvx_end
+% cvx_begin
+%     variable x(16);
+%     subject to
+%         % Equality conditions
+%         A_ * x - b_ == 0;
+%         % Nonnegative conditions
+%         x >= 0;
+% cvx_end
 
 
 
