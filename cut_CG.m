@@ -41,7 +41,7 @@ h = 0;
 %     subject to 
 %         % Equality conditions
 %         A * x == b;
-%         % Nonnegative conditions
+%         % Inequality conditions
 %         G * x <= h;
 % cvx_end
 
