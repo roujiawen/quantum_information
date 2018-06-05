@@ -67,3 +67,9 @@ cvx_end
 fprintf('Matrix A: m = %d, n = %d, rank = %d\n', size(A), rank(full(A)))
 fprintf('Matrix A'': m = %d, n = %d, rank = %d\n', size(A_), rank(full(A_)))
 
+% ------------Results---------------
+% Status: Infeasible
+% Optimal value (cvx_optval): +Inf
+%  
+% Matrix A: m = 34, n = 64, rank = 18
+% Matrix A': m = 98, n = 128, rank = 82

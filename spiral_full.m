@@ -45,15 +45,15 @@ cvx_begin
         x >= 0;
 cvx_end
 
-% ------------Results---------------
-% Status: Infeasible
-% Optimal value (cvx_optval): +Inf
-
 
 %-----------Analysis----------------
 
 %rref(A)
 fprintf('Matrix A: m = %d, n = %d, rank = %d\n', size(A), rank(full(A)))
 
-
+% ------------Results---------------
+% Status: Infeasible
+% Optimal value (cvx_optval): +Inf
+%  
+% Matrix A: m = 34, n = 64, rank = 18
 
