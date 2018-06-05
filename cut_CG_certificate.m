@@ -1,12 +1,8 @@
-% Matrices stay nonflat in the main body of code
-
 % Given:
 P_ABC = [0.5;0;0;0;0;0;0;0.5]; %(000, 100, 010, 110, 001, 101, 011, 111)
  
 % P_ABC in CG coordinate:
-G_ABC = p2cg(P_ABC);
-
-zero_vector = zeros(8,1);
+G_ABC = p2cg(3)*P_ABC;
 
 cvx_begin
     variable x(16); % x is concat(P_CG_inf, z)
@@ -17,22 +13,28 @@ cvx_begin
     subject to 
         % Equality conditions
         % G_A2C1 = G_AC
-        y1: cgmarginal(P_CG_inf, [1 3]) == cgmarginal(G_ABC, [1 3]);
+        y1: cgmarginal(3, [1 3]) * P_CG_inf == cgmarginal(3, [1 3]) * G_ABC;
         % G_B1C1 = G_BC
-        y2: cgmarginal(P_CG_inf, [2 3]) == cgmarginal(G_ABC, [2 3]);
-        % G_A2B1 = S * P_A * P_B
-        y3: cgmarginal(P_CG_inf, [1 2]) == p2cg((pmarginal(P_ABC, 1))*(pmarginal(P_ABC, 2)).');
+        y2: cgmarginal(3, [2 3]) * P_CG_inf == cgmarginal(3, [2 3]) * G_ABC;
+        % G_A2B1 = G_A * G_B
+        y3: cgmarginal(3, [1 2]) * P_CG_inf == kron(cgmarginal(3, [1]) * G_ABC, cgmarginal(3, [2]) * G_ABC);
         % Nonnegative conditions
-        y4: cg2p(P_CG_inf) - z == 0;
+        y4: cg2p(3) * P_CG_inf - z == 0;
         y5: z >= 0;
 cvx_end
 
-% RESULTS
+%-----------Analysis----------------
+b = [cgmarginal(3, [1 3]) * G_ABC;
+    cgmarginal(3, [2 3]) * G_ABC;
+    kron(cgmarginal(3, [1]) * G_ABC, cgmarginal(3, [2]) * G_ABC)];
+
+b.' * [y1; y2; y3]
+
+%-----------Results----------------
 % Status: Infeasible
-% Optimal value (cvx_optval): -Inf
-
-b = [cgmarginal(G_ABC, [1 3]);
-	cgmarginal(G_ABC, [2 3]);
-	p2cg((pmarginal(P_ABC, 1))*(pmarginal(P_ABC, 2)).')]
-
-b.', b.' * [y1; y2; y3]
+% Optimal value (cvx_optval): +Inf
+%  
+% 
+% ans =
+% 
+%      1
