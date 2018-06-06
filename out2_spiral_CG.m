@@ -1,5 +1,5 @@
 % Given:
-P_ABC = [0;1/3;1/3;0;1/3;0;0;0];%(000, 100, 010, 110, 001, 101, 011, 111)
+P_ABC = get_dist('W-type');%(000, 100, 010, 110, 001, 101, 011, 111)
 
 % Convert to CG coordinates
 G_ABC = p2cg(3)*P_ABC;
