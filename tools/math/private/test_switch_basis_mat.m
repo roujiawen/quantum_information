@@ -1,5 +1,5 @@
 % Add parent folder to path
-addpath(fileparts(pwd))
+addpath(fileparts(pwd));
 
 success = 1;
 for n=1:10
