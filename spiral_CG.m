@@ -50,23 +50,29 @@ h = 0;
 % cvx_end
 
 %--------------LP standard form---------------
-A_ = [G eye(64);
-      A zeros(34,64)];
-b_ = [zeros(64,1);
-      b];
+% A_ = [G eye(64);
+%       A zeros(34,64)];
+% b_ = [zeros(64,1);
+%       b];
 
 cvx_begin
-    variable x(128);
+    variables x(64) s(64) t;
+    dual variable y;
+    maximize(t);
     subject to
         % Equality conditions
-        A_ * x - b_ == 0;
+        y: A * x == b;
+        G * x + eye(64) * s + t == 0;
         % Nonnegative conditions
-        x >= 0;
+        %x >= 0;
+        s >= 0;
 cvx_end
 
 %-----------Analysis----------------
 fprintf('Matrix A: m = %d, n = %d, rank = %d\n', size(A), rank(full(A)))
-fprintf('Matrix A'': m = %d, n = %d, rank = %d\n', size(A_), rank(full(A_)))
+%fprintf('Matrix A'': m = %d, n = %d, rank = %d\n', size(A_), rank(full(A_)))
+fprintf('-b^T y = %f\n', -b.' * y)
+
 
 % ------------Results---------------
 % Status: Infeasible

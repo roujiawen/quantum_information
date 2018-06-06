@@ -37,11 +37,23 @@ b = [P_ABC;
     kron(kron(pmarginal(3, [1]) * P_ABC, pmarginal(3, [2]) * P_ABC),pmarginal(3, [3]) * P_ABC)];
 
 
+% cvx_begin
+%     variables x(64) t;
+%     dual variable y;
+%     maximize t;
+%     subject to 
+%         y: A * x == b;
+%         x >= t;
+% cvx_end
+
 cvx_begin
-    variable x(64);
+    variables x(64) s(64) t;
+    dual variable y;
+    maximize t;
     subject to 
-        A * x == b;
-        x >= 0;
+        y: A * x == b;
+        x - t == s;
+        s >= 0;
 cvx_end
 
 
@@ -49,6 +61,8 @@ cvx_end
 
 %rref(A)
 fprintf('Matrix A: m = %d, n = %d, rank = %d\n', size(A), rank(full(A)))
+fprintf('-b^T y = %f\n', -b.' * y)
+
 
 % ------------Results---------------
 % Status: Infeasible

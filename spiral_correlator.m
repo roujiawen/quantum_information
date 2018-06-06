@@ -1,5 +1,6 @@
 % Given:
 P_ABC = [0;1/3;1/3;0;1/3;0;0;0];%(000, 100, 010, 110, 001, 101, 011, 111)
+%P_ABC = [0;1;1;1;1;1;1;0]/6;
 
 % Convert to correlator coordinates
 C_ABC = p2co(3)*P_ABC;
@@ -56,18 +57,22 @@ b_ = [zeros(64,1);
       b];
 
 cvx_begin
-    variable x(128);
+    variables x(64) s(64) t;
+    dual variable y;
+    minimize(-t);
     subject to
         % Equality conditions
-        A_ * x - b_ == 0;
+        y: A * x == b;
+        G * x + eye(64) * s + t == 0;
         % Nonnegative conditions
-        x >= 0;
+        %x >= 0;
+        s >= 0;
 cvx_end
 
 %-----------Analysis----------------
 fprintf('Matrix A: m = %d, n = %d, rank = %d\n', size(A), rank(full(A)))
-fprintf('Matrix A'': m = %d, n = %d, rank = %d\n', size(A_), rank(full(A_)))
-
+%fprintf('Matrix A'': m = %d, n = %d, rank = %d\n', size(A_), rank(full(A_)))
+fprintf('-b^T y = %f\n', -b.' * y)
 % ------------Results---------------
 % Status: Infeasible
 % Optimal value (cvx_optval): +Inf
