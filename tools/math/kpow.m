@@ -1,9 +1,9 @@
-function ans = kpow(M, n)
-    if n < 1 || floor(n) ~= n
-       error('Error. Input must be a positive integer.')
+function A = kpow(M, n)
+    if ~is_pos_int(n)
+       error('Error. N must be a positive integer.')
     end
-    ans = M;
+    A = M;
     for i = 2:1:n
-        ans = kron(ans, M);
+        A = kron(A, M);
     end
 end
