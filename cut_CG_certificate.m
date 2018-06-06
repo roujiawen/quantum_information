@@ -1,5 +1,5 @@
 % Given:
-P_ABC = [0.5;0;0;0;0;0;0;0.5]; %(000, 100, 010, 110, 001, 101, 011, 111)
+P_ABC = get_dist('complete correlation'); %(000, 100, 010, 110, 001, 101, 011, 111)
  
 % P_ABC in CG coordinate:
 G_ABC = p2cg(3)*P_ABC;

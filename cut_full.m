@@ -1,5 +1,5 @@
 % Given:
-P_ABC = [0.5;0;0;0;0;0;0;0.5]; %(000, 100, 010, 110, 001, 101, 011, 111)
+P_ABC = get_dist('complete correlation'); %(000, 100, 010, 110, 001, 101, 011, 111)
 
 M_AC = pmarginal(3, [1 3]);
 M_BC = pmarginal(3, [2 3]);
