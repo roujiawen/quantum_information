@@ -1,72 +1,59 @@
 % Given
-P_ABC = [0;1/3;1/3;0;1/3;0;0;0];%(000, 100, 010, 110, 001, 101, 011, 111)
+nout = 4; % Number of outcomes
+P_ABC = get_dist('EJM');
 
 % cvx_begin
-%     variable x(64);%P_A1B1C1A2B2C2
+%     variable x(nout^6);% P_A1B1C1A2B2C2
 %     subject to
 %         % Marginal equivalence conditions
-%         pmarginal(6, [1 2 3]) * x == P_ABC;
-%         pmarginal(6, [4 3]) * x == pmarginal(3, [1 3]) * P_ABC;
-%         pmarginal(6, [5 1]) * x == pmarginal(3, [2 1]) * P_ABC;
-%         pmarginal(6, [6 2]) * x == pmarginal(3, [3 2]) * P_ABC;
-%         pmarginal(6, [4]) * x == pmarginal(3, [1]) * P_ABC;
-%         pmarginal(6, [5]) * x == pmarginal(3, [2]) * P_ABC;
-%         pmarginal(6, [6]) * x == pmarginal(3, [3]) * P_ABC;
+%         sum_marginal(nout, 6, [1 2 3]) * x == P_ABC;
+%         sum_marginal(nout, 6, [4 3]) * x == sum_marginal(nout, 3, [1 3]) * P_ABC;
+%         sum_marginal(nout, 6, [5 1]) * x == sum_marginal(nout, 3, [2 1]) * P_ABC;
+%         sum_marginal(nout, 6, [6 2]) * x == sum_marginal(nout, 3, [3 2]) * P_ABC;
+%         sum_marginal(nout, 6, [4]) * x == sum_marginal(nout, 3, [1]) * P_ABC;
+%         sum_marginal(nout, 6, [5]) * x == sum_marginal(nout, 3, [2]) * P_ABC;
+%         sum_marginal(nout, 6, [6]) * x == sum_marginal(nout, 3, [3]) * P_ABC;
 %         % Independence condition
-%         pmarginal(6, [4 5 6]) * x == kron(kron(pmarginal(3, [1]) * P_ABC, pmarginal(3, [2]) * P_ABC),pmarginal(3, [3]) * P_ABC); 
+%         sum_marginal(nout, 6, [4 5 6]) * x == kron(kron(sum_marginal(nout, 3, [1]) * P_ABC, sum_marginal(nout, 3, [2]) * P_ABC),sum_marginal(nout, 3, [3]) * P_ABC); 
 %         % Nonnegativity condition
 %         x >= 0;
 % cvx_end
 
 %--------------LP standard form---------------
-A = [pmarginal(6, [1 2 3]);
-    pmarginal(6, [4 3]);
-    pmarginal(6, [5 1]);
-    pmarginal(6, [6 2]);
-    pmarginal(6, [4]);
-    pmarginal(6, [5]);
-    pmarginal(6, [6]);
-    pmarginal(6, [4 5 6])];
+A = [sum_marginal(nout, 6, [1 2 3]);
+    sum_marginal(nout, 6, [4 3]);
+    sum_marginal(nout, 6, [5 1]);
+    sum_marginal(nout, 6, [6 2]);
+    sum_marginal(nout, 6, [4]);
+    sum_marginal(nout, 6, [5]);
+    sum_marginal(nout, 6, [6]);
+    sum_marginal(nout, 6, [4 5 6])];
 b = [P_ABC;
-    pmarginal(3, [1 3]) * P_ABC;
-    pmarginal(3, [2 1]) * P_ABC;
-    pmarginal(3, [3 2]) * P_ABC;
-    pmarginal(3, [1]) * P_ABC;
-    pmarginal(3, [2]) * P_ABC;
-    pmarginal(3, [3]) * P_ABC;
-    kron(kron(pmarginal(3, [1]) * P_ABC, pmarginal(3, [2]) * P_ABC),pmarginal(3, [3]) * P_ABC)];
+    sum_marginal(nout, 3, [1 3]) * P_ABC;
+    sum_marginal(nout, 3, [2 1]) * P_ABC;
+    sum_marginal(nout, 3, [3 2]) * P_ABC;
+    sum_marginal(nout, 3, [1]) * P_ABC;
+    sum_marginal(nout, 3, [2]) * P_ABC;
+    sum_marginal(nout, 3, [3]) * P_ABC;
+    kron(kron(sum_marginal(nout, 3, [1]) * P_ABC, sum_marginal(nout, 3, [2]) * P_ABC),sum_marginal(nout, 3, [3]) * P_ABC)];
 
-
-% cvx_begin
-%     variables x(64) t;
-%     dual variable y;
-%     maximize t;
-%     subject to 
-%         y: A * x == b;
-%         x >= t;
-% cvx_end
 
 cvx_begin
-    variables x(64) s(64) t;
+    variables x(nout^6) t;
     dual variable y;
     maximize t;
     subject to 
         y: A * x == b;
-        x - t == s;
-        s >= 0;
+        x >= t;
 cvx_end
-
 
 %-----------Analysis----------------
 
-%rref(A)
-fprintf('Matrix A: m = %d, n = %d, rank = %d\n', size(A), rank(full(A)))
-fprintf('-b^T y = %f\n', -b.' * y)
+% rref(A)
+% fprintf('Matrix A: m = %d, n = %d, rank = %d\n', size(A), rank(full(A)))
+% fprintf('-b^T y = %f\n', -b.' * y)
 
 
 % ------------Results---------------
-% Status: Infeasible
-% Optimal value (cvx_optval): +Inf
-%  
-% Matrix A: m = 34, n = 64, rank = 18
-
+% Status: Solved
+% Optimal value (cvx_optval): +6.10298e-05
