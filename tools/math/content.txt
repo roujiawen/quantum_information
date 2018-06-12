@@ -1,0 +1,22 @@
+Functions for binary variables only (2 outcomes)
+    Taking marginal probabilities
+        - pmarginal
+        - cgmarginal
+        - comarginal (same as cgmarginal)
+    Convert coordinates
+        - p2cg
+        - cg2p
+        - p2co
+        - co2p
+
+Functions for any variables (arbitrary # of outcomes)
+    Taking marginal probabilities
+        - sum_marginal
+        - slice_marginal (for both CG and correlator)
+    Convert coordinates
+        - switch_basis_mat
+
+Others
+    - permute_sum (not currently in use; 1st iter of p/sum_marginal)
+    - is_pos_int (for checking input format)
+    - kpow (kronecker power)
