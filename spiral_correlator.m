@@ -43,29 +43,29 @@ b = [C_ABC;
 G = -co2p(6);
 h = 0;
 
-% cvx_begin
-%     variables x(64) t;
-%     dual variable y;
-%     maximize(t);
-%     subject to 
-%         y: A * x == b;
-%         G * x + t <= h;
-% cvx_end
+cvx_begin
+    variables x(64) t;
+    dual variable y;
+    maximize(t);
+    subject to 
+        y: A * x == b;
+        G * x + t <= h;
+cvx_end
 
 %--------------LP standard form---------------
 
-cvx_begin
-    variables x(64) s(64) t;
-    dual variable y;
-    maximize(t);
-    subject to
-        % Equality conditions
-        y: A * x == b;
-        G * x + eye(64) * s + t == 0;
-        % Nonnegative conditions
-        %x >= 0;
-        s >= 0;
-cvx_end
+% cvx_begin
+%     variables x(64) s(64) t;
+%     dual variable y;
+%     maximize(t);
+%     subject to
+%         % Equality conditions
+%         y: A * x == b;
+%         G * x + eye(64) * s + t == 0;
+%         % Nonnegative conditions
+%         %x >= 0;
+%         s >= 0;
+% cvx_end
 
 %-----------Analysis----------------
 fprintf('Matrix A: m = %d, n = %d, rank = %d\n', size(A), rank(full(A)))
