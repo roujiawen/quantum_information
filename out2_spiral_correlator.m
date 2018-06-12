@@ -44,22 +44,20 @@ G = -co2p(6);
 h = 0;
 
 % cvx_begin
-%     variable x(64);
+%     variables x(64) t;
+%     dual variable y;
+%     maximize(t);
 %     subject to 
-%         A * x == b;
-%         G * x <= h;
+%         y: A * x == b;
+%         G * x + t <= h;
 % cvx_end
 
 %--------------LP standard form---------------
-A_ = [G eye(64);
-      A zeros(34,64)];
-b_ = [zeros(64,1);
-      b];
 
 cvx_begin
     variables x(64) s(64) t;
     dual variable y;
-    minimize(-t);
+    maximize(t);
     subject to
         % Equality conditions
         y: A * x == b;
