@@ -1,9 +1,8 @@
-% Test sum_marginal against pmarginal (only binary)
-
 % Add parent folder to path
 addpath(fileparts(pwd));
 
 
+% Test sum_marginal against pmarginal (only binary)
 success = 1;
 for i = 4:10
     for j = 1:2:i
