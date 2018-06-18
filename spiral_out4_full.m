@@ -25,7 +25,7 @@ b = [P_ABC;
 %--------------CVX without slack---------------
 if slack == false
     cvx_begin
-        variables x(nout^6);
+        variable x(nout^6);
         dual variable y;
         subject to 
             y: A * x == b;

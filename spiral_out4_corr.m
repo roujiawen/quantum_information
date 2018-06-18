@@ -29,7 +29,6 @@ h = 0;
 
 %--------------CVX without slack---------------
 if slack == false
-    'without slack'
     cvx_begin
         variable x(nout^6);
         dual variable y;
@@ -39,7 +38,6 @@ if slack == false
     cvx_end
     
 else
-    'with slack'
     %--------------CVX with slack---------------
     cvx_begin
         variables x(nout^6) t;
