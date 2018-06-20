@@ -1,5 +1,6 @@
 function pprint_cmat(mat, sigdig)
 % Pretty print complex matrices
+% Bug: prints '-0'
 
 if nargin < 1
     mat = complex(rand(3,3,3), rand(3,3,3));
