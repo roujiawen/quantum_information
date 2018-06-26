@@ -5,11 +5,11 @@ function P = get_dist(name)
 % - 'EJM'
 
     switch name
-        case 'W-type'
+        case "W-type"
             P = [0;1/3;1/3;0;1/3;0;0;0];
-        case 'complete correlation'
+        case "complete correlation"
             P = [0.5;0;0;0;0;0;0;0.5];
-        case 'EJM'
+        case "EJM"
             P = gen_ejm();
     end
 end
