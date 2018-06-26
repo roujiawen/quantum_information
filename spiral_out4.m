@@ -1,10 +1,10 @@
 function stats = spiral_out4(basis, slack)
 switch basis
-    case 'full'
+    case "full"
         stats = spiral_out4_full(slack);
-    case 'CG'
+    case "CG"
         stats = spiral_out4_CG(slack);
-    case 'corr'
+    case "corr"
         stats = spiral_out4_corr(slack);
 end
 end
