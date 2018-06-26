@@ -1,4 +1,4 @@
-function spiral_out4_full(slack)
+function stats = spiral_out4_full(slack)
 % Given
 nout = 4; % Number of outcomes
 P_ABC = get_dist('EJM');
@@ -43,7 +43,10 @@ else
     cvx_end
 end
 
-
+stats = {cvx_cputime, cvx_status,...
+         cvx_optval, dot(b,y), cvx_optval-dot(b,y),...
+         cvx_optbnd, cvx_slvitr, cvx_slvtol};
+end
 
 
 

@@ -1,4 +1,4 @@
-function spiral_out4_CG(slack)
+function stats = spiral_out4_CG(slack)
 % Number of outcomes
 nout = 4; 
 % Given distribution of observed variables
@@ -50,6 +50,11 @@ else
     
 end
 
+stats = {cvx_cputime, cvx_status,...
+         cvx_optval, dot(b,y), cvx_optval-dot(b,y),...
+         cvx_optbnd, cvx_slvitr, cvx_slvtol};
+
+end
 
 
 
