@@ -1,5 +1,11 @@
-solvers = {'Mosek' 'SDPT3' 'SeDuMi'};
+solvers = {'Mosek' 'SDPT3' 'SeDuMi', 'Gurobi'};
 bases = {'full', 'CG', 'corr'};
+
+headers = {'solver', 'basis', 'slack', 'cvx_cputime',...
+    'cvx_status', 'primal opt', 'dual opt', 'gap',...
+    'cvx_optbnd', 'cvx_slvitr', 'cvx_slvtol'};
+data = headers;
+
 for i = 1:length(solvers)
     cur_solver = solvers{i};
     cvx_solver(cur_solver);
@@ -13,8 +19,11 @@ for i = 1:length(solvers)
             end
             diary(sprintf('outs/%s_%s_%s.txt',...
                 cur_solver, cur_basis, slack_label))
-            spiral_out4(cur_basis,slack);
-            diary off
+            stats = spiral_out4(cur_basis,slack);
+            diary off;
+            datarow = [{cur_solver},{cur_basis},{slack_label},stats];
+            data = [data; datarow];
+            cell2csv('stats.csv', data);
         end
     end
 end
