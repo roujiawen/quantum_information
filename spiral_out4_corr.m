@@ -3,7 +3,7 @@ function stats = spiral_out4_corr(slack)
 nout = 4; 
 % Given distribution of observed variables
 P_ABC = get_dist('EJM');
-% Convert to CG coordinates
+% Convert to correlator coordinates
 G_ABC = switch_basis_mat('full', 'corr', nout, 3)*P_ABC;
 
 %--------------Constraints---------------
