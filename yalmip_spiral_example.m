@@ -25,7 +25,7 @@ b = [P_ABC;
     kron(kron(sum_marginal(nout, 3, [1]) * P_ABC, sum_marginal(nout, 3, [2]) * P_ABC),sum_marginal(nout, 3, [3]) * P_ABC)];
 
 % Set YALMIP solver options
-options = sdpsettings('solver','mosek','verbose',1,'savesolveroutput',1);
+options = sdpsettings('solver','mosek','verbose',1,'debug',1,'savesolveroutput', 1, 'mosek.MSK_IPAR_OPTIMIZER', 'MSK_OPTIMIZER_FREE_SIMPLEX');
     
 %--------------YALMIP without slack---------------
 if slack == false

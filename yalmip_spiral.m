@@ -1,12 +1,14 @@
-function [stats, solveroutput] = yalmip_spiral(nout, P_ABC, solver, basis, slack)
-% Formatting output filename
-solver_outfile = format_yalmipsolverout(solver, basis, slack);
+function [stats, solveroutput] = yalmip_spiral(nout, P_ABC, solver, basis, slack, optimizer)
 
 %--------------Constraint matrices---------------
 [A, b, G, h] = get_spiral_constraints(nout, P_ABC, basis);
 
 %--------------YALMIP solver options---------------
-options = sdpsettings('solver',solver,'verbose',1,'savesolveroutput',1);
+if solver=="Mosek"
+    options = sdpsettings('solver',solver,'verbose',1,'savesolveroutput',1, 'mosek.MSK_IPAR_OPTIMIZER', optimizer);
+else
+    options = sdpsettings('solver',solver,'verbose',1,'savesolveroutput',1);
+end
     
 %--------------YALMIP without slack---------------
 if slack == false
