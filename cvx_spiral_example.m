@@ -1,26 +1,11 @@
+basis = 'full';
 slack = 0;
 % Given
 nout = 4; % Number of outcomes
 P_ABC = get_dist('EJM');
 
-%--------------Constraints---------------
-% Marginal equivalence & independence conditions
-A = [sum_marginal(nout, 6, [1 2 3]);
-    sum_marginal(nout, 6, [4 3]);
-    sum_marginal(nout, 6, [5 1]);
-    sum_marginal(nout, 6, [6 2]);
-    sum_marginal(nout, 6, [4]);
-    sum_marginal(nout, 6, [5]);
-    sum_marginal(nout, 6, [6]);
-    sum_marginal(nout, 6, [4 5 6])];
-b = [P_ABC;
-    sum_marginal(nout, 3, [1 3]) * P_ABC;
-    sum_marginal(nout, 3, [2 1]) * P_ABC;
-    sum_marginal(nout, 3, [3 2]) * P_ABC;
-    sum_marginal(nout, 3, [1]) * P_ABC;
-    sum_marginal(nout, 3, [2]) * P_ABC;
-    sum_marginal(nout, 3, [3]) * P_ABC;
-    kron(kron(sum_marginal(nout, 3, [1]) * P_ABC, sum_marginal(nout, 3, [2]) * P_ABC),sum_marginal(nout, 3, [3]) * P_ABC)];
+%--------------Constraint matrices---------------
+[A, b, G, h] = get_spiral_constraints(nout, P_ABC, basis);
 
 %--------------CVX without slack---------------
 if slack == false
