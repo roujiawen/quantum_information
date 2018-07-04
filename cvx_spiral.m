@@ -1,11 +1,11 @@
-function stats = cvx_spiral(nout, P_ABC, basis, slack)
+function [stats, x] = cvx_spiral(nout, P_ABC, basis, slack)
 
 %--------------Constraint matrices---------------
 [A, b, G, h] = get_spiral_constraints(nout, P_ABC, basis);
     
 %--------------CVX without slack---------------
 if slack == false
-    if basis == "full"
+    if G == 0
         cvx_begin
             variable x(nout^6);
             dual variable y;
@@ -24,7 +24,7 @@ if slack == false
     end
 else
     %--------------CVX with slack---------------
-    if basis == "full"
+    if G == 0
         cvx_begin
             variables x(nout^6) t;
             dual variable y;

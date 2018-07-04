@@ -4,7 +4,7 @@ function [stats, solveroutput] = yalmip_spiral(nout, P_ABC, solver, basis, slack
 [A, b, G, h] = get_spiral_constraints(nout, P_ABC, basis);
 
 %--------------YALMIP solver options---------------
-if solver=="Mosek"
+if (solver=="Mosek") && (nargin > 5)
     options = sdpsettings('solver',solver,'verbose',1,'savesolveroutput',1, 'mosek.MSK_IPAR_OPTIMIZER', optimizer);
 else
     options = sdpsettings('solver',solver,'verbose',1,'savesolveroutput',1);
@@ -17,7 +17,7 @@ if slack == false
     % OBJECTIVE
     Objective = [];%feasibility
     % CONSTRAINTS
-    if basis == "full"
+    if G == 0
         Constraints = [A * x == b, x >= 0];
     else
         Constraints = [A * x == b, G * x <= h];
@@ -34,7 +34,7 @@ else
     % OBJECTIVE
     Objective = t;
     % CONSTRAINTS
-    if basis == "full"
+    if G == 0
         Constraints = [A * x == b, x >= t];
     else
         Constraints = [A * x == b, G * x + t <= h];

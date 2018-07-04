@@ -5,7 +5,7 @@ P_ABC = get_dist('EJM');
 
 % Iteration range
 solvers = {'Mosek' 'SDPT3' 'SeDuMi', 'Gurobi'};
-bases = {'full', 'CG', 'corr'};
+bases = {'full', 'CG', 'corr', 'CG_e', 'corr_e'};
 
 % Output data file
 headers = {'solver', 'basis', 'slack', 'cvx_cputime',...
