@@ -1,4 +1,4 @@
-function E = qsd(n, m, p, rho)
+function [E, cvx_optval] = qsd(n, m, p, rho)
 % Solve a quantum state discrimination problem using cvx.
 %
 % Inputs
