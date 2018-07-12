@@ -18,7 +18,6 @@ for i = 1:length(solvers)
     if cur_solver == "Mosek"
         data = cvx_mosek_automator(data, bases, filename, nout, P_ABC);
     else
-        cvx_solver(cur_solver);
         for j = 1:length(bases)
             cur_basis = bases{j};
             for slack = 0:1
@@ -29,7 +28,7 @@ for i = 1:length(solvers)
                 end
                 diary(sprintf('outs/%s_%s_%s.txt',...
                     cur_solver, cur_basis, slack_label))
-                stats = cvx_spiral(nout, P_ABC, cur_basis,slack);
+                stats = cvx_spiral(nout, P_ABC, cur_solver, cur_basis,slack);
                 diary off;
                 datarow = [{cur_solver},{cur_basis},{slack_label},stats];
                 data = [data; datarow];

@@ -1,10 +1,30 @@
-function [stats, x] = cvx_spiral(nout, P_ABC, basis, slack)
+function [stats, x] = cvx_spiral(nout, P_ABC, solver, basis, slack, optimizer)
 
+
+switch solver
+    case "MSK_OPTIMIZER_INTPNT"
+        cvx_solver('Mosek');
+        cvx_solver_settings('MSK_IPAR_OPTIMIZER',convertStringsToChars(solver));
+    case "MSK_OPTIMIZER_PRIMAL_SIMPLEX"
+        cvx_solver('Mosek');
+        cvx_solver_settings('MSK_IPAR_OPTIMIZER',convertStringsToChars(solver));
+    case "MSK_OPTIMIZER_DUAL_SIMPLEX"
+        cvx_solver('Mosek');
+        cvx_solver_settings('MSK_IPAR_OPTIMIZER',convertStringsToChars(solver));
+    otherwise
+        %--------------Choose solver and optimizer(mosek)---------------
+        cvx_solver(convertStringsToChars(solver));
+        if (lower(solver)=="mosek") && (nargin > 5)
+            cvx_solver_settings('MSK_IPAR_OPTIMIZER',convertStringsToChars(optimizer));
+        end
+end
+
+    
 %--------------Constraint matrices---------------
 [A, b, G, h] = get_spiral_constraints(nout, P_ABC, basis);
     
 %--------------CVX without slack---------------
-if slack == false
+if slack ~= 1
     if G == 0
         cvx_begin
             variable x(nout^6);
