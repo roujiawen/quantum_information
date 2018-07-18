@@ -10,7 +10,6 @@ function [P, nout, feasibility] = get_dist(name)
 % INFEASIBLE:
 % - 'W-type'
 % - 'complete correlation'
-% - 'anti-correlation'
 
     switch name
         case 'uniform'
