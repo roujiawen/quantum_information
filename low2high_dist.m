@@ -9,35 +9,52 @@ nvar = 3;
 [l_dist, l_out, feasibility] = get_dist(dist_name);
 
 % If conversion matrices (e.g. P(a'|a)) not given, generate randomly
-if nargin < 5
+if nargin < 3
     if feasibility == true
-        % For feasible distribution, generate random matrix
+        % For FEASIBLE distribution, generate random matrix
         conv_mat = rand(h_out, l_out, nvar);
 
         % Normalize probabilities
-        col_sums = sum(conv_mat, 1);
+        col_sums = sum(conv_mat, 1);%shape=(1, l_out, nvar)
         divisor = repmat(col_sums, h_out, 1, 1);
         conv_mat = conv_mat ./ divisor;
 
     else
-        % For infeasible distribution, generate random invertible matrix
-        conv_mat = rand(h_out, l_out, nvar);
+        % For INFEASIBLE dist, generate random invertibly normalizable matrix
+        %     (1) generate matrix
+        %         .5 0  0
+        %         .5 0  0
+        %         0  .3 0
+        %         0  .4 0
+        %         0  .3 0
+        %         0  0  1
+        %     (2) shuffle rows
         
-        % Make sure all matrices are invertible (is this necessary??)
-        for k = 1:nvar
-            while rank(conv_mat(:,:,k)) < l_out
-                conv_mat(:,:,k) = rand(h_out,l_out)
+        conv_mat = zeros(h_out, l_out, nvar);
+        % Do this for every layer(nvar):
+        for layer = 1:nvar
+            % Determine lengths of vectors
+            col_nonzeros = ones(1, l_out);%at least 1 nonzero entries
+            for k = 1:h_out-l_out
+                rand_index = randi(l_out);
+                col_nonzeros(1, rand_index) = col_nonzeros(1, rand_index) + 1;
             end
+            % Create random vectors and place inside matrix
+            slices = [0 cumsum(col_nonzeros)];
+            for k = 1:l_out
+                % Random normalized vector of shape (#nonzero, 1)
+                rand_mat = rand(col_nonzeros(1,k),1);
+                divisor = sum(rand_mat);
+                rand_mat = rand_mat/divisor;
+                % Place random vector inside the matrix
+                conv_mat(slices(k)+1:slices(k+1), k, layer) = rand_mat;
+            end
+            % Shuffle rows of the matrix
+            conv_mat(:,:,layer) = conv_mat(randperm(size(conv_mat,1)),:,layer);
         end
-
-        % Normalize probabilities
-        col_sums = sum(conv_mat, 1);
-        divisor = repmat(col_sums, h_out, 1, 1);
-        conv_mat = conv_mat ./ divisor;
     end
 end
 
-%conv_mat
 % Take kronecker product e.g. C x B x A
 kron_prod = 1;
 for k = 1:nvar
@@ -55,4 +72,3 @@ h_dist = kron_prod * l_dist;
 % h_dist(find(h_dist))
 
 end
-% call h_out = 4; h_dist = low2high_dist(get_dist('uniform'), 2, h_out);cvx_spiral(h_out, h_dist, 'full', 1)
