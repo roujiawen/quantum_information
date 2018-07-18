@@ -1,6 +1,7 @@
+test_name = 'rand_infea_100trials';
 solvers = {'MSK_OPTIMIZER_INTPNT',...
     'MSK_OPTIMIZER_PRIMAL_SIMPLEX', ... 
-    'MSK_OPTIMIZER_DUAL_SIMPLEX','Gurobi'};%SDPT3 SeDuMi
+    'MSK_OPTIMIZER_DUAL_SIMPLEX'};%SDPT3 SeDuMi Gurobi
 bases = {'full', 'CG', 'corr'};
 slack_states = {'noslack', 'slack_v1(x>=t)', 'slack_v2(|t|<=1)', 'slack_v3(x=y-t+1)'};
 ntrials = 100;
@@ -12,16 +13,16 @@ headers = {'num_outcomes', 'solver', 'basis', 'slack', 'trial',...
 data = headers;
 
 for h_out = 4:4
-%     % Create test data
-%     test_data = zeros(h_out^3, ntrials);
-%     for trial = 1:ntrials
-%         h_dist = low2high_dist('anti-correlation', h_out);
-%         test_data(:,trial) = h_dist;
-%     end
-%     % Save test data
-%     save(sprintf('logs/test_data_%d', h_out), 'test_data');
+    % Create test data
+    test_data = zeros(h_out^3, ntrials);
+    for trial = 1:ntrials
+        h_dist = low2high_dist('W-type', h_out);
+        test_data(:,trial) = h_dist;
+    end
+    % Save test data
+    save(sprintf('logs/test_data_%s', test_name), 'test_data');
     % Load test data
-    load('logs/test_data_100trials/test_data_4.mat', 'test_data')
+%     load(sprintf('logs/test_data_%s.mat', test_name), 'test_data')
     for trial = 1:ntrials
         for k1 = 1:length(solvers)
             solver = solvers{k1};
@@ -37,8 +38,8 @@ for h_out = 4:4
                     datarow = [{h_out},{solver},{basis},{slack},{trial},stats];
                     data = [data; datarow];
                     % Update master table to .csv file and .mat file
-                    cell2csv('results/cvx_trials.csv', data);
-                    save('results/cvx_trials', 'data');
+                    cell2csv(sprintf('results/%s.csv', test_name), data);
+                    save(sprintf('results/%s', test_name), 'data');
                 end
             end
         end
