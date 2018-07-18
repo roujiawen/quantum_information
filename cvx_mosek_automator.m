@@ -15,7 +15,7 @@ for i = 1:length(optimizers)
             else
                 slack_label = 'noslack';
             end
-            diary(sprintf('outs/%s_%s_%s.txt',...
+            diary(sprintf('logs/%s_%s_%s.txt',...
                 cur_solver_optimizer, cur_basis, slack_label))
             stats = cvx_spiral(nout, P_ABC, cur_solver, cur_basis,slack, cur_optimizer);
             diary off;

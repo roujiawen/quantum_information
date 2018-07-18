@@ -17,7 +17,7 @@ data = headers;
 for i = 1:length(solvers)
     solver = solvers{i};
     %--------------Mosek---------------
-    if solver == "Mosek"
+    if strcmpi(solver, 'Mosek')
         for k = 1:length(mosek_optimizers)
             optimizer = mosek_optimizers{k};
             for j = 1:length(bases)
@@ -29,14 +29,14 @@ for i = 1:length(solvers)
                         slack_label = 'noslack';
                     end
                     % Save command window output to .txt file
-                    diary(sprintf('outs/Yalmip_%s_%s_%s_%s.txt',...
+                    diary(sprintf('logs/Yalmip_%s_%s_%s_%s.txt',...
                         solver, optimizer, basis, slack_label))
                     % Call optimization function
                     [stats, solveroutput] = yalmip_spiral(nout, P_ABC,...
                                           solver, basis, slack, optimizer);
                     diary off;
                     % Save solverouput to .mat file
-                    save(sprintf('outs/YmpSlvOut_%s_%s_%s_%s.mat',...
+                    save(sprintf('logs/YmpSlvOut_%s_%s_%s_%s.mat',...
                         solver, optimizer, basis, slack_label), 'solveroutput');
                     % Add data row to master table
                     datarow = [{strcat('Mosek_', optimizer)},{basis},{slack_label}, stats];
@@ -57,14 +57,14 @@ for i = 1:length(solvers)
                     slack_label = 'noslack';
                 end
                 % Save command window output to .txt file
-                diary(sprintf('outs/Yalmip_%s_%s_%s.txt',...
+                diary(sprintf('logs/Yalmip_%s_%s_%s.txt',...
                     solver, basis, slack_label))
                 % Call optimization function
                 [stats, solveroutput] = yalmip_spiral(nout, P_ABC,...
                                       solver, basis, slack);
                 diary off;
                 % Save solverouput to .mat file
-                save(sprintf('outs/YmpSlvOut_%s_%s_%s.mat',...
+                save(sprintf('logs/YmpSlvOut_%s_%s_%s.mat',...
                     solver, basis, slack_label), 'solveroutput');
                 % Add data row to master table
                 datarow = [{solver},{basis},{slack_label}, stats];

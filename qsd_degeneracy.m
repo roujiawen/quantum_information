@@ -29,9 +29,9 @@ rho = cat(3, r1, r2, r3, r4); % list of n density matrices of size (m,m)
 for picked = 1:4
     for maxmin_i=1:2
         if maxmin_i == 1
-            maxmin = "max"
+            maxmin = 'max'
         else
-            maxmin = "min"
+            maxmin = 'min'
         end
         cvx_begin
             % variable is a list of n POVM elements
@@ -41,7 +41,7 @@ for picked = 1:4
             E_dot_rho = dot2(E, rho, E_dot_rho)
             tr = trace2(E_dot_rho, tr)
             % objective
-            if maxmin == "max"
+            if strcmpi(maxmin, 'max')
                 maximize(trace(E(:,:,picked)))
             else
                 minimize(trace(E(:,:,picked)))
