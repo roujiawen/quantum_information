@@ -2,14 +2,14 @@ solver = 'mosek';
 basis = 'full';
 slack = 1;
 % Given
-nout = 4; % Number of outcomes
-P_ABC = get_dist('EJM');
+nout = 2; % Number of outcomes
+P_ABC = get_dist('complete correlation');
 
 %--------------Constraint matrices---------------
 [A, b, G, h] = get_spiral_constraints(nout, P_ABC, basis);
 
 % Set YALMIP solver options
-options = sdpsettings('solver','mosek','verbose',1,'debug',1,'savesolveroutput', 1, 'mosek.MSK_IPAR_OPTIMIZER', 'MSK_OPTIMIZER_FREE_SIMPLEX');
+options = sdpsettings('solver',solver,'verbose',1,'debug',1,'savesolveroutput', 1);%, 'mosek.MSK_IPAR_OPTIMIZER', 'MSK_OPTIMIZER_FREE_SIMPLEX');
     
 %--------------YALMIP without slack---------------
 if slack == false
