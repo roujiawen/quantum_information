@@ -1,4 +1,4 @@
-function [stats, x] = cvx_spiral(nout, P_ABC, solver, basis, slack, optimizer)
+function [stats, x] = cvx_spiral_quiet(nout, P_ABC, solver, basis, slack, optimizer)
 
 cvx_solver_settings('-clearall')
 switch solver
@@ -31,7 +31,7 @@ end
 switch slack
     case {0, 'noslack'}
         if length(G) == 1%full, CG, corr
-            cvx_begin
+            cvx_begin quiet
                 variable x(nout^6);
                 dual variable y;
                 subject to 
@@ -39,7 +39,7 @@ switch slack
                     x >= 0;
             cvx_end
         else%CG_old, corr_old
-            cvx_begin
+            cvx_begin quiet
                 variable x(nout^6);
                 dual variable y;
                 subject to 
@@ -52,7 +52,7 @@ switch slack
     case {1, 'slack(x>=t)'}
         %--------------CVX with slack(x>=t)---------------
         if length(G) == 1
-            cvx_begin
+            cvx_begin quiet
                 variables x(nout^6) t;
                 dual variable y;
                 maximize t;
@@ -61,7 +61,7 @@ switch slack
                     x >= t;
             cvx_end
         else
-            cvx_begin
+            cvx_begin quiet
                 variables x(nout^6) t;
                 dual variable y;
                 maximize(t);
@@ -75,7 +75,7 @@ switch slack
     case {2, 'slack_v2(|t|<=1)'}
         %--------------CVX with slack(-1<t<1)---------------
         if length(G) == 1
-            cvx_begin
+            cvx_begin quiet
                 variables x(nout^6) t;
                 dual variable y;
                 maximize t;
@@ -94,7 +94,7 @@ switch slack
         %--------------CVX with slack(x=y-t+1)---------------
         if length(G) == 1
             A_sum = sum(A,2);
-            cvx_begin
+            cvx_begin quiet
                 variables x(nout^6) t;
                 dual variable y;
                 minimize t;
