@@ -66,7 +66,7 @@ switch basis
             kron(kron(slice_marginal(nout, 3, [3]) * G_ABC, slice_marginal(nout, 3, [2]) * G_ABC),slice_marginal(nout, 3, [1]) * G_ABC)];
         G = -switch_basis_mat('corr', 'full', nout, 6);
         h = 0;
-    case 'CG_v2'
+    case 'CG'
         % Convert to CG coordinates
         G_ABC = switch_basis_mat('full', 'CG', nout, 3)*P_ABC;
         A = [slice_marginal(nout, 6, [1 2 3]);
@@ -89,7 +89,7 @@ switch basis
         % placeholders
         G = 0;
         h = 0;
-    case 'CG_reduced'
+    case 'CG_red'
         % Convert to CG coordinates
         G_ABC = switch_basis_mat('full', 'CG', nout, 3)*P_ABC;
         temp = reshape(1:nout^2, [1 1]*nout);
@@ -122,7 +122,7 @@ switch basis
         % placeholders
         G = 0;
         h = 0;
-    case 'corr_v2'
+    case 'corr'
         % Convert to correlator coordinates
         G_ABC = switch_basis_mat('full', 'corr', nout, 3)*P_ABC;
         A = [slice_marginal(nout, 6, [1 2 3]);
@@ -145,7 +145,7 @@ switch basis
         % placeholders
         G = 0;
         h = 0;
-    case 'corr'
+    case 'corr_red'
         % Convert to correlator coordinates
         G_ABC = switch_basis_mat('full', 'corr', nout, 3)*P_ABC;
         A = [slice_marginal(nout, 6, [1 2 3]);
