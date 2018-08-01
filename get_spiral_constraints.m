@@ -166,8 +166,6 @@ switch basis
             slice_marginal(nout, 3, [3]) * G_ABC;
             kron(kron(slice_marginal(nout, 3, [3]) * G_ABC, slice_marginal(nout, 3, [2]) * G_ABC),slice_marginal(nout, 3, [1]) * G_ABC)];
         
-        
-        
         G_ABC = switch_basis_mat('full', 'corr', nout, 3)*P_ABC;
         temp = reshape(1:nout^2, [1 1]*nout);
         temp = temp(2:nout,2:nout);
