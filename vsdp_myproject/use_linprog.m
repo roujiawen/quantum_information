@@ -19,7 +19,7 @@
 %     0.3333
 %     0.1111
 
-linprog(zeros(8,1), G, h, A, b)
+[x,tmp,flag,tmp,lambda] = linprog(zeros(8,1), G, h, A, b,[],[],0)
 
 %--------------LP standard form---------------
 % c = zeros(16,1);

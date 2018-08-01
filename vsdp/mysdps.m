@@ -114,7 +114,7 @@ end
 
 %% get solver number
 solverLIST = {'sedumi','sdpt3','sdpa','csdp','sdplr', ...
-    'lp_solve','linprog'};
+    'lp_solve','linprog', 'mosek'};
 nsolvers = length(solverLIST);
 if ischar(solver)
     solverID = find(strncmpi(solver,solverLIST,4));
@@ -345,8 +345,46 @@ elseif any(solverID==7) && exist('linprog','file')==2
     end
     info = [1 2] * (abs(flag)==[2; 3]);
 
-else
+elseif any(solverID==8) && exist('mosekopt','file')==3%MEX-file
+    %% call mosek
 
+    % options parameter for mosek
+    OPTIONS = struct();
+    if isfield(opts,'MOSEK_OPTIONS')
+        OPTIONS = opts.MOSEK_OPTIONS;
+    elseif isfield(VSDP_OPTIONS,'MOSEK_OPTIONS')
+        OPTIONS = VSDP_OPTIONS.MOSEK_OPTIONS;
+    end
+  
+    % test of not supported cones,
+    if sum(K.q)>0 || sum(K.s)>0
+        error('VSDP:MYSDPS','Second order and semidefinite cones are not supported by MOSEK');
+    end
+    
+    % call mosek solver [with intial point]
+    mosek_prob = struct();
+    mosek_prob.c = full(c);
+    mosek_prob.a = sparse(A)';
+    mosek_prob.blc = full(b);
+    mosek_prob.buc = full(b);
+    mosek_prob.blx = [-inf(K.f,1); zeros(K.l,1)];
+    mosek_prob.bux = inf(length(c),1);
+    [rcode, res] = ...
+        mosekopt('minimize statuskeys(1)', mosek_prob, OPTIONS);
+    % transform results to vsdp format
+    x = res.sol.itr.xx;
+    if ~isempty(x)
+        y = res.sol.itr.y;
+        z = c - A*y;
+        obj(1) = c'*x;
+        obj(2) = b'*y;
+    end
+    if (res.sol.itr.solsta == 1) && (res.sol.itr.prosta == 1)
+        info = 0;
+    else
+        info = -1;
+    end
+else
     % no solver called
     warning('VSDP:MYSDPS','Solver not found!');
     disp('The selected solver could not be detected!');

@@ -130,7 +130,7 @@ wfields = 0;  % number of fields that could not be imported
 
 % solver
 solverLIST = {'sedumi','sdpt3','sdpa','csdp','sdplr', ...
-    'lp_solve','linprog'};
+    'lp_solve','linprog','mosek'};
 if isfield(opts,'SOLVER')
     stat = stat + 1;
     ofield = opts.SOLVER;
