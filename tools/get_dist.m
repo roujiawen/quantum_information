@@ -1,4 +1,4 @@
-function [P, nout, feasibility] = get_dist(name, interval)
+function [P, nout, feasibility] = get_dist(name, use_interval)
 % Returns one of the following distributions:
 % FEASIBLE:
 % - 'uniform'
@@ -12,10 +12,10 @@ function [P, nout, feasibility] = get_dist(name, interval)
 % - 'complete correlation'
 
 if nargin < 2
-    interval = false;%default
+    use_interval = false;%default
 end
 
-if interval
+if use_interval
     switch name
         case 'uniform'
             P = 1/8 * intval(ones(8,1));
