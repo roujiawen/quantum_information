@@ -1,4 +1,4 @@
-function S = switch_basis_mat(from, to, nout, nvar)
+function S = switch_basis_mat(from, to, nout, nvar, use_interval)
 %SWITCH_BASIS A function that returns a switch of basis corresponding
 % to the specifications given in the inputs.
 % 
@@ -11,6 +11,8 @@ function S = switch_basis_mat(from, to, nout, nvar)
 %        (e.g. nout for binary variables is 2)
 % nvar   An integer specifying the number of variables in the joint
 %        probability distribution. (e.g. nvar for P_ABC is 3)
+% use_interval (optional) A boolean specifying whether outputs should be
+%        in interval/integer form.
 %        
 % Outputs:
 % S      A matrix, the switch of basis matrix, of the size
@@ -32,6 +34,9 @@ function S = switch_basis_mat(from, to, nout, nvar)
 %
 % -------------------------------------------------------
 
+if nargin < 2
+    use_interval = false;%default
+end
 
 S_type = strcat(from, to);
 switch S_type
@@ -42,7 +47,7 @@ switch S_type
     case 'CGfull'
         S1 = CGfull(nout);
     case 'corrfull'
-        S1 = corrfull(nout);
+        S1 = corrfull(nout, use_interval);
     otherwise
         error('Error. The given FROM and TO pair has not been implemented.')
 end
@@ -65,8 +70,13 @@ function S1 = CGfull(nout)
           1 -ones(1, nout-1)];
 end
 
-function S1 = corrfull(nout)
-    S1 = [ones(nout,1)/nout [eye(nout-1)/nout;
+function S1 = corrfull(nout, use_interval)
+    if use_interval
+        S1 = [intval(ones(nout,1))/nout [intval(eye(nout-1))/nout;
+                             -intval(ones(1,nout-1))/nout]];
+    else
+        S1 = [ones(nout,1)/nout [eye(nout-1)/nout;
                              -ones(1,nout-1)/nout]];
+    end
 end
 
