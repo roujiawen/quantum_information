@@ -1,4 +1,4 @@
-function [P, nout, feasibility] = get_dist(name)
+function [P, nout, feasibility] = get_dist(name, interval)
 % Returns one of the following distributions:
 % FEASIBLE:
 % - 'uniform'
@@ -11,6 +11,24 @@ function [P, nout, feasibility] = get_dist(name)
 % - 'W-type'
 % - 'complete correlation'
 
+if nargin < 2
+    interval = false;%default
+end
+
+if interval
+    switch name
+        case 'uniform'
+            P = 1/8 * intval(ones(8,1));
+            nout = 2;
+            feasibility = true;
+        case 'complete correlation'
+            P = 1/2 * intval([1;0;0;0;0;0;0;1]);
+            nout = 2;
+            feasibility = false;
+        otherwise
+            error('Not implemented');
+    end
+else
     switch name
         case 'uniform'
             P = 1/8 * ones(8,1);
@@ -50,7 +68,10 @@ function [P, nout, feasibility] = get_dist(name)
             P = gen_ejm();
             nout = 4;
             feasibility = true;
+        otherwise
+            error('Not implemented');
     end
+end
 end
 
             
