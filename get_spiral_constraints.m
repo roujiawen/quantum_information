@@ -1,7 +1,11 @@
-function [A, b, G, h] = get_spiral_constraints(nout, P_ABC, basis)
+function [A, b, G, h] = get_spiral_constraints(nout, P_ABC, basis, use_interval)
 %SPIRAL_CONSTRAINTS given the number of outcomes, a distribution vector 
 %and a basis name ('full', 'CG', 'corr'), outputs the set of constraints 
 %(A, b, G, h) under the spiral inflation.
+
+if nargin < 4
+    use_interval = false;%default
+end
 
 switch basis
     case 'full'
@@ -64,7 +68,7 @@ switch basis
             slice_marginal(nout, 3, [2]) * G_ABC;
             slice_marginal(nout, 3, [3]) * G_ABC;
             kron(kron(slice_marginal(nout, 3, [3]) * G_ABC, slice_marginal(nout, 3, [2]) * G_ABC),slice_marginal(nout, 3, [1]) * G_ABC)];
-        G = -switch_basis_mat('corr', 'full', nout, 6);
+        G = -switch_basis_mat('corr', 'full', nout, 6, use_interval);
         h = 0;
     case 'CG'
         % Convert to CG coordinates
