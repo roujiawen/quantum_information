@@ -12,11 +12,10 @@ headers = {'num_outcomes', 'solver', 'basis', 'slack', 'trial',...
 data = headers;
 
 %% Test grid
-solvers = {'Mosek_INTPNT', 'Mosek_INTPNT_ONLY', ...
-    'Mosek_PRIMAL_SIMPLEX', 'Mosek_DUAL_SIMPLEX', ...
-    'Gurobi'};%SDPT3 SeDuMi
-bases = {'full', 'CG', 'CG_red', 'corr', 'corr_red'};
-slack_types = {'noslack', 'slack(x>=t)', 'slack(x=y-t+1)'};
+solvers = {'Mosek_PRIMAL_SIMPLEX','Mosek_DUAL_SIMPLEX'};%SDPT3 SeDuMi
+bases = {'CG', 'CG_red'};
+slack_types = {'slack(x=y-t+1)'};
+failed_list = [6 9 28 38 44 55 71 110 174 198 210 228 248 259 281 295 312 319 339 364 449 458 462];
 ntrials = 500;
 
 %% Continue on disrupted results
@@ -51,6 +50,7 @@ for nout = 4:4
     pause(1);
     
     for trial = 1:ntrials
+        if any(trial == failed_list)
         for k1 = 1:length(solvers)
             solver = solvers{k1};
             for k2 = 1:length(bases)
@@ -72,6 +72,7 @@ for nout = 4:4
                     end
                 end
             end
+        end
         end
     end
 end

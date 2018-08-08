@@ -1,22 +1,24 @@
+%% Mosek Settings
+OPTIONS = struct();
+OPTIONS.MOSEK_OPTIONS.MSK_IPAR_BI_MAX_ITERATIONS = 50000;
+OPTIONS.MOSEK_OPTIONS.MSK_IPAR_LOG = 0;
+
 %% I/O
-test_name = 'rand_infea_500trials';
-init_dist = 'W-type';
+test_name = 'fea_vsdp_failures';
+init_dist = 'anti-correlation';
 
 test_data_path = sprintf('logs/test_data_%s', test_name);
 results_data_path = sprintf('results/%s', test_name);
 
 % Output data file
 headers = {'num_outcomes', 'solver', 'basis', 'slack', 'trial',...
-    'cvx_cputime', 'cvx_status', 'primal opt', 'dual opt', 'gap',...
-    'cvx_optbnd', 'cvx_slvitr', 'cvx_slvtol'};
+    'objt', 'max(xt)', 'info'};
 data = headers;
 
 %% Test grid
-solvers = {'Mosek_INTPNT', 'Mosek_INTPNT_ONLY', ...
-    'Mosek_PRIMAL_SIMPLEX', 'Mosek_DUAL_SIMPLEX', ...
-    'Gurobi'};%SDPT3 SeDuMi
-bases = {'full', 'CG', 'CG_red', 'corr', 'corr_red'};
-slack_types = {'noslack', 'slack(x>=t)', 'slack(x=y-t+1)'};
+solvers = {'mosek'};%SDPT3 SeDuMi
+bases = {'CG', 'CG_red'};
+slack_types = {'slack(z=x+t-1)'};
 ntrials = 500;
 
 %% Continue on disrupted results
@@ -62,9 +64,9 @@ for nout = 4:4
                         slack = slack_types{k3};
                         % trials
                         test_dist = test_data(:,trial);
-                        [stats, solution] = cvx_spiral_quiet(nout, test_dist, solver, basis, slack);
+                        [objt,xt,yt,zt,info] = mysdps_spiral(nout, test_dist, solver, basis, slack, OPTIONS);
                         % Add data row to master table
-                        datarow = [{nout},{solver},{basis},{slack},{trial},stats];
+                        datarow = [{nout},{solver},{basis},{slack},{trial}, objt, max(xt), info];
                         data = [data; datarow];
                         % Update master table to .csv file and .mat file
                         %cell2csv(strcat(results_data_path, '.csv'), data);
