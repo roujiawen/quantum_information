@@ -1,0 +1,3165 @@
+FOLDER: /Users/work/Documents/MATLAB/Intlab_V9/setround/feature
+=======
+/Users/work/Documents/MATLAB/Intlab_V9/setround/feature/setround.m
+/Users/work/Documents/MATLAB/Intlab_V9/intval/setround.m            % Shadowed
+/Users/work/Documents/MATLAB/Intlab_V9/fl/setround.m                % Shadowed
+
+FOLDER: /Users/work/Documents/MATLAB/Intlab_V9
+=======
+/Users/work/Documents/MATLAB/Intlab_V9/INTLAB_Version_2.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/INTLAB_Version_3.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/INTLAB_Version_3_1.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/INTLAB_Version_4.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/INTLAB_Version_4_1.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/INTLAB_Version_4_1_1.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/INTLAB_Version_4_1_2.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/INTLAB_Version_5.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/INTLAB_Version_5_1.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/INTLAB_Version_5_2.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/INTLAB_Version_5_3.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/INTLAB_Version_5_4.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/INTLAB_Version_5_5.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/INTLAB_Version_6.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/INTLAB_Version_7.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/INTLAB_Version_7_1.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/INTLAB_Version_8.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/INTLAB_Version_9.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/intlablogo.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/intlabsetting.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/startintlab.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/startup.m
+
+FOLDER: /Users/work/Documents/MATLAB/Intlab_V9/intval
+=======
+/Users/work/Documents/MATLAB/Intlab_V9/intval/abss.m
+/Users/work/Documents/MATLAB/Intlab_V9/intval/@intval/abss.m    % Shadowed intval method
+/Users/work/Documents/MATLAB/Intlab_V9/polynom/@polynom/abss.m  % Shadowed polynom method
+/Users/work/Documents/MATLAB/Intlab_V9/fl/@fl/abss.m            % Shadowed fl method
+
+/Users/work/Documents/MATLAB/Intlab_V9/intval/band.m
+/Users/work/Documents/MATLAB/Intlab_V9/intval/@intval/band.m      % Shadowed intval method
+/Users/work/Documents/MATLAB/Intlab_V9/affari/@affari/band.m      % Shadowed affari method
+/Users/work/Documents/MATLAB/Intlab_V9/gradient/@gradient/band.m  % Shadowed gradient method
+/Users/work/Documents/MATLAB/Intlab_V9/hessian/@hessian/band.m    % Shadowed hessian method
+/Users/work/Documents/MATLAB/Intlab_V9/taylor/@taylor/band.m      % Shadowed taylor method
+/Users/work/Documents/MATLAB/Intlab_V9/slope/@slope/band.m        % Shadowed slope method
+/Users/work/Documents/MATLAB/Intlab_V9/fl/@fl/band.m              % Shadowed fl method
+
+/Users/work/Documents/MATLAB/Intlab_V9/intval/bandwidth.m
+/Users/work/Documents/MATLAB/Intlab_V9/intval/@intval/bandwidth.m      % Shadowed intval method
+/Users/work/Documents/MATLAB/Intlab_V9/affari/@affari/bandwidth.m      % Shadowed affari method
+/Users/work/Documents/MATLAB/Intlab_V9/gradient/@gradient/bandwidth.m  % Shadowed gradient method
+/Users/work/Documents/MATLAB/Intlab_V9/hessian/@hessian/bandwidth.m    % Shadowed hessian method
+/Users/work/Documents/MATLAB/Intlab_V9/taylor/@taylor/bandwidth.m      % Shadowed taylor method
+/Users/work/Documents/MATLAB/Intlab_V9/fl/@fl/bandwidth.m              % Shadowed fl method
+/Applications/MATLAB_R2018a.app/toolbox/matlab/matfun/bandwidth.m      % Shadowed
+
+/Users/work/Documents/MATLAB/Intlab_V9/intval/cintval.m
+/Users/work/Documents/MATLAB/Intlab_V9/intval/@intval/cintval.m  % Shadowed intval method
+
+/Users/work/Documents/MATLAB/Intlab_V9/intval/columns.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/intval/diam.m
+/Users/work/Documents/MATLAB/Intlab_V9/intval/@intval/diam.m      % Shadowed intval method
+/Users/work/Documents/MATLAB/Intlab_V9/affari/@affari/diam.m      % Shadowed affari method
+/Users/work/Documents/MATLAB/Intlab_V9/gradient/@gradient/diam.m  % Shadowed gradient method
+/Users/work/Documents/MATLAB/Intlab_V9/hessian/@hessian/diam.m    % Shadowed hessian method
+/Users/work/Documents/MATLAB/Intlab_V9/taylor/@taylor/diam.m      % Shadowed taylor method
+/Users/work/Documents/MATLAB/Intlab_V9/polynom/@polynom/diam.m    % Shadowed polynom method
+/Users/work/Documents/MATLAB/Intlab_V9/fl/@fl/diam.m              % Shadowed fl method
+/Users/work/Documents/MATLAB/Intlab_V9/long/@long/diam.m          % Shadowed long method
+
+/Users/work/Documents/MATLAB/Intlab_V9/intval/dim.m
+/Users/work/Documents/MATLAB/Intlab_V9/intval/@intval/dim.m      % Shadowed intval method
+/Users/work/Documents/MATLAB/Intlab_V9/affari/@affari/dim.m      % Shadowed affari method
+/Users/work/Documents/MATLAB/Intlab_V9/gradient/@gradient/dim.m  % Shadowed gradient method
+/Users/work/Documents/MATLAB/Intlab_V9/hessian/@hessian/dim.m    % Shadowed hessian method
+/Users/work/Documents/MATLAB/Intlab_V9/taylor/@taylor/dim.m      % Shadowed taylor method
+/Users/work/Documents/MATLAB/Intlab_V9/slope/@slope/dim.m        % Shadowed slope method
+/Users/work/Documents/MATLAB/Intlab_V9/fl/@fl/dim.m              % Shadowed fl method
+
+/Users/work/Documents/MATLAB/Intlab_V9/intval/disp2str.m
+/Users/work/Documents/MATLAB/Intlab_V9/intval/@intval/disp2str.m  % Shadowed intval method
+
+/Users/work/Documents/MATLAB/Intlab_V9/intval/displayinner.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/intval/displaywidth.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/intval/emptyintersect.m
+/Users/work/Documents/MATLAB/Intlab_V9/intval/@intval/emptyintersect.m      % Shadowed intval method
+/Users/work/Documents/MATLAB/Intlab_V9/affari/@affari/emptyintersect.m      % Shadowed affari method
+/Users/work/Documents/MATLAB/Intlab_V9/gradient/@gradient/emptyintersect.m  % Shadowed gradient method
+/Users/work/Documents/MATLAB/Intlab_V9/hessian/@hessian/emptyintersect.m    % Shadowed hessian method
+/Users/work/Documents/MATLAB/Intlab_V9/fl/@fl/emptyintersect.m              % Shadowed fl method
+
+/Users/work/Documents/MATLAB/Intlab_V9/intval/gershgorin.m
+/Users/work/Documents/MATLAB/Intlab_V9/intval/@intval/gershgorin.m  % Shadowed intval method
+
+/Users/work/Documents/MATLAB/Intlab_V9/intval/getround.m
+/Users/work/Documents/MATLAB/Intlab_V9/fl/getround.m      % Shadowed
+
+/Users/work/Documents/MATLAB/Intlab_V9/intval/hull.m
+/Users/work/Documents/MATLAB/Intlab_V9/intval/@intval/hull.m   % Shadowed intval method
+/Users/work/Documents/MATLAB/Intlab_V9/affari/@affari/hull.m   % Shadowed affari method
+/Users/work/Documents/MATLAB/Intlab_V9/fl/@fl/hull.m           % Shadowed fl method
+/Users/work/Documents/MATLAB/yalmip/extras/@constraint/hull.m  % Shadowed constraint method
+/Users/work/Documents/MATLAB/yalmip/extras/@lmi/hull.m         % Shadowed lmi method
+
+/Users/work/Documents/MATLAB/Intlab_V9/intval/inf_.m
+/Users/work/Documents/MATLAB/Intlab_V9/intval/@intval/inf_.m  % Shadowed intval method
+/Users/work/Documents/MATLAB/Intlab_V9/fl/@fl/inf_.m          % Shadowed fl method
+
+/Users/work/Documents/MATLAB/Intlab_V9/intval/infsup.m
+/Users/work/Documents/MATLAB/Intlab_V9/intval/@intval/infsup.m      % Shadowed intval method
+/Users/work/Documents/MATLAB/Intlab_V9/affari/@affari/infsup.m      % Shadowed affari method
+/Users/work/Documents/MATLAB/Intlab_V9/gradient/@gradient/infsup.m  % Shadowed gradient method
+/Users/work/Documents/MATLAB/Intlab_V9/hessian/@hessian/infsup.m    % Shadowed hessian method
+/Users/work/Documents/MATLAB/Intlab_V9/taylor/@taylor/infsup.m      % Shadowed taylor method
+/Users/work/Documents/MATLAB/Intlab_V9/slope/@slope/infsup.m        % Shadowed slope method
+/Users/work/Documents/MATLAB/Intlab_V9/polynom/@polynom/infsup.m    % Shadowed polynom method
+/Users/work/Documents/MATLAB/Intlab_V9/fl/@fl/infsup.m              % Shadowed fl method
+
+/Users/work/Documents/MATLAB/Intlab_V9/intval/intvalinit.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/intval/isaffari.m
+/Users/work/Documents/MATLAB/Intlab_V9/affari/@affari/isaffari.m      % Shadowed affari method
+/Users/work/Documents/MATLAB/Intlab_V9/gradient/@gradient/isaffari.m  % Shadowed gradient method
+/Users/work/Documents/MATLAB/Intlab_V9/hessian/@hessian/isaffari.m    % Shadowed hessian method
+/Users/work/Documents/MATLAB/Intlab_V9/taylor/@taylor/isaffari.m      % Shadowed taylor method
+
+/Users/work/Documents/MATLAB/Intlab_V9/intval/isintval.m
+/Users/work/Documents/MATLAB/Intlab_V9/intval/@intval/isintval.m      % Shadowed intval method
+/Users/work/Documents/MATLAB/Intlab_V9/affari/@affari/isintval.m      % Shadowed affari method
+/Users/work/Documents/MATLAB/Intlab_V9/gradient/@gradient/isintval.m  % Shadowed gradient method
+/Users/work/Documents/MATLAB/Intlab_V9/hessian/@hessian/isintval.m    % Shadowed hessian method
+/Users/work/Documents/MATLAB/Intlab_V9/taylor/@taylor/isintval.m      % Shadowed taylor method
+/Users/work/Documents/MATLAB/Intlab_V9/slope/@slope/isintval.m        % Shadowed slope method
+/Users/work/Documents/MATLAB/Intlab_V9/polynom/@polynom/isintval.m    % Shadowed polynom method
+/Users/work/Documents/MATLAB/Intlab_V9/fl/@fl/isintval.m              % Shadowed fl method
+
+/Users/work/Documents/MATLAB/Intlab_V9/intval/iszero.m
+/Users/work/Documents/MATLAB/Intlab_V9/intval/@intval/iszero.m  % Shadowed intval method
+/Users/work/Documents/MATLAB/Intlab_V9/affari/@affari/iszero.m  % Shadowed affari method
+/Users/work/Documents/MATLAB/Intlab_V9/fl/@fl/iszero.m          % Shadowed fl method
+
+/Users/work/Documents/MATLAB/Intlab_V9/intval/lssresidual.m
+/Users/work/Documents/MATLAB/Intlab_V9/intval/@intval/lssresidual.m  % Shadowed intval method
+
+/Users/work/Documents/MATLAB/Intlab_V9/intval/mag.m
+/Users/work/Documents/MATLAB/Intlab_V9/intval/@intval/mag.m      % Shadowed intval method
+/Users/work/Documents/MATLAB/Intlab_V9/affari/@affari/mag.m      % Shadowed affari method
+/Users/work/Documents/MATLAB/Intlab_V9/gradient/@gradient/mag.m  % Shadowed gradient method
+/Users/work/Documents/MATLAB/Intlab_V9/hessian/@hessian/mag.m    % Shadowed hessian method
+/Users/work/Documents/MATLAB/Intlab_V9/polynom/@polynom/mag.m    % Shadowed polynom method
+/Users/work/Documents/MATLAB/Intlab_V9/fl/@fl/mag.m              % Shadowed fl method
+
+/Users/work/Documents/MATLAB/Intlab_V9/intval/mid.m
+/Users/work/Documents/MATLAB/Intlab_V9/intval/@intval/mid.m      % Shadowed intval method
+/Users/work/Documents/MATLAB/Intlab_V9/affari/@affari/mid.m      % Shadowed affari method
+/Users/work/Documents/MATLAB/Intlab_V9/gradient/@gradient/mid.m  % Shadowed gradient method
+/Users/work/Documents/MATLAB/Intlab_V9/hessian/@hessian/mid.m    % Shadowed hessian method
+/Users/work/Documents/MATLAB/Intlab_V9/taylor/@taylor/mid.m      % Shadowed taylor method
+/Users/work/Documents/MATLAB/Intlab_V9/polynom/@polynom/mid.m    % Shadowed polynom method
+/Users/work/Documents/MATLAB/Intlab_V9/fl/@fl/mid.m              % Shadowed fl method
+/Users/work/Documents/MATLAB/Intlab_V9/long/@long/mid.m          % Shadowed long method
+/Users/work/Documents/MATLAB/yalmip/@sdpvar/mid.m                % Shadowed sdpvar method
+/Users/work/Documents/MATLAB/yalmip/extras/mid.m                 % Shadowed
+
+/Users/work/Documents/MATLAB/Intlab_V9/intval/midrad.m
+/Users/work/Documents/MATLAB/Intlab_V9/intval/@intval/midrad.m      % Shadowed intval method
+/Users/work/Documents/MATLAB/Intlab_V9/affari/@affari/midrad.m      % Shadowed affari method
+/Users/work/Documents/MATLAB/Intlab_V9/gradient/@gradient/midrad.m  % Shadowed gradient method
+/Users/work/Documents/MATLAB/Intlab_V9/hessian/@hessian/midrad.m    % Shadowed hessian method
+/Users/work/Documents/MATLAB/Intlab_V9/taylor/@taylor/midrad.m      % Shadowed taylor method
+/Users/work/Documents/MATLAB/Intlab_V9/slope/@slope/midrad.m        % Shadowed slope method
+/Users/work/Documents/MATLAB/Intlab_V9/polynom/@polynom/midrad.m    % Shadowed polynom method
+/Users/work/Documents/MATLAB/Intlab_V9/fl/@fl/midrad.m              % Shadowed fl method
+
+/Users/work/Documents/MATLAB/Intlab_V9/intval/mig.m
+/Users/work/Documents/MATLAB/Intlab_V9/intval/@intval/mig.m      % Shadowed intval method
+/Users/work/Documents/MATLAB/Intlab_V9/affari/@affari/mig.m      % Shadowed affari method
+/Users/work/Documents/MATLAB/Intlab_V9/gradient/@gradient/mig.m  % Shadowed gradient method
+/Users/work/Documents/MATLAB/Intlab_V9/hessian/@hessian/mig.m    % Shadowed hessian method
+/Users/work/Documents/MATLAB/Intlab_V9/fl/@fl/mig.m              % Shadowed fl method
+
+/Users/work/Documents/MATLAB/Intlab_V9/intval/modpi2.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/intval/qdist.m
+/Users/work/Documents/MATLAB/Intlab_V9/intval/@intval/qdist.m    % Shadowed intval method
+/Users/work/Documents/MATLAB/Intlab_V9/affari/@affari/qdist.m    % Shadowed affari method
+/Users/work/Documents/MATLAB/Intlab_V9/polynom/@polynom/qdist.m  % Shadowed polynom method
+/Users/work/Documents/MATLAB/Intlab_V9/fl/@fl/qdist.m            % Shadowed fl method
+
+/Users/work/Documents/MATLAB/Intlab_V9/intval/rad.m
+/Users/work/Documents/MATLAB/Intlab_V9/intval/@intval/rad.m      % Shadowed intval method
+/Users/work/Documents/MATLAB/Intlab_V9/affari/@affari/rad.m      % Shadowed affari method
+/Users/work/Documents/MATLAB/Intlab_V9/gradient/@gradient/rad.m  % Shadowed gradient method
+/Users/work/Documents/MATLAB/Intlab_V9/hessian/@hessian/rad.m    % Shadowed hessian method
+/Users/work/Documents/MATLAB/Intlab_V9/taylor/@taylor/rad.m      % Shadowed taylor method
+/Users/work/Documents/MATLAB/Intlab_V9/polynom/@polynom/rad.m    % Shadowed polynom method
+/Users/work/Documents/MATLAB/Intlab_V9/fl/@fl/rad.m              % Shadowed fl method
+/Users/work/Documents/MATLAB/Intlab_V9/long/@long/rad.m          % Shadowed long method
+/Users/work/Documents/MATLAB/yalmip/@sdpvar/rad.m                % Shadowed sdpvar method
+/Users/work/Documents/MATLAB/yalmip/extras/rad.m                 % Shadowed
+
+/Users/work/Documents/MATLAB/Intlab_V9/intval/rows.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/setround/feature/setround.m
+/Users/work/Documents/MATLAB/Intlab_V9/intval/setround.m            % Shadowed
+/Users/work/Documents/MATLAB/Intlab_V9/fl/setround.m                % Shadowed
+
+/Users/work/Documents/MATLAB/Intlab_V9/intval/stdfctsdata.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/intval/stdfctsinit.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/intval/str2intval.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/intval/structeig.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/intval/structlss.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/intval/structure.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/intval/sup.m
+/Users/work/Documents/MATLAB/Intlab_V9/intval/@intval/sup.m      % Shadowed intval method
+/Users/work/Documents/MATLAB/Intlab_V9/affari/@affari/sup.m      % Shadowed affari method
+/Users/work/Documents/MATLAB/Intlab_V9/gradient/@gradient/sup.m  % Shadowed gradient method
+/Users/work/Documents/MATLAB/Intlab_V9/hessian/@hessian/sup.m    % Shadowed hessian method
+/Users/work/Documents/MATLAB/Intlab_V9/taylor/@taylor/sup.m      % Shadowed taylor method
+/Users/work/Documents/MATLAB/Intlab_V9/polynom/@polynom/sup.m    % Shadowed polynom method
+/Users/work/Documents/MATLAB/Intlab_V9/fl/@fl/sup.m              % Shadowed fl method
+/Users/work/Documents/MATLAB/Intlab_V9/long/@long/sup.m          % Shadowed long method
+
+/Users/work/Documents/MATLAB/Intlab_V9/intval/test.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/intval/typeadj.m
+/Users/work/Documents/MATLAB/Intlab_V9/intval/@intval/typeadj.m      % Shadowed intval method
+/Users/work/Documents/MATLAB/Intlab_V9/affari/@affari/typeadj.m      % Shadowed affari method
+/Users/work/Documents/MATLAB/Intlab_V9/gradient/@gradient/typeadj.m  % Shadowed gradient method
+/Users/work/Documents/MATLAB/Intlab_V9/hessian/@hessian/typeadj.m    % Shadowed hessian method
+/Users/work/Documents/MATLAB/Intlab_V9/taylor/@taylor/typeadj.m      % Shadowed taylor method
+/Users/work/Documents/MATLAB/Intlab_V9/slope/@slope/typeadj.m        % Shadowed slope method
+/Users/work/Documents/MATLAB/Intlab_V9/polynom/@polynom/typeadj.m    % Shadowed polynom method
+/Users/work/Documents/MATLAB/Intlab_V9/fl/@fl/typeadj.m              % Shadowed fl method
+
+/Users/work/Documents/MATLAB/Intlab_V9/intval/typeof.m
+/Users/work/Documents/MATLAB/Intlab_V9/intval/@intval/typeof.m      % Shadowed intval method
+/Users/work/Documents/MATLAB/Intlab_V9/affari/@affari/typeof.m      % Shadowed affari method
+/Users/work/Documents/MATLAB/Intlab_V9/gradient/@gradient/typeof.m  % Shadowed gradient method
+/Users/work/Documents/MATLAB/Intlab_V9/hessian/@hessian/typeof.m    % Shadowed hessian method
+/Users/work/Documents/MATLAB/Intlab_V9/taylor/@taylor/typeof.m      % Shadowed taylor method
+/Users/work/Documents/MATLAB/Intlab_V9/slope/@slope/typeof.m        % Shadowed slope method
+/Users/work/Documents/MATLAB/Intlab_V9/polynom/@polynom/typeof.m    % Shadowed polynom method
+/Users/work/Documents/MATLAB/Intlab_V9/fl/@fl/typeof.m              % Shadowed fl method
+
+/Users/work/Documents/MATLAB/Intlab_V9/intval/verifyeig.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/intval/verifyfft.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/intval/verifylss.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/intval/verifynlss.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/intval/verifynlss2.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/intval/verifyquad.m
+
+FOLDER: /Users/work/Documents/MATLAB/Intlab_V9/affari
+=======
+/Users/work/Documents/MATLAB/Intlab_V9/affari/affariinit.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/affari/affarivars.m
+
+FOLDER: /Users/work/Documents/MATLAB/Intlab_V9/gradient
+=======
+/Users/work/Documents/MATLAB/Intlab_V9/gradient/gradientinit.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/gradient/sparsegradient.m
+
+FOLDER: /Users/work/Documents/MATLAB/Intlab_V9/hessian
+=======
+/Users/work/Documents/MATLAB/Intlab_V9/hessian/hessianinit.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/hessian/sparsehessian.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/hessian/test_h.m
+
+FOLDER: /Users/work/Documents/MATLAB/Intlab_V9/taylor
+=======
+/Users/work/Documents/MATLAB/Intlab_V9/taylor/taylorinit.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/taylor/taylororder.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/taylor/testfuntaylor.m
+
+FOLDER: /Users/work/Documents/MATLAB/Intlab_V9/slope
+=======
+/Users/work/Documents/MATLAB/Intlab_V9/slope/demotest.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/slope/slopeinit.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/slope/slopeplot.m
+
+FOLDER: /Users/work/Documents/MATLAB/Intlab_V9/polynom
+=======
+/Users/work/Documents/MATLAB/Intlab_V9/polynom/bernstein.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/polynom/bugeaud.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/polynom/chebyshev.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/polynom/chebyshev2.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/polynom/gegenbauer.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/polynom/hermite.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/polynom/jacobi.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/polynom/laguerre.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/polynom/legendre.m
+/Applications/MATLAB_R2018a.app/toolbox/matlab/specfun/legendre.m  % Shadowed
+
+/Users/work/Documents/MATLAB/Intlab_V9/polynom/polynominit.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/polynom/randpoly.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/polynom/verifypoly.m
+
+FOLDER: /Users/work/Documents/MATLAB/Intlab_V9/utility
+=======
+/Users/work/Documents/MATLAB/Intlab_V9/utility/backward.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/utility/base2vec.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/utility/bin2vec.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/utility/binom.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/utility/boothroyd.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/utility/circulant.m
+/Users/work/Documents/MATLAB/Intlab_V9/intval/@intval/circulant.m  % Shadowed intval method
+/Users/work/Documents/MATLAB/Intlab_V9/affari/@affari/circulant.m  % Shadowed affari method
+/Users/work/Documents/MATLAB/Intlab_V9/fl/@fl/circulant.m          % Shadowed fl method
+
+/Users/work/Documents/MATLAB/Intlab_V9/utility/clear.m
+/Applications/MATLAB_R2018a.app/toolbox/matlab/general/clear.m  % Shadowed
+
+/Users/work/Documents/MATLAB/Intlab_V9/utility/compmat.m
+/Users/work/Documents/MATLAB/Intlab_V9/intval/@intval/compmat.m  % Shadowed intval method
+/Users/work/Documents/MATLAB/Intlab_V9/affari/@affari/compmat.m  % Shadowed affari method
+/Users/work/Documents/MATLAB/Intlab_V9/fl/@fl/compmat.m          % Shadowed fl method
+
+/Users/work/Documents/MATLAB/Intlab_V9/utility/distbits.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/utility/even.m
+/Users/work/Documents/MATLAB/yalmip/extras/even.m      % Shadowed
+
+/Users/work/Documents/MATLAB/Intlab_V9/utility/factors.m
+/Users/work/Documents/MATLAB/yalmip/@sdpvar/factors.m     % Shadowed sdpvar method
+
+/Users/work/Documents/MATLAB/Intlab_V9/utility/finish.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/utility/fletcher.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/utility/format.m
+/Applications/MATLAB_R2018a.app/toolbox/matlab/general/format.m  % Shadowed
+
+/Users/work/Documents/MATLAB/Intlab_V9/utility/forward.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/utility/gregk316.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/utility/gregk416.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/utility/gregk420.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/utility/helpp.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/utility/isregular.m
+/Applications/MATLAB_R2018a.app/toolbox/matlab/datatypes/@timetable/isregular.m  % Shadowed timetable method
+
+/Users/work/Documents/MATLAB/Intlab_V9/utility/isspd.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/utility/luwpp.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/utility/odd.m
+
+/Applications/MATLAB_R2018a.app/toolbox/matlab/elmat/private/poisson.m  % Private to elmat
+/Users/work/Documents/MATLAB/Intlab_V9/utility/poisson.m                % Shadowed
+
+/Users/work/Documents/MATLAB/Intlab_V9/utility/pred.m
+/Users/work/Documents/MATLAB/Intlab_V9/fl/@fl/pred.m   % Shadowed fl method
+
+/Users/work/Documents/MATLAB/Intlab_V9/utility/randherm.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/utility/randint.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/utility/randmat.m
+/Users/work/Documents/MATLAB/cvx/sdpt3/Solver/randmat.m   % Shadowed
+
+/Users/work/Documents/MATLAB/Intlab_V9/utility/random.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/utility/randomc.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/utility/randorth.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/utility/randsym.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/utility/relerr.m
+/Users/work/Documents/MATLAB/Intlab_V9/intval/@intval/relerr.m    % Shadowed intval method
+/Users/work/Documents/MATLAB/Intlab_V9/affari/@affari/relerr.m    % Shadowed affari method
+/Users/work/Documents/MATLAB/Intlab_V9/polynom/@polynom/relerr.m  % Shadowed polynom method
+/Users/work/Documents/MATLAB/Intlab_V9/fl/@fl/relerr.m            % Shadowed fl method
+
+/Users/work/Documents/MATLAB/Intlab_V9/utility/solvewpp.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/utility/sqr.m
+/Users/work/Documents/MATLAB/Intlab_V9/intval/@intval/sqr.m      % Shadowed intval method
+/Users/work/Documents/MATLAB/Intlab_V9/affari/@affari/sqr.m      % Shadowed affari method
+/Users/work/Documents/MATLAB/Intlab_V9/gradient/@gradient/sqr.m  % Shadowed gradient method
+/Users/work/Documents/MATLAB/Intlab_V9/hessian/@hessian/sqr.m    % Shadowed hessian method
+/Users/work/Documents/MATLAB/Intlab_V9/taylor/@taylor/sqr.m      % Shadowed taylor method
+/Users/work/Documents/MATLAB/Intlab_V9/slope/@slope/sqr.m        % Shadowed slope method
+/Users/work/Documents/MATLAB/Intlab_V9/fl/@fl/sqr.m              % Shadowed fl method
+/Users/work/Documents/MATLAB/yalmip/@sdpvar/sqr.m                % Shadowed sdpvar method
+
+/Users/work/Documents/MATLAB/Intlab_V9/utility/subrealmin.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/utility/succ.m
+/Users/work/Documents/MATLAB/Intlab_V9/fl/@fl/succ.m   % Shadowed fl method
+
+FOLDER: /Users/work/Documents/MATLAB/Intlab_V9/fl
+=======
+/Users/work/Documents/MATLAB/Intlab_V9/fl/flinit.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/fl/flround.m
+/Users/work/Documents/MATLAB/Intlab_V9/fl/@fl/flround.m  % Shadowed fl method
+
+/Users/work/Documents/MATLAB/Intlab_V9/fl/flsequence.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/fl/getbits.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/intval/getround.m
+/Users/work/Documents/MATLAB/Intlab_V9/fl/getround.m      % Shadowed
+
+/Users/work/Documents/MATLAB/Intlab_V9/fl/realmax.m
+/Applications/MATLAB_R2018a.app/toolbox/matlab/elmat/realmax.m  % Shadowed
+
+/Users/work/Documents/MATLAB/Intlab_V9/fl/realmin.m
+/Applications/MATLAB_R2018a.app/toolbox/matlab/elmat/realmin.m  % Shadowed
+
+/Users/work/Documents/MATLAB/Intlab_V9/setround/feature/setround.m
+/Users/work/Documents/MATLAB/Intlab_V9/intval/setround.m            % Shadowed
+/Users/work/Documents/MATLAB/Intlab_V9/fl/setround.m                % Shadowed
+
+FOLDER: /Users/work/Documents/MATLAB/Intlab_V9/long
+=======
+/Users/work/Documents/MATLAB/Intlab_V9/long/longinit.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/long/longpi.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/long/longprecision.m
+
+FOLDER: /Users/work/Documents/MATLAB/Intlab_V9/accsumdot
+=======
+/Users/work/Documents/MATLAB/Intlab_V9/accsumdot/AccDot.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/accsumdot/AccSign.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/accsumdot/AccSum.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/accsumdot/AccSumHugeN.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/accsumdot/AccSumK.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/Contents.m
+/Applications/MATLAB_R2018a.app/toolbox/shared/instrument/@instrument/Contents.m           % Shadowed instrument method
+/Applications/MATLAB_R2018a.app/toolbox/matlab/serial/@serial/Contents.m                   % Shadowed serial method
+/Users/work/Documents/MATLAB/Intlab_V9/intval/Contents.m                                   % Shadowed
+/Users/work/Documents/MATLAB/Intlab_V9/affari/Contents.m                                   % Shadowed
+/Users/work/Documents/MATLAB/Intlab_V9/gradient/Contents.m                                 % Shadowed
+/Users/work/Documents/MATLAB/Intlab_V9/hessian/Contents.m                                  % Shadowed
+/Users/work/Documents/MATLAB/Intlab_V9/taylor/Contents.m                                   % Shadowed
+/Users/work/Documents/MATLAB/Intlab_V9/slope/Contents.m                                    % Shadowed
+/Users/work/Documents/MATLAB/Intlab_V9/polynom/Contents.m                                  % Shadowed
+/Users/work/Documents/MATLAB/Intlab_V9/utility/Contents.m                                  % Shadowed
+/Users/work/Documents/MATLAB/Intlab_V9/fl/Contents.m                                       % Shadowed
+/Users/work/Documents/MATLAB/Intlab_V9/long/Contents.m                                     % Shadowed
+/Users/work/Documents/MATLAB/Intlab_V9/accsumdot/Contents.m                                % Shadowed
+/Users/work/Documents/MATLAB/Intlab_V9/demos/Contents.m                                    % Shadowed
+/Users/work/Documents/MATLAB/cvx/sedumi/Contents.m                                         % Shadowed
+/Users/work/Documents/MATLAB/cvx/sedumi/conversion/Contents.m                              % Shadowed
+/Users/work/Documents/MATLAB/cvx/builtins/Contents.m                                       % Shadowed
+/Users/work/Documents/MATLAB/cvx/commands/Contents.m                                       % Shadowed
+/Users/work/Documents/MATLAB/cvx/functions/Contents.m                                      % Shadowed
+/Users/work/Documents/MATLAB/cvx/lib/Contents.m                                            % Shadowed
+/Users/work/Documents/MATLAB/cvx/structures/Contents.m                                     % Shadowed
+/Users/work/Documents/MATLAB/cvx/Contents.m                                                % Shadowed
+/Users/work/Documents/MATLAB/yalmip/Contents.m                                             % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/matlab/datafun/Contents.m                          % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/matlab/datatypes/Contents.m                        % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/matlab/elfun/Contents.m                            % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/matlab/elmat/Contents.m                            % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/matlab/funfun/Contents.m                           % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/matlab/general/Contents.m                          % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/matlab/iofun/Contents.m                            % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/matlab/lang/Contents.m                             % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/matlab/matfun/Contents.m                           % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/matlab/ops/Contents.m                              % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/matlab/polyfun/Contents.m                          % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/matlab/randfun/Contents.m                          % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/matlab/sparfun/Contents.m                          % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/matlab/specfun/Contents.m                          % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/matlab/strfun/Contents.m                           % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/matlab/timefun/Contents.m                          % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/matlab/demos/Contents.m                            % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/matlab/graph2d/Contents.m                          % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/matlab/graph3d/Contents.m                          % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/matlab/graphics/Contents.m                         % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/matlab/plottools/Contents.m                        % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/matlab/scribe/Contents.m                           % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/matlab/specgraph/Contents.m                        % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/matlab/uitools/Contents.m                          % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/local/Contents.m                                   % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/matlab/optimfun/Contents.m                         % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/matlab/codetools/Contents.m                        % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/matlab/guide/Contents.m                            % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/matlab/helptools/Contents.m                        % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/matlab/winfun/Contents.m                           % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/matlab/winfun/NET/Contents.m                       % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/matlab/audiovideo/Contents.m                       % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/matlab/connector2/connector/Contents.m             % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/matlab/networklib/Contents.m                       % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/optim/optim/Contents.m                             % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/optim/optimdemos/Contents.m                        % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/shared/controllib/general/Contents.m               % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/shared/controllib/graphics/Contents.m              % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/shared/optimlib/Contents.m                         % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/shared/simulink/Contents.m                         % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/matlab/system/Contents.m                           % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/matlab/timeseries/Contents.m                       % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/matlab/webcam/Contents.m                           % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/matlab/external/interfaces/webservices/Contents.m  % Shadowed
+
+/Users/work/Documents/MATLAB/Intlab_V9/accsumdot/Dot2.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/accsumdot/Dot2Err.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/accsumdot/DotK.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/accsumdot/DotXBLAS.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/accsumdot/Dot_.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/accsumdot/DownSum.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/accsumdot/FastAccSum.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/accsumdot/FastPrecSum.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/accsumdot/FastTwoSum.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/accsumdot/GenDot.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/accsumdot/GenSum.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/accsumdot/InvIllco.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/accsumdot/NearSum.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/accsumdot/NextPowerTwo.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/accsumdot/PrecSum.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/accsumdot/PriestSum.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/accsumdot/ProdKL.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/accsumdot/Split.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/accsumdot/Sum2.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/accsumdot/SumK.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/accsumdot/SumKL.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/accsumdot/SumXBLAS.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/accsumdot/Sum_.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/accsumdot/TwoProduct.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/accsumdot/TwoSum.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/accsumdot/UpSum.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/accsumdot/VecSum.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/accsumdot/ZDSum.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/accsumdot/ufp.m
+
+FOLDER: /Users/work/Documents/MATLAB/Intlab_V9/demos
+=======
+/Users/work/Documents/MATLAB/Intlab_V9/demos/Broyden.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/Contents.m
+/Applications/MATLAB_R2018a.app/toolbox/shared/instrument/@instrument/Contents.m           % Shadowed instrument method
+/Applications/MATLAB_R2018a.app/toolbox/matlab/serial/@serial/Contents.m                   % Shadowed serial method
+/Users/work/Documents/MATLAB/Intlab_V9/intval/Contents.m                                   % Shadowed
+/Users/work/Documents/MATLAB/Intlab_V9/affari/Contents.m                                   % Shadowed
+/Users/work/Documents/MATLAB/Intlab_V9/gradient/Contents.m                                 % Shadowed
+/Users/work/Documents/MATLAB/Intlab_V9/hessian/Contents.m                                  % Shadowed
+/Users/work/Documents/MATLAB/Intlab_V9/taylor/Contents.m                                   % Shadowed
+/Users/work/Documents/MATLAB/Intlab_V9/slope/Contents.m                                    % Shadowed
+/Users/work/Documents/MATLAB/Intlab_V9/polynom/Contents.m                                  % Shadowed
+/Users/work/Documents/MATLAB/Intlab_V9/utility/Contents.m                                  % Shadowed
+/Users/work/Documents/MATLAB/Intlab_V9/fl/Contents.m                                       % Shadowed
+/Users/work/Documents/MATLAB/Intlab_V9/long/Contents.m                                     % Shadowed
+/Users/work/Documents/MATLAB/Intlab_V9/accsumdot/Contents.m                                % Shadowed
+/Users/work/Documents/MATLAB/Intlab_V9/demos/Contents.m                                    % Shadowed
+/Users/work/Documents/MATLAB/cvx/sedumi/Contents.m                                         % Shadowed
+/Users/work/Documents/MATLAB/cvx/sedumi/conversion/Contents.m                              % Shadowed
+/Users/work/Documents/MATLAB/cvx/builtins/Contents.m                                       % Shadowed
+/Users/work/Documents/MATLAB/cvx/commands/Contents.m                                       % Shadowed
+/Users/work/Documents/MATLAB/cvx/functions/Contents.m                                      % Shadowed
+/Users/work/Documents/MATLAB/cvx/lib/Contents.m                                            % Shadowed
+/Users/work/Documents/MATLAB/cvx/structures/Contents.m                                     % Shadowed
+/Users/work/Documents/MATLAB/cvx/Contents.m                                                % Shadowed
+/Users/work/Documents/MATLAB/yalmip/Contents.m                                             % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/matlab/datafun/Contents.m                          % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/matlab/datatypes/Contents.m                        % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/matlab/elfun/Contents.m                            % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/matlab/elmat/Contents.m                            % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/matlab/funfun/Contents.m                           % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/matlab/general/Contents.m                          % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/matlab/iofun/Contents.m                            % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/matlab/lang/Contents.m                             % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/matlab/matfun/Contents.m                           % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/matlab/ops/Contents.m                              % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/matlab/polyfun/Contents.m                          % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/matlab/randfun/Contents.m                          % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/matlab/sparfun/Contents.m                          % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/matlab/specfun/Contents.m                          % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/matlab/strfun/Contents.m                           % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/matlab/timefun/Contents.m                          % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/matlab/demos/Contents.m                            % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/matlab/graph2d/Contents.m                          % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/matlab/graph3d/Contents.m                          % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/matlab/graphics/Contents.m                         % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/matlab/plottools/Contents.m                        % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/matlab/scribe/Contents.m                           % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/matlab/specgraph/Contents.m                        % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/matlab/uitools/Contents.m                          % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/local/Contents.m                                   % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/matlab/optimfun/Contents.m                         % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/matlab/codetools/Contents.m                        % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/matlab/guide/Contents.m                            % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/matlab/helptools/Contents.m                        % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/matlab/winfun/Contents.m                           % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/matlab/winfun/NET/Contents.m                       % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/matlab/audiovideo/Contents.m                       % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/matlab/connector2/connector/Contents.m             % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/matlab/networklib/Contents.m                       % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/optim/optim/Contents.m                             % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/optim/optimdemos/Contents.m                        % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/shared/controllib/general/Contents.m               % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/shared/controllib/graphics/Contents.m              % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/shared/optimlib/Contents.m                         % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/shared/simulink/Contents.m                         % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/matlab/system/Contents.m                           % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/matlab/timeseries/Contents.m                       % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/matlab/webcam/Contents.m                           % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/matlab/external/interfaces/webservices/Contents.m  % Shadowed
+
+/Users/work/Documents/MATLAB/Intlab_V9/demos/IntlabTiming.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/demos/daccsumdot.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/demos/daffari.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/demos/darithmetic.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/demos/demointlab.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/demos/dfl.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/demos/dgradient.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/demos/dhessian.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/demos/dintlab.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/demos/dintlab_larger.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/demos/dintval.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/demos/dlong.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/demos/dpolynom.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/demos/dslope.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/demos/dstdfcts.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/demos/dtaylor.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/demos/dutility.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/demos/f1.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/demos/f2.m
+
+FOLDER: /Users/work/Documents/MATLAB/Intlab_V9/demos/html
+=======
+FOLDER: /Users/work/Documents/MATLAB
+=======
+/Users/work/Documents/MATLAB/cut_CG.m
+
+/Users/work/Documents/MATLAB/cut_CG_certificate.m
+
+/Users/work/Documents/MATLAB/cut_CG_slack.m
+
+/Users/work/Documents/MATLAB/cut_correlator.m
+
+/Users/work/Documents/MATLAB/cut_full.m
+
+/Users/work/Documents/MATLAB/cut_out4_full.m
+
+/Users/work/Documents/MATLAB/cvx_automator.m
+
+/Users/work/Documents/MATLAB/cvx_mosek_automator.m
+
+/Users/work/Documents/MATLAB/cvx_spiral.m
+
+/Users/work/Documents/MATLAB/cvx_spiral_example.m
+
+/Users/work/Documents/MATLAB/get_cut_constraints.m
+
+/Users/work/Documents/MATLAB/get_spiral_constraints.m
+
+/Users/work/Documents/MATLAB/low2high_dist.m
+
+/Users/work/Documents/MATLAB/qsd.m
+
+/Users/work/Documents/MATLAB/qsd_degeneracy.m
+
+/Users/work/Documents/MATLAB/qsd_examples.m
+
+/Users/work/Documents/MATLAB/qsd_seesaw.m
+
+/Users/work/Documents/MATLAB/randdist_automator.m
+
+/Users/work/Documents/MATLAB/replicate_failure.m
+
+/Users/work/Documents/MATLAB/whichall.m
+
+/Users/work/Documents/MATLAB/yalmip_automator.m
+
+/Users/work/Documents/MATLAB/yalmip_bug.m
+
+/Users/work/Documents/MATLAB/yalmip_spiral.m
+
+/Users/work/Documents/MATLAB/yalmip_spiral_example.m
+
+FOLDER: /Users/work/Documents/MATLAB/cvx/sedumi
+=======
+'A' not found.
+
+/Users/work/Documents/MATLAB/Intlab_V9/Contents.m
+/Applications/MATLAB_R2018a.app/toolbox/shared/instrument/@instrument/Contents.m           % Shadowed instrument method
+/Applications/MATLAB_R2018a.app/toolbox/matlab/serial/@serial/Contents.m                   % Shadowed serial method
+/Users/work/Documents/MATLAB/Intlab_V9/intval/Contents.m                                   % Shadowed
+/Users/work/Documents/MATLAB/Intlab_V9/affari/Contents.m                                   % Shadowed
+/Users/work/Documents/MATLAB/Intlab_V9/gradient/Contents.m                                 % Shadowed
+/Users/work/Documents/MATLAB/Intlab_V9/hessian/Contents.m                                  % Shadowed
+/Users/work/Documents/MATLAB/Intlab_V9/taylor/Contents.m                                   % Shadowed
+/Users/work/Documents/MATLAB/Intlab_V9/slope/Contents.m                                    % Shadowed
+/Users/work/Documents/MATLAB/Intlab_V9/polynom/Contents.m                                  % Shadowed
+/Users/work/Documents/MATLAB/Intlab_V9/utility/Contents.m                                  % Shadowed
+/Users/work/Documents/MATLAB/Intlab_V9/fl/Contents.m                                       % Shadowed
+/Users/work/Documents/MATLAB/Intlab_V9/long/Contents.m                                     % Shadowed
+/Users/work/Documents/MATLAB/Intlab_V9/accsumdot/Contents.m                                % Shadowed
+/Users/work/Documents/MATLAB/Intlab_V9/demos/Contents.m                                    % Shadowed
+/Users/work/Documents/MATLAB/cvx/sedumi/Contents.m                                         % Shadowed
+/Users/work/Documents/MATLAB/cvx/sedumi/conversion/Contents.m                              % Shadowed
+/Users/work/Documents/MATLAB/cvx/builtins/Contents.m                                       % Shadowed
+/Users/work/Documents/MATLAB/cvx/commands/Contents.m                                       % Shadowed
+/Users/work/Documents/MATLAB/cvx/functions/Contents.m                                      % Shadowed
+/Users/work/Documents/MATLAB/cvx/lib/Contents.m                                            % Shadowed
+/Users/work/Documents/MATLAB/cvx/structures/Contents.m                                     % Shadowed
+/Users/work/Documents/MATLAB/cvx/Contents.m                                                % Shadowed
+/Users/work/Documents/MATLAB/yalmip/Contents.m                                             % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/matlab/datafun/Contents.m                          % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/matlab/datatypes/Contents.m                        % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/matlab/elfun/Contents.m                            % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/matlab/elmat/Contents.m                            % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/matlab/funfun/Contents.m                           % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/matlab/general/Contents.m                          % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/matlab/iofun/Contents.m                            % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/matlab/lang/Contents.m                             % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/matlab/matfun/Contents.m                           % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/matlab/ops/Contents.m                              % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/matlab/polyfun/Contents.m                          % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/matlab/randfun/Contents.m                          % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/matlab/sparfun/Contents.m                          % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/matlab/specfun/Contents.m                          % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/matlab/strfun/Contents.m                           % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/matlab/timefun/Contents.m                          % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/matlab/demos/Contents.m                            % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/matlab/graph2d/Contents.m                          % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/matlab/graph3d/Contents.m                          % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/matlab/graphics/Contents.m                         % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/matlab/plottools/Contents.m                        % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/matlab/scribe/Contents.m                           % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/matlab/specgraph/Contents.m                        % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/matlab/uitools/Contents.m                          % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/local/Contents.m                                   % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/matlab/optimfun/Contents.m                         % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/matlab/codetools/Contents.m                        % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/matlab/guide/Contents.m                            % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/matlab/helptools/Contents.m                        % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/matlab/winfun/Contents.m                           % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/matlab/winfun/NET/Contents.m                       % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/matlab/audiovideo/Contents.m                       % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/matlab/connector2/connector/Contents.m             % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/matlab/networklib/Contents.m                       % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/optim/optim/Contents.m                             % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/optim/optimdemos/Contents.m                        % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/shared/controllib/general/Contents.m               % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/shared/controllib/graphics/Contents.m              % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/shared/optimlib/Contents.m                         % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/shared/simulink/Contents.m                         % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/matlab/system/Contents.m                           % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/matlab/timeseries/Contents.m                       % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/matlab/webcam/Contents.m                           % Shadowed
+/Applications/MATLAB_R2018a.app/toolbox/matlab/external/interfaces/webservices/Contents.m  % Shadowed
+
+/Users/work/Documents/MATLAB/cvx/sedumi/PopK.m
+
+/Users/work/Documents/MATLAB/cvx/sedumi/ada_pcg.m
+
+/Users/work/Documents/MATLAB/cvx/sedumi/adendotd.m
+
+/Users/work/Documents/MATLAB/cvx/sedumi/asmDxq.m
+
+/Users/work/Documents/MATLAB/cvx/sedumi/blkchol.m
+
+/Users/work/Documents/MATLAB/cvx/sedumi/bwblkslv.m
+
+/Users/work/Documents/MATLAB/cvx/sedumi/bwdpr1.m
+
+/Users/work/Documents/MATLAB/cvx/sedumi/cellK.m
+
+/Users/work/Documents/MATLAB/cvx/sedumi/checkpars.m
+
+/Users/work/Documents/MATLAB/cvx/sedumi/ddot.m
+
+/Users/work/Documents/MATLAB/cvx/sedumi/deninfac.m
+
+/Users/work/Documents/MATLAB/cvx/sedumi/dimacserrors.m
+
+/Users/work/Documents/MATLAB/cvx/sedumi/dpr1fact.m
+
+/Users/work/Documents/MATLAB/cvx/sedumi/eigK.m
+
+/Users/work/Documents/MATLAB/cvx/sedumi/extractA.m
+
+/Users/work/Documents/MATLAB/cvx/sedumi/eyeK.m
+
+/Users/work/Documents/MATLAB/cvx/sedumi/findblks.m
+
+/Users/work/Documents/MATLAB/cvx/sedumi/finsymbden.m
+
+/Users/work/Documents/MATLAB/cvx/sedumi/frameit.m
+
+/Users/work/Documents/MATLAB/cvx/sedumi/fwblkslv.m
+
+/Users/work/Documents/MATLAB/cvx/sedumi/fwdpr1.m
+
+/Users/work/Documents/MATLAB/cvx/sedumi/getDAt.m
+
+/Users/work/Documents/MATLAB/cvx/sedumi/getDAtm.m
+
+/Users/work/Documents/MATLAB/cvx/sedumi/getada.m
+
+/Users/work/Documents/MATLAB/cvx/sedumi/getada1.m
+
+/Users/work/Documents/MATLAB/cvx/sedumi/getada2.m
+
+/Users/work/Documents/MATLAB/cvx/sedumi/getada3.m
+
+/Users/work/Documents/MATLAB/cvx/sedumi/getdense.m
+
+/Users/work/Documents/MATLAB/cvx/sedumi/getsymbada.m
+
+/Users/work/Documents/MATLAB/cvx/sedumi/givensrot.m
+
+/Users/work/Documents/MATLAB/cvx/sedumi/incorder.m
+
+/Users/work/Documents/MATLAB/cvx/sedumi/install_sedumi.m
+
+/Users/work/Documents/MATLAB/cvx/sedumi/invcholfac.m
+
+/Users/work/Documents/MATLAB/cvx/sedumi/iswnbr.m
+
+/Users/work/Documents/MATLAB/cvx/sedumi/loopPcg.m
+
+/Users/work/Documents/MATLAB/cvx/sedumi/mat.m
+
+/Users/work/Documents/MATLAB/cvx/sedumi/maxeigK.m
+
+/Users/work/Documents/MATLAB/cvx/sedumi/maxstep.m
+
+/Users/work/Documents/MATLAB/cvx/sedumi/minpsdeig.m
+
+/Users/work/Documents/MATLAB/cvx/sedumi/my_fprintf.m
+
+/Users/work/Documents/MATLAB/cvx/sedumi/optstep.m
+
+/Users/work/Documents/MATLAB/cvx/sedumi/ordmmdmex.m
+
+/Users/work/Documents/MATLAB/cvx/sedumi/partitA.m
+
+/Users/work/Documents/MATLAB/cvx/sedumi/posttransfo.m
+
+/Users/work/Documents/MATLAB/cvx/sedumi/pretransfo.m
+
+/Users/work/Documents/MATLAB/cvx/sedumi/psdeig.m
+
+/Users/work/Documents/MATLAB/cvx/sedumi/psdfactor.m
+
+/Users/work/Documents/MATLAB/cvx/sedumi/psdinvjmul.m
+
+/Users/work/Documents/MATLAB/cvx/sedumi/psdinvscale.m
+
+/Users/work/Documents/MATLAB/cvx/sedumi/psdjmul.m
+
+/Users/work/Documents/MATLAB/cvx/sedumi/psdscale.m
+
+/Users/work/Documents/MATLAB/cvx/sedumi/qblkmul.m
+
+/Users/work/Documents/MATLAB/cvx/sedumi/qframeit.m
+
+/Users/work/Documents/MATLAB/cvx/sedumi/qinvjmul.m
+
+/Users/work/Documents/MATLAB/cvx/sedumi/qjmul.m
+
+/Users/work/Documents/MATLAB/cvx/sedumi/quadadd.m
+
+/Users/work/Documents/MATLAB/cvx/sedumi/sddir.m
+
+/Users/work/Documents/MATLAB/cvx/sedumi/sdfactor.m
+
+/Users/work/Documents/MATLAB/cvx/sedumi/sdinit.m
+
+/Users/work/Documents/MATLAB/cvx/sedumi/sedumi.m
+
+/Users/work/Documents/MATLAB/cvx/sedumi/sedumi_binary_error.m
+
+/Users/work/Documents/MATLAB/cvx/sedumi/sortnnz.m
+
+/Users/work/Documents/MATLAB/cvx/sedumi/sparbwslv.m
+
+/Users/work/Documents/MATLAB/cvx/sedumi/sparfwslv.m
+
+/Users/work/Documents/MATLAB/cvx/sedumi/spars.m
+
+/Users/work/Documents/MATLAB/cvx/sedumi/sqrtinv.m
+
+/Users/work/Documents/MATLAB/cvx/sedumi/stepdif.m
+
+/Users/work/Documents/MATLAB/cvx/sedumi/symbchol.m
+
+/Users/work/Documents/MATLAB/cvx/sedumi/symbcholden.m
+
+/Users/work/Documents/MATLAB/cvx/sedumi/symfctmex.m
+
+/Users/work/Documents/MATLAB/cvx/sedumi/tdet.m
+
+/Users/work/Documents/MATLAB/cvx/sedumi/triumtriu.m
+
+/Users/work/Documents/MATLAB/cvx/sedumi/trydif.m
+
+/Users/work/Documents/MATLAB/cvx/sedumi/updtransfo.m
+
+/Users/work/Documents/MATLAB/cvx/sedumi/urotorder.m
+
+/Users/work/Documents/MATLAB/cvx/sedumi/vec.m
+/Users/work/Documents/MATLAB/cvx/functions/@cvx/vec.m       % Shadowed cvx method
+/Users/work/Documents/MATLAB/yalmip/@sdpvar/vec.m           % Shadowed sdpvar method
+/Users/work/Documents/MATLAB/yalmip/extras/@ndsdpvar/vec.m  % Shadowed ndsdpvar method
+
+/Users/work/Documents/MATLAB/cvx/sedumi/vecsym.m
+
+/Users/work/Documents/MATLAB/cvx/sedumi/widelen.m
+
+/Users/work/Documents/MATLAB/cvx/sedumi/wrapPcg.m
+
+/Users/work/Documents/MATLAB/cvx/sedumi/wregion.m
+
+FOLDER: /Users/work/Documents/MATLAB/cvx/sedumi/conversion
+=======
+/Users/work/Documents/MATLAB/cvx/sedumi/conversion/blk2vec.m
+
+/Users/work/Documents/MATLAB/cvx/sedumi/conversion/feascpx.m
+
+/Users/work/Documents/MATLAB/cvx/sedumi/conversion/feasreal.m
+
+/Users/work/Documents/MATLAB/cvx/sedumi/conversion/frompack.m
+
+/Users/work/Documents/MATLAB/cvx/sedumi/conversion/fromsdpa.m
+
+/Users/work/Documents/MATLAB/cvx/sedumi/conversion/getproblem.m
+
+/Users/work/Documents/MATLAB/cvx/sedumi/conversion/prelp.m
+
+/Users/work/Documents/MATLAB/cvx/sedumi/conversion/sdpa2vec.m
+
+/Users/work/Documents/MATLAB/cvx/sedumi/conversion/sdpasplit.m
+
+/Users/work/Documents/MATLAB/cvx/sedumi/conversion/writesdp.m
+
+FOLDER: /Users/work/Documents/MATLAB/cvx/sedumi/doc
+=======
+FOLDER: /Users/work/Documents/MATLAB/cvx/sedumi/examples
+=======
+FOLDER: /Users/work/Documents/MATLAB/cvx/sdpt3
+=======
+/Users/work/Documents/MATLAB/cvx/sdpt3/install_sdpt3.m
+
+/Users/work/Documents/MATLAB/cvx/sdpt3/sdpt3.m
+
+FOLDER: /Users/work/Documents/MATLAB/cvx/sdpt3/Examples
+=======
+'Asu' not found.
+
+/Users/work/Documents/MATLAB/cvx/sdpt3/Examples/Doptdesign.m
+
+/Users/work/Documents/MATLAB/cvx/sdpt3/Examples/ToeplitzApprox.m
+
+/Users/work/Documents/MATLAB/cvx/sdpt3/Examples/ToeplitzApproxSQQ.m
+
+/Users/work/Documents/MATLAB/cvx/sdpt3/Examples/cheby0.m
+
+/Users/work/Documents/MATLAB/cvx/sdpt3/Examples/chebyinf.m
+
+/Users/work/Documents/MATLAB/cvx/sdpt3/Examples/chebymat.m
+
+/Users/work/Documents/MATLAB/cvx/sdpt3/Examples/control.m
+
+/Users/work/Documents/MATLAB/cvx/sdpt3/Examples/corrmat.m
+
+/Users/work/Documents/MATLAB/cvx/sdpt3/Examples/dwd.m
+
+/Users/work/Documents/MATLAB/cvx/sdpt3/Examples/etp.m
+
+/Users/work/Documents/MATLAB/cvx/sdpt3/Examples/geometric_mean.m
+
+/Users/work/Documents/MATLAB/cvx/sdpt3/Examples/gpp.m
+
+/Users/work/Documents/MATLAB/cvx/sdpt3/Examples/gppschur.m
+
+/Applications/MATLAB_R2018a.app/toolbox/matlab/graphfun/@graph/graph.m  % graph constructor
+/Users/work/Documents/MATLAB/cvx/sdpt3/Examples/graph.m                 % Shadowed
+
+/Users/work/Documents/MATLAB/cvx/sdpt3/Examples/igmres.m
+
+/Users/work/Documents/MATLAB/cvx/sdpt3/Examples/lmiexamp1.m
+
+/Users/work/Documents/MATLAB/cvx/sdpt3/Examples/lmiexamp2.m
+
+/Users/work/Documents/MATLAB/cvx/sdpt3/Examples/lmiexamp3.m
+
+/Users/work/Documents/MATLAB/cvx/sdpt3/Examples/lmifun.m
+
+/Users/work/Documents/MATLAB/cvx/sdpt3/Examples/lmifun2.m
+
+/Users/work/Documents/MATLAB/cvx/sdpt3/Examples/logcheby.m
+
+/Users/work/Documents/MATLAB/cvx/sdpt3/Examples/logchebyRcone.m
+
+/Users/work/Documents/MATLAB/cvx/sdpt3/Examples/max_kcut.m
+
+/Users/work/Documents/MATLAB/cvx/sdpt3/Examples/maxcut.m
+
+/Users/work/Documents/MATLAB/cvx/sdpt3/Examples/mcpschur.m
+
+/Users/work/Documents/MATLAB/cvx/sdpt3/Examples/minEpts.m
+
+/Users/work/Documents/MATLAB/cvx/sdpt3/Examples/norm_min.m
+
+/Users/work/Documents/MATLAB/cvx/sdpt3/Examples/orthbasis.m
+
+/Users/work/Documents/MATLAB/cvx/sdpt3/Examples/randinfsdp.m
+
+/Users/work/Documents/MATLAB/cvx/sdpt3/Examples/randlowranksdp.m
+
+/Users/work/Documents/MATLAB/cvx/sdpt3/Examples/randmaxdet.m
+
+/Users/work/Documents/MATLAB/cvx/sdpt3/Examples/randsdp.m
+
+/Users/work/Documents/MATLAB/cvx/sdpt3/Examples/sdphankel.m
+
+/Users/work/Documents/MATLAB/cvx/sdpt3/Examples/thetaproblem.m
+
+/Users/work/Documents/MATLAB/cvx/sdpt3/Examples/viewgraph.m
+
+FOLDER: /Users/work/Documents/MATLAB/cvx/sdpt3/HSDSolver
+=======
+/Users/work/Documents/MATLAB/cvx/sdpt3/HSDSolver/HSDHKMcorr.m
+
+/Users/work/Documents/MATLAB/cvx/sdpt3/HSDSolver/HSDHKMdirfun.m
+
+/Users/work/Documents/MATLAB/cvx/sdpt3/HSDSolver/HSDHKMpred.m
+
+/Users/work/Documents/MATLAB/cvx/sdpt3/HSDSolver/HSDHKMrhsfun.m
+
+/Users/work/Documents/MATLAB/cvx/sdpt3/HSDSolver/HSDNTcorr.m
+
+/Users/work/Documents/MATLAB/cvx/sdpt3/HSDSolver/HSDNTdirfun.m
+
+/Users/work/Documents/MATLAB/cvx/sdpt3/HSDSolver/HSDNTpred.m
+
+/Users/work/Documents/MATLAB/cvx/sdpt3/HSDSolver/HSDNTrhsfun.m
+
+/Users/work/Documents/MATLAB/cvx/sdpt3/HSDSolver/HSDbicgstab.m
+
+/Users/work/Documents/MATLAB/cvx/sdpt3/HSDSolver/HSDlinsysolve.m
+
+/Users/work/Documents/MATLAB/cvx/sdpt3/HSDSolver/HSDsortA.m
+
+/Users/work/Documents/MATLAB/cvx/sdpt3/HSDSolver/HSDsqlp.m
+
+/Users/work/Documents/MATLAB/cvx/sdpt3/HSDSolver/HSDsqlpCpert.m
+
+/Users/work/Documents/MATLAB/cvx/sdpt3/HSDSolver/HSDsqlpcheckconvg.m
+
+/Users/work/Documents/MATLAB/cvx/sdpt3/HSDSolver/HSDsqlpmain.m
+
+/Users/work/Documents/MATLAB/cvx/sdpt3/HSDSolver/HSDsqlpmisc.m
+
+FOLDER: /Users/work/Documents/MATLAB/cvx/sdpt3/Solver
+=======
+/Users/work/Documents/MATLAB/cvx/sdpt3/Solver/AXfun.m
+
+/Users/work/Documents/MATLAB/cvx/sdpt3/Solver/Arrow.m
+
+/Users/work/Documents/MATLAB/cvx/sdpt3/Solver/Atyfun.m
+
+/Users/work/Documents/MATLAB/cvx/sdpt3/Solver/HKMcorr.m
+
+/Users/work/Documents/MATLAB/cvx/sdpt3/Solver/HKMdirfun.m
+
+/Users/work/Documents/MATLAB/cvx/sdpt3/Solver/HKMpred.m
+
+/Users/work/Documents/MATLAB/cvx/sdpt3/Solver/HKMrhsfun.m
+
+/Users/work/Documents/MATLAB/cvx/sdpt3/Solver/NTcorr.m
+
+/Users/work/Documents/MATLAB/cvx/sdpt3/Solver/NTdirfun.m
+
+/Users/work/Documents/MATLAB/cvx/sdpt3/Solver/NTpred.m
+
+/Users/work/Documents/MATLAB/cvx/sdpt3/Solver/NTrhsfun.m
+
+/Users/work/Documents/MATLAB/cvx/sdpt3/Solver/NTscaling.m
+
+/Users/work/Documents/MATLAB/cvx/sdpt3/Solver/Prod2.m
+
+/Users/work/Documents/MATLAB/cvx/sdpt3/Solver/Prod3.m
+
+/Users/work/Documents/MATLAB/cvx/sdpt3/Solver/SDPT3data_SEDUMIdata.m
+
+/Users/work/Documents/MATLAB/cvx/sdpt3/Solver/SDPT3soln_SEDUMIsoln.m
+
+/Users/work/Documents/MATLAB/cvx/sdpt3/Solver/SDPvalBounds.m
+
+/Users/work/Documents/MATLAB/cvx/sdpt3/Solver/blkbarrier.m
+
+/Users/work/Documents/MATLAB/cvx/sdpt3/Solver/blkcholfun.m
+
+/Users/work/Documents/MATLAB/cvx/sdpt3/Solver/blkeig.m
+
+/Users/work/Documents/MATLAB/cvx/sdpt3/Solver/blktrace.m
+
+/Users/work/Documents/MATLAB/cvx/sdpt3/Solver/checkdense.m
+
+/Users/work/Documents/MATLAB/cvx/sdpt3/Solver/checkdepconstr.m
+
+/Users/work/Documents/MATLAB/cvx/sdpt3/Solver/combine_blk.m
+
+/Users/work/Documents/MATLAB/cvx/sdpt3/Solver/convertRcone.m
+
+/Users/work/Documents/MATLAB/cvx/sdpt3/Solver/convertcmpsdp.m
+
+/Users/work/Documents/MATLAB/cvx/sdpt3/Solver/degeneracy.m
+
+/Users/work/Documents/MATLAB/cvx/sdpt3/Solver/detect_lblk.m
+
+/Users/work/Documents/MATLAB/cvx/sdpt3/Solver/detect_ublk.m
+
+/Users/work/Documents/MATLAB/cvx/sdpt3/Solver/gdcomp.m
+
+/Users/work/Documents/MATLAB/cvx/sdpt3/Solver/gpcomp.m
+
+/Users/work/Documents/MATLAB/cvx/sdpt3/Solver/infeaspt.m
+
+/Users/work/Documents/MATLAB/cvx/sdpt3/Solver/linsysolve.m
+
+/Users/work/Documents/MATLAB/cvx/sdpt3/Solver/linsysolvefun.m
+
+/Users/work/Documents/MATLAB/cvx/sdpt3/Solver/mybicgstab.m
+
+/Users/work/Documents/MATLAB/cvx/sdpt3/Solver/mytime.m
+
+/Users/work/Documents/MATLAB/cvx/sdpt3/Solver/nzlist.m
+
+/Users/work/Documents/MATLAB/cvx/sdpt3/Solver/ops.m
+/Applications/MATLAB_R2018a.app/toolbox/matlab/codetools/@mtree/ops.m  % Shadowed mtree method
+
+/Users/work/Documents/MATLAB/cvx/sdpt3/Solver/qops.m
+
+/Users/work/Documents/MATLAB/cvx/sdpt3/Solver/qprod.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/utility/randmat.m
+/Users/work/Documents/MATLAB/cvx/sdpt3/Solver/randmat.m   % Shadowed
+
+/Users/work/Documents/MATLAB/cvx/sdpt3/Solver/read_sdpa.m
+
+/Users/work/Documents/MATLAB/cvx/sdpt3/Solver/read_sedumi.m
+
+/Users/work/Documents/MATLAB/cvx/sdpt3/Solver/scaling.m
+
+/Users/work/Documents/MATLAB/cvx/sdpt3/Solver/schurmat_lblk.m
+
+/Users/work/Documents/MATLAB/cvx/sdpt3/Solver/schurmat_qblk.m
+
+/Users/work/Documents/MATLAB/cvx/sdpt3/Solver/schurmat_sblk.m
+
+/Users/work/Documents/MATLAB/cvx/sdpt3/Solver/skron.m
+
+/Users/work/Documents/MATLAB/cvx/sdpt3/Solver/smat.m
+
+/Users/work/Documents/MATLAB/cvx/sdpt3/Solver/sortA.m
+
+/Users/work/Documents/MATLAB/cvx/sdpt3/Solver/sqlp.m
+
+/Users/work/Documents/MATLAB/cvx/sdpt3/Solver/sqlparameters.m
+
+/Users/work/Documents/MATLAB/cvx/sdpt3/Solver/sqlpcheckconvg.m
+
+/Users/work/Documents/MATLAB/cvx/sdpt3/Solver/sqlpdemo.m
+
+/Users/work/Documents/MATLAB/cvx/sdpt3/Solver/sqlpmain.m
+
+/Users/work/Documents/MATLAB/cvx/sdpt3/Solver/sqlpmisc.m
+
+/Users/work/Documents/MATLAB/cvx/sdpt3/Solver/sqlpsummary.m
+
+/Users/work/Documents/MATLAB/cvx/sdpt3/Solver/sqlptermcode.m
+
+/Users/work/Documents/MATLAB/cvx/sdpt3/Solver/sqlpu2lblk.m
+
+/Users/work/Documents/MATLAB/cvx/sdpt3/Solver/steplength.m
+
+/Users/work/Documents/MATLAB/cvx/sdpt3/Solver/svec.m
+/Users/work/Documents/MATLAB/cvx/lib/@cvx/svec.m      % Shadowed cvx method
+
+/Users/work/Documents/MATLAB/cvx/sdpt3/Solver/symqmr.m
+
+/Applications/MATLAB_R2018a.app/toolbox/matlab/graphics/private/validate.m  % Private to graphics
+/Users/work/Documents/MATLAB/cvx/sdpt3/Solver/validate.m                    % Shadowed
+
+/Users/work/Documents/MATLAB/cvx/sdpt3/Solver/validate_startpoint.m
+
+FOLDER: /Users/work/Documents/MATLAB/cvx/sdpt3/Solver/Mexfun
+=======
+FOLDER: /Users/work/Documents/MATLAB/cvx/sdpt3/dimacs
+=======
+FOLDER: /Users/work/Documents/MATLAB/cvx/sdpt3/sdplib
+=======
+FOLDER: /Users/work/Documents/MATLAB/vsdp
+=======
+/Applications/MATLAB_R2018a.app/toolbox/matlab/general/bench.m
+
+/Users/work/Documents/MATLAB/vsdp/bnd4sd.m
+
+/Users/work/Documents/MATLAB/vsdp/mysdps.m
+
+/Users/work/Documents/MATLAB/vsdp/vsdpinfeas.m
+
+/Users/work/Documents/MATLAB/vsdp/vsdpinit.m
+
+/Users/work/Documents/MATLAB/vsdp/vsdplow.m
+
+/Users/work/Documents/MATLAB/vsdp/vsdpneig.m
+
+/Users/work/Documents/MATLAB/vsdp/vsdpup.m
+
+/Users/work/Documents/MATLAB/vsdp/vuls.m
+
+FOLDER: /Users/work/Documents/MATLAB/vsdp/conversion
+=======
+/Users/work/Documents/MATLAB/vsdp/conversion/lp2vsdp.m
+
+/Users/work/Documents/MATLAB/vsdp/conversion/mps2vsdp.m
+
+/Users/work/Documents/MATLAB/vsdp/conversion/read_mps.m
+
+/Users/work/Documents/MATLAB/vsdp/conversion/sdpa2vsdp.m
+
+/Users/work/Documents/MATLAB/vsdp/conversion/sdpam2vsdp.m
+
+/Users/work/Documents/MATLAB/vsdp/conversion/sdpt2vsdp.m
+
+/Users/work/Documents/MATLAB/vsdp/conversion/sscale.m
+
+/Users/work/Documents/MATLAB/vsdp/conversion/vsdp12vsdp.m
+
+/Users/work/Documents/MATLAB/vsdp/conversion/vsdp2sdpam.m
+
+/Users/work/Documents/MATLAB/vsdp/conversion/vsdp2sdpt3.m
+
+/Users/work/Documents/MATLAB/vsdp/conversion/vsdp2sedumi.m
+
+/Users/work/Documents/MATLAB/vsdp/conversion/vsmat.m
+
+/Users/work/Documents/MATLAB/vsdp/conversion/vsvec.m
+
+FOLDER: /Users/work/Documents/MATLAB/vsdp/examples
+=======
+FOLDER: /Users/work/Documents/MATLAB/cvx/builtins
+=======
+FOLDER: /Users/work/Documents/MATLAB/cvx/commands
+=======
+/Users/work/Documents/MATLAB/cvx/commands/cvx_begin.m
+
+/Users/work/Documents/MATLAB/cvx/commands/cvx_clear.m
+
+/Users/work/Documents/MATLAB/cvx/commands/cvx_end.m
+
+/Users/work/Documents/MATLAB/cvx/commands/cvx_expert.m
+
+/Users/work/Documents/MATLAB/cvx/commands/cvx_pause.m
+
+/Users/work/Documents/MATLAB/cvx/commands/cvx_power_warning.m
+
+/Users/work/Documents/MATLAB/cvx/commands/cvx_precision.m
+
+/Users/work/Documents/MATLAB/cvx/commands/cvx_profile.m
+
+/Users/work/Documents/MATLAB/cvx/commands/cvx_quiet.m
+
+/Users/work/Documents/MATLAB/cvx/commands/cvx_save_prefs.m
+
+/Users/work/Documents/MATLAB/cvx/commands/cvx_solver.m
+
+/Users/work/Documents/MATLAB/cvx/commands/cvx_solver_settings.m
+
+/Users/work/Documents/MATLAB/cvx/commands/cvx_tic.m
+
+/Users/work/Documents/MATLAB/cvx/commands/cvx_toc.m
+
+/Users/work/Documents/MATLAB/cvx/commands/cvx_where.m
+
+FOLDER: /Users/work/Documents/MATLAB/cvx/functions
+=======
+/Users/work/Documents/MATLAB/cvx/functions/avg_abs_dev.m
+/Users/work/Documents/MATLAB/cvx/functions/@cvx/avg_abs_dev.m  % Shadowed cvx method
+
+/Users/work/Documents/MATLAB/cvx/functions/avg_abs_dev_med.m
+/Users/work/Documents/MATLAB/cvx/functions/@cvx/avg_abs_dev_med.m  % Shadowed cvx method
+
+/Users/work/Documents/MATLAB/cvx/functions/berhu.m
+/Users/work/Documents/MATLAB/cvx/functions/@cvx/berhu.m  % Shadowed cvx method
+
+/Users/work/Documents/MATLAB/cvx/functions/det_inv.m
+/Users/work/Documents/MATLAB/cvx/functions/@cvx/det_inv.m  % Shadowed cvx method
+
+/Users/work/Documents/MATLAB/cvx/functions/det_root2n.m
+
+/Users/work/Documents/MATLAB/cvx/functions/det_rootn.m
+/Users/work/Documents/MATLAB/cvx/functions/@cvx/det_rootn.m  % Shadowed cvx method
+
+/Users/work/Documents/MATLAB/cvx/functions/entr.m
+
+/Users/work/Documents/MATLAB/cvx/functions/geo_mean.m
+/Users/work/Documents/MATLAB/cvx/functions/@cvx/geo_mean.m  % Shadowed cvx method
+
+/Users/work/Documents/MATLAB/cvx/functions/geomean.m
+/Users/work/Documents/MATLAB/yalmip/@sdpvar/geomean.m        % Shadowed sdpvar method
+/Users/work/Documents/MATLAB/yalmip/extras/@ncvar/geomean.m  % Shadowed ncvar method
+
+/Users/work/Documents/MATLAB/cvx/functions/huber.m
+/Users/work/Documents/MATLAB/yalmip/operators/huber.m  % Shadowed
+
+/Users/work/Documents/MATLAB/cvx/functions/huber_circ.m
+
+/Users/work/Documents/MATLAB/cvx/functions/huber_pos.m
+/Users/work/Documents/MATLAB/cvx/functions/@cvx/huber_pos.m  % Shadowed cvx method
+
+/Users/work/Documents/MATLAB/cvx/functions/inv_pos.m
+/Users/work/Documents/MATLAB/cvx/functions/@cvx/inv_pos.m  % Shadowed cvx method
+
+/Users/work/Documents/MATLAB/cvx/functions/kl_div.m
+
+/Users/work/Documents/MATLAB/cvx/functions/lambda_max.m
+/Users/work/Documents/MATLAB/cvx/functions/@cvx/lambda_max.m  % Shadowed cvx method
+/Users/work/Documents/MATLAB/yalmip/operators/lambda_max.m    % Shadowed
+
+/Users/work/Documents/MATLAB/cvx/functions/lambda_min.m
+/Users/work/Documents/MATLAB/yalmip/operators/lambda_min.m  % Shadowed
+
+/Users/work/Documents/MATLAB/cvx/functions/lambda_sum_largest.m
+/Users/work/Documents/MATLAB/cvx/functions/@cvx/lambda_sum_largest.m  % Shadowed cvx method
+
+/Users/work/Documents/MATLAB/cvx/functions/lambda_sum_smallest.m
+
+/Users/work/Documents/MATLAB/cvx/functions/log_det.m
+
+/Users/work/Documents/MATLAB/cvx/functions/log_normcdf.m
+/Users/work/Documents/MATLAB/cvx/functions/@cvx/log_normcdf.m  % Shadowed cvx method
+
+/Users/work/Documents/MATLAB/cvx/functions/log_prod.m
+
+/Users/work/Documents/MATLAB/cvx/functions/log_sum_exp.m
+/Users/work/Documents/MATLAB/cvx/functions/@cvx/log_sum_exp.m  % Shadowed cvx method
+
+/Users/work/Documents/MATLAB/cvx/functions/logsumexp.m
+/Users/work/Documents/MATLAB/yalmip/operators/logsumexp.m  % Shadowed
+
+/Users/work/Documents/MATLAB/cvx/functions/logsumexp_sdp.m
+
+/Users/work/Documents/MATLAB/cvx/functions/matrix_frac.m
+/Users/work/Documents/MATLAB/cvx/functions/@cvx/matrix_frac.m  % Shadowed cvx method
+
+/Users/work/Documents/MATLAB/cvx/functions/norm_largest.m
+
+/Users/work/Documents/MATLAB/cvx/functions/norm_nuc.m
+/Users/work/Documents/MATLAB/cvx/functions/@cvx/norm_nuc.m  % Shadowed cvx method
+
+/Users/work/Documents/MATLAB/cvx/functions/norms.m
+/Users/work/Documents/MATLAB/cvx/functions/@cvx/norms.m  % Shadowed cvx method
+
+/Users/work/Documents/MATLAB/cvx/functions/norms_largest.m
+
+/Users/work/Documents/MATLAB/cvx/functions/poly_env.m
+
+/Users/work/Documents/MATLAB/cvx/functions/polyenv.m
+
+/Users/work/Documents/MATLAB/cvx/functions/polyval_trig.m
+
+/Users/work/Documents/MATLAB/cvx/functions/pos.m
+
+/Users/work/Documents/MATLAB/cvx/functions/pow_abs.m
+/Users/work/Documents/MATLAB/cvx/functions/@cvx/pow_abs.m  % Shadowed cvx method
+
+/Users/work/Documents/MATLAB/cvx/functions/pow_p.m
+/Users/work/Documents/MATLAB/cvx/functions/@cvx/pow_p.m  % Shadowed cvx method
+
+/Users/work/Documents/MATLAB/cvx/functions/pow_pos.m
+/Users/work/Documents/MATLAB/cvx/functions/@cvx/pow_pos.m  % Shadowed cvx method
+
+/Users/work/Documents/MATLAB/cvx/functions/prod_inv.m
+/Users/work/Documents/MATLAB/cvx/functions/@cvx/prod_inv.m  % Shadowed cvx method
+
+/Users/work/Documents/MATLAB/cvx/functions/quad_form.m
+/Users/work/Documents/MATLAB/cvx/functions/@cvx/quad_form.m  % Shadowed cvx method
+
+/Users/work/Documents/MATLAB/cvx/functions/quad_over_lin.m
+/Users/work/Documents/MATLAB/cvx/functions/@cvx/quad_over_lin.m  % Shadowed cvx method
+
+/Users/work/Documents/MATLAB/cvx/functions/quad_pos_over_lin.m
+/Users/work/Documents/MATLAB/cvx/functions/@cvx/quad_pos_over_lin.m  % Shadowed cvx method
+
+/Users/work/Documents/MATLAB/cvx/functions/rel_entr.m
+/Users/work/Documents/MATLAB/cvx/functions/@cvx/rel_entr.m  % Shadowed cvx method
+
+/Users/work/Documents/MATLAB/cvx/functions/sigma_max.m
+/Users/work/Documents/MATLAB/cvx/functions/@cvx/sigma_max.m  % Shadowed cvx method
+
+/Users/work/Documents/MATLAB/cvx/functions/square_abs.m
+/Users/work/Documents/MATLAB/cvx/functions/@cvx/square_abs.m  % Shadowed cvx method
+
+/Users/work/Documents/MATLAB/cvx/functions/square_pos.m
+/Users/work/Documents/MATLAB/cvx/functions/@cvx/square_pos.m  % Shadowed cvx method
+
+/Users/work/Documents/MATLAB/cvx/functions/sum_largest.m
+/Users/work/Documents/MATLAB/cvx/functions/@cvx/sum_largest.m  % Shadowed cvx method
+
+/Users/work/Documents/MATLAB/cvx/functions/sum_log.m
+/Users/work/Documents/MATLAB/cvx/functions/@cvx/sum_log.m  % Shadowed cvx method
+
+/Users/work/Documents/MATLAB/cvx/functions/sum_smallest.m
+
+/Users/work/Documents/MATLAB/cvx/functions/sum_square.m
+/Users/work/Documents/MATLAB/cvx/functions/@cvx/sum_square.m  % Shadowed cvx method
+/Users/work/Documents/MATLAB/yalmip/operators/sum_square.m    % Shadowed
+
+/Users/work/Documents/MATLAB/cvx/functions/sum_square_abs.m
+/Users/work/Documents/MATLAB/cvx/functions/@cvx/sum_square_abs.m  % Shadowed cvx method
+
+/Users/work/Documents/MATLAB/cvx/functions/sum_square_pos.m
+/Users/work/Documents/MATLAB/cvx/functions/@cvx/sum_square_pos.m  % Shadowed cvx method
+
+/Users/work/Documents/MATLAB/cvx/functions/sym.m
+/Users/work/Documents/MATLAB/yalmip/@sdpvar/sym.m        % Shadowed sdpvar method
+/Users/work/Documents/MATLAB/yalmip/extras/@ncvar/sym.m  % Shadowed ncvar method
+
+/Users/work/Documents/MATLAB/cvx/functions/trace_inv.m
+/Users/work/Documents/MATLAB/cvx/functions/@cvx/trace_inv.m  % Shadowed cvx method
+
+/Users/work/Documents/MATLAB/cvx/functions/trace_sqrtm.m
+/Users/work/Documents/MATLAB/cvx/functions/@cvx/trace_sqrtm.m  % Shadowed cvx method
+
+FOLDER: /Users/work/Documents/MATLAB/cvx/lib
+=======
+/Users/work/Documents/MATLAB/cvx/lib/cvx_accept_concave.m
+
+/Users/work/Documents/MATLAB/cvx/lib/cvx_accept_convex.m
+
+/Users/work/Documents/MATLAB/cvx/lib/cvx_basis.m
+/Users/work/Documents/MATLAB/cvx/lib/@cvx/cvx_basis.m      % Shadowed cvx method
+/Users/work/Documents/MATLAB/cvx/lib/@cvxdual/cvx_basis.m  % Shadowed cvxdual method
+
+/Users/work/Documents/MATLAB/cvx/lib/cvx_bcompress.m
+
+/Users/work/Documents/MATLAB/cvx/lib/cvx_blkdiag.m
+
+/Users/work/Documents/MATLAB/cvx/lib/cvx_c2r.m
+
+/Users/work/Documents/MATLAB/cvx/lib/cvx_check_dimension.m
+
+/Users/work/Documents/MATLAB/cvx/lib/cvx_check_dimlist.m
+
+/Users/work/Documents/MATLAB/cvx/lib/cvx_class.m
+
+/Users/work/Documents/MATLAB/cvx/lib/cvx_classify.m
+/Users/work/Documents/MATLAB/cvx/lib/@cvx/cvx_classify.m  % Shadowed cvx method
+
+/Users/work/Documents/MATLAB/cvx/lib/cvx_clearpath.m
+
+/Users/work/Documents/MATLAB/cvx/lib/cvx_clearspath.m
+
+/Users/work/Documents/MATLAB/cvx/lib/cvx_collapse.m
+/Users/work/Documents/MATLAB/cvx/lib/@cvxtuple/cvx_collapse.m  % Shadowed cvxtuple method
+
+/Users/work/Documents/MATLAB/cvx/lib/cvx_constant.m
+/Users/work/Documents/MATLAB/cvx/lib/@cvx/cvx_constant.m       % Shadowed cvx method
+/Users/work/Documents/MATLAB/cvx/lib/@cvxtuple/cvx_constant.m  % Shadowed cvxtuple method
+
+/Users/work/Documents/MATLAB/cvx/lib/cvx_default_dimension.m
+
+/Users/work/Documents/MATLAB/cvx/lib/cvx_expand_dim.m
+
+/Users/work/Documents/MATLAB/cvx/lib/cvx_expert_check.m
+
+/Users/work/Documents/MATLAB/cvx/lib/cvx_getdual.m
+/Users/work/Documents/MATLAB/cvx/lib/@cvx/cvx_getdual.m       % Shadowed cvx method
+/Users/work/Documents/MATLAB/cvx/lib/@cvxtuple/cvx_getdual.m  % Shadowed cvxtuple method
+
+/Users/work/Documents/MATLAB/cvx/lib/cvx_global.m
+
+/Users/work/Documents/MATLAB/cvx/lib/cvx_id.m
+/Users/work/Documents/MATLAB/cvx/lib/@cell/cvx_id.m      % Shadowed cell method
+/Users/work/Documents/MATLAB/cvx/lib/@cvxobj/cvx_id.m    % Shadowed cvxobj method
+/Users/work/Documents/MATLAB/cvx/lib/@cvxtuple/cvx_id.m  % Shadowed cvxtuple method
+
+/Users/work/Documents/MATLAB/cvx/lib/cvx_ids.m
+
+/Users/work/Documents/MATLAB/cvx/lib/cvx_isaffine.m
+/Users/work/Documents/MATLAB/cvx/lib/@cvx/cvx_isaffine.m       % Shadowed cvx method
+/Users/work/Documents/MATLAB/cvx/lib/@cvxtuple/cvx_isaffine.m  % Shadowed cvxtuple method
+
+/Users/work/Documents/MATLAB/cvx/lib/cvx_isconcave.m
+/Users/work/Documents/MATLAB/cvx/lib/@cvx/cvx_isconcave.m       % Shadowed cvx method
+/Users/work/Documents/MATLAB/cvx/lib/@cvxtuple/cvx_isconcave.m  % Shadowed cvxtuple method
+
+/Users/work/Documents/MATLAB/cvx/lib/cvx_isconstant.m
+/Users/work/Documents/MATLAB/cvx/lib/@cvx/cvx_isconstant.m       % Shadowed cvx method
+/Users/work/Documents/MATLAB/cvx/lib/@cvxtuple/cvx_isconstant.m  % Shadowed cvxtuple method
+
+/Users/work/Documents/MATLAB/cvx/lib/cvx_isconvex.m
+/Users/work/Documents/MATLAB/cvx/lib/@cvx/cvx_isconvex.m       % Shadowed cvx method
+/Users/work/Documents/MATLAB/cvx/lib/@cvxtuple/cvx_isconvex.m  % Shadowed cvxtuple method
+
+/Users/work/Documents/MATLAB/cvx/lib/cvx_isnonzero.m
+/Users/work/Documents/MATLAB/cvx/lib/@cvx/cvx_isnonzero.m  % Shadowed cvx method
+
+/Users/work/Documents/MATLAB/cvx/lib/cvx_r2c.m
+
+/Users/work/Documents/MATLAB/cvx/lib/cvx_readlevel.m
+/Users/work/Documents/MATLAB/cvx/lib/@cvx/cvx_readlevel.m  % Shadowed cvx method
+
+/Users/work/Documents/MATLAB/cvx/lib/cvx_reduce_size.m
+
+/Users/work/Documents/MATLAB/cvx/lib/cvx_remap.m
+
+/Users/work/Documents/MATLAB/cvx/lib/cvx_reshape.m
+
+/Users/work/Documents/MATLAB/cvx/lib/cvx_run_solver.m
+
+/Users/work/Documents/MATLAB/cvx/lib/cvx_setdual.m
+/Users/work/Documents/MATLAB/cvx/lib/@cell/cvx_setdual.m      % Shadowed cell method
+/Users/work/Documents/MATLAB/cvx/lib/@cvx/cvx_setdual.m       % Shadowed cvx method
+/Users/work/Documents/MATLAB/cvx/lib/@cvxtuple/cvx_setdual.m  % Shadowed cvxtuple method
+
+/Users/work/Documents/MATLAB/cvx/lib/cvx_setpath.m
+
+/Users/work/Documents/MATLAB/cvx/lib/cvx_setspath.m
+
+/Users/work/Documents/MATLAB/cvx/lib/cvx_size_check.m
+
+/Users/work/Documents/MATLAB/cvx/lib/cvx_subs2str.m
+
+/Users/work/Documents/MATLAB/cvx/lib/cvx_subsasgn.m
+
+/Users/work/Documents/MATLAB/cvx/lib/cvx_subsref.m
+
+/Users/work/Documents/MATLAB/cvx/lib/cvx_subsref_check.m
+
+/Users/work/Documents/MATLAB/cvx/lib/cvx_use_sparse.m
+
+/Users/work/Documents/MATLAB/cvx/lib/cvx_value.m
+/Users/work/Documents/MATLAB/cvx/lib/@cell/cvx_value.m      % Shadowed cell method
+/Users/work/Documents/MATLAB/cvx/lib/@cvx/cvx_value.m       % Shadowed cvx method
+/Users/work/Documents/MATLAB/cvx/lib/@cvxdual/cvx_value.m   % Shadowed cvxdual method
+/Users/work/Documents/MATLAB/cvx/lib/@cvxprob/cvx_value.m   % Shadowed cvxprob method
+/Users/work/Documents/MATLAB/cvx/lib/@cvxtuple/cvx_value.m  % Shadowed cvxtuple method
+
+/Users/work/Documents/MATLAB/cvx/lib/cvx_values.m
+
+/Users/work/Documents/MATLAB/cvx/lib/cvx_vexity.m
+/Users/work/Documents/MATLAB/cvx/lib/@cvx/cvx_vexity.m  % Shadowed cvx method
+
+/Users/work/Documents/MATLAB/cvx/lib/cvx_zeros.m
+
+FOLDER: /Users/work/Documents/MATLAB/cvx/structures
+=======
+/Users/work/Documents/MATLAB/cvx/structures/cvx_create_structure.m
+
+/Users/work/Documents/MATLAB/cvx/structures/cvx_invert_structure.m
+
+/Users/work/Documents/MATLAB/cvx/structures/cvx_orthog_structure.m
+
+/Users/work/Documents/MATLAB/cvx/structures/cvx_replicate_structure.m
+
+/Users/work/Documents/MATLAB/cvx/structures/cvx_s_banded.m
+
+/Users/work/Documents/MATLAB/cvx/structures/cvx_s_hankel.m
+
+/Users/work/Documents/MATLAB/cvx/structures/cvx_s_hermitian.m
+
+/Users/work/Documents/MATLAB/cvx/structures/cvx_s_sparse.m
+
+/Users/work/Documents/MATLAB/cvx/structures/cvx_s_symmetric.m
+
+/Users/work/Documents/MATLAB/cvx/structures/cvx_s_symmetric_ut.m
+
+/Users/work/Documents/MATLAB/cvx/structures/cvx_s_upper_hankel.m
+
+FOLDER: /Users/work/Documents/MATLAB/cvx/functions/square_
+=======
+/Users/work/Documents/MATLAB/cvx/functions/square_/square.m
+/Users/work/Documents/MATLAB/cvx/functions/@cvx/square.m     % Shadowed cvx method
+
+FOLDER: /Users/work/Documents/MATLAB/cvx
+=======
+/Users/work/Documents/MATLAB/cvx/cvx_error.m
+
+/Users/work/Documents/MATLAB/cvx/cvx_grbgetkey.m
+
+/Users/work/Documents/MATLAB/cvx/cvx_setup.m
+
+/Users/work/Documents/MATLAB/cvx/cvx_startup.m
+
+/Users/work/Documents/MATLAB/cvx/cvx_version.m
+
+FOLDER: /Users/work/Documents/MATLAB/tools
+=======
+/Users/work/Documents/MATLAB/tools/cell2csv.m
+
+/Users/work/Documents/MATLAB/tools/get_dist.m
+
+/Users/work/Documents/MATLAB/tools/mem_to_MB.m
+
+/Users/work/Documents/MATLAB/tools/pprint_cmat.m
+
+/Users/work/Documents/MATLAB/tools/tools_setup.m
+
+FOLDER: /Users/work/Documents/MATLAB/tools/math
+=======
+/Users/work/Documents/MATLAB/tools/math/cg2p.m
+
+/Users/work/Documents/MATLAB/tools/math/cgmarginal.m
+
+/Users/work/Documents/MATLAB/tools/math/co2p.m
+
+/Users/work/Documents/MATLAB/tools/math/comarginal.m
+
+/Users/work/Documents/MATLAB/tools/math/dot2.m
+
+/Users/work/Documents/MATLAB/tools/math/is_pos_int.m
+
+/Users/work/Documents/MATLAB/tools/math/kpow.m
+
+/Users/work/Documents/MATLAB/tools/math/p2cg.m
+
+/Users/work/Documents/MATLAB/tools/math/p2co.m
+
+/Users/work/Documents/MATLAB/tools/math/permute_sum.m
+
+/Users/work/Documents/MATLAB/tools/math/pmarginal.m
+
+/Users/work/Documents/MATLAB/tools/math/slice_marginal.m
+
+/Users/work/Documents/MATLAB/tools/math/sum_marginal.m
+
+/Users/work/Documents/MATLAB/tools/math/switch_basis_mat.m
+
+/Users/work/Documents/MATLAB/tools/math/trace2.m
+
+FOLDER: /Users/work/Documents/MATLAB/tools/system
+=======
+/Users/work/Documents/MATLAB/tools/system/show_path.m
+
+FOLDER: /Library/gurobi800/mac64/matlab
+=======
+/Library/gurobi800/mac64/matlab/gurobi.mexmaci64
+/Library/gurobi800/mac64/matlab/gurobi.m          % Shadowed
+
+/Library/gurobi800/mac64/matlab/gurobi_feasrelax.m
+
+/Library/gurobi800/mac64/matlab/gurobi_iis.m
+
+/Library/gurobi800/mac64/matlab/gurobi_read.m
+
+/Library/gurobi800/mac64/matlab/gurobi_relax.m
+
+/Library/gurobi800/mac64/matlab/gurobi_setup.m
+
+/Library/gurobi800/mac64/matlab/gurobi_write.m
+
+FOLDER: /Users/work/Documents/MATLAB/yalmip
+=======
+/Users/work/Documents/MATLAB/yalmip/yalmipdemo.m
+
+/Users/work/Documents/MATLAB/yalmip/yalmiptest.m
+
+FOLDER: /Users/work/Documents/MATLAB/yalmip/demos
+=======
+FOLDER: /Users/work/Documents/MATLAB/yalmip/extras
+=======
+'InstantiateEle' not found.
+
+/Users/work/Documents/MATLAB/yalmip/extras/InstantiateElementWiseUnitary.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/NormalizeCallback.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/RecoverNonlinearSolverSolution.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/SetupEvaluationVariable.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/addExponentialCone.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/addStructureBounds.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/adjoint.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/alreadydone.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/amplexpr.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/appendYALMIPvariables.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/append_normalized_socp.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/apply_oldrecursive_differentiation.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/apply_recursive_differentiation.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/apply_recursive_evaluation.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/argmin.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/assignschur.m
+/Users/work/Documents/MATLAB/yalmip/extras/@constraint/assignschur.m  % Shadowed constraint method
+/Users/work/Documents/MATLAB/yalmip/extras/@lmi/assignschur.m         % Shadowed lmi method
+
+/Users/work/Documents/MATLAB/yalmip/extras/bilinearize.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/binary.m
+/Users/work/Documents/MATLAB/yalmip/@sdpvar/binary.m                % Shadowed sdpvar method
+/Users/work/Documents/MATLAB/yalmip/extras/@ncvar/binary.m          % Shadowed ncvar method
+/Users/work/Documents/MATLAB/yalmip/extras/@ndsdpvar/binary.m       % Shadowed ndsdpvar method
+/Applications/MATLAB_R2018a.app/toolbox/matlab/iofun/@ftp/binary.m  % Shadowed ftp method
+
+/Users/work/Documents/MATLAB/yalmip/extras/binaryindex.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/binmodel.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/binvar.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/bisection.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/bisection_core.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/blockdiagmoment.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/blocks.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/bmilin.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/build_recursive_scheme.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/checkfeasiblefast.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/classifyfactors.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/clean.m
+/Users/work/Documents/MATLAB/yalmip/@sdpvar/clean.m           % Shadowed sdpvar method
+/Users/work/Documents/MATLAB/yalmip/extras/@ncvar/clean.m     % Shadowed ncvar method
+/Users/work/Documents/MATLAB/yalmip/extras/@ndsdpvar/clean.m  % Shadowed ndsdpvar method
+
+/Users/work/Documents/MATLAB/yalmip/extras/coefficients.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/compileinterfacedata.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/compressLifted.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/compress_evaluation_scheme.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/compressfactors.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/compressfactors2.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/computeconstraintresiduals.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/computedimacs.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/convert_perspective_log.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/convert_polynomial_to_quadratic.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/convert_polynomial_to_sdpfun.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/convert_sigmonial_to_sdpfun.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/convertlogics.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/convertquadratics.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/createNumericalModel.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/createOutputStructure.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/create_CHS.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/create_HS.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/createobjective.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/createoutput.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/createsdplibfile.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/datasaver.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/dd.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/deadhub.m
+/Users/work/Documents/MATLAB/yalmip/@sdpvar/deadhub.m  % Shadowed sdpvar method
+
+/Users/work/Documents/MATLAB/yalmip/extras/dec2decbin.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/define.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/definecreationtime.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/degree.m
+/Applications/MATLAB_R2018a.app/toolbox/matlab/graphfun/@graph/degree.m  % Shadowed graph method
+/Users/work/Documents/MATLAB/Intlab_V9/polynom/@polynom/degree.m         % Shadowed polynom method
+/Users/work/Documents/MATLAB/yalmip/@sdpvar/degree.m                     % Shadowed sdpvar method
+/Users/work/Documents/MATLAB/yalmip/extras/@ncvar/degree.m               % Shadowed ncvar method
+
+/Users/work/Documents/MATLAB/yalmip/extras/depends.m
+/Applications/MATLAB_R2018a.app/toolbox/matlab/codetools/@mtree/depends.m  % Shadowed mtree method
+/Users/work/Documents/MATLAB/yalmip/@sdpvar/depends.m                      % Shadowed sdpvar method
+/Users/work/Documents/MATLAB/yalmip/extras/@constraint/depends.m           % Shadowed constraint method
+/Users/work/Documents/MATLAB/yalmip/extras/@lmi/depends.m                  % Shadowed lmi method
+/Users/work/Documents/MATLAB/yalmip/extras/@ncvar/depends.m                % Shadowed ncvar method
+/Users/work/Documents/MATLAB/yalmip/extras/@ndsdpvar/depends.m             % Shadowed ndsdpvar method
+
+/Users/work/Documents/MATLAB/yalmip/extras/derandomize.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/derivebounds.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/derivedualBounds.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/derivedualBoundsParameterFree.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/det_internal.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/detn.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/detset.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/disjunctivecut.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/dissect_internal.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/double2sdpvar.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/dsdpdata.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/dual2cell.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/dualize.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/eigv.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/eliminatevariables.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/ellipplot.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/emptyNumericalModel.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/utility/even.m
+/Users/work/Documents/MATLAB/yalmip/extras/even.m      % Shadowed
+
+/Users/work/Documents/MATLAB/yalmip/extras/expanded.m
+/Users/work/Documents/MATLAB/yalmip/@sdpvar/expanded.m        % Shadowed sdpvar method
+/Users/work/Documents/MATLAB/yalmip/extras/@lmi/expanded.m    % Shadowed lmi method
+/Users/work/Documents/MATLAB/yalmip/extras/@ncvar/expanded.m  % Shadowed ncvar method
+
+/Users/work/Documents/MATLAB/yalmip/extras/expandforindex.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/expandmodel.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/expandrecursive.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/expandsemivar.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/expandsos2.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/export.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/extractConstraints.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/extractSemiContBounds.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/extract_bounds_from_abs_operator.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/extract_bounds_from_max_operator.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/extract_bounds_from_milpsubsref_operator.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/extract_bounds_from_min_operator.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/extract_bounds_from_norm_operator.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/extsubsref.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/eyev.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/findOutWeights.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/find_variable_bounds.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/findapplicablesolvers.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/findhash.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/findhashsorted.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/findlinearulb.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/findrows.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/findulb.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/findulb_interval.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/fiordos_call.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/fmincon_con.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/fmincon_con_liftlayer.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/fmincon_congp.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/fmincon_fun.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/fmincon_fun_liftlayer.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/fmincon_fungp.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/fmincon_fungrad.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/fmincon_funhessian.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/fraction.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/gammainc_a.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/gammainc_x.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/gams2yalmip.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/gen_rand_hash.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/getbase.m
+/Users/work/Documents/MATLAB/yalmip/@sdpvar/getbase.m             % Shadowed sdpvar method
+/Users/work/Documents/MATLAB/yalmip/extras/@constraint/getbase.m  % Shadowed constraint method
+/Users/work/Documents/MATLAB/yalmip/extras/@lmi/getbase.m         % Shadowed lmi method
+/Users/work/Documents/MATLAB/yalmip/extras/@ncvar/getbase.m       % Shadowed ncvar method
+
+/Users/work/Documents/MATLAB/yalmip/extras/getbasematrix.m
+/Users/work/Documents/MATLAB/yalmip/@sdpvar/getbasematrix.m           % Shadowed sdpvar method
+/Users/work/Documents/MATLAB/yalmip/extras/@ncvar/getbasematrix.m     % Shadowed ncvar method
+/Users/work/Documents/MATLAB/yalmip/extras/@ndsdpvar/getbasematrix.m  % Shadowed ndsdpvar method
+
+/Users/work/Documents/MATLAB/yalmip/extras/getexponentbase.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/getvariables.m
+/Users/work/Documents/MATLAB/yalmip/@sdpvar/getvariables.m             % Shadowed sdpvar method
+/Users/work/Documents/MATLAB/yalmip/extras/@constraint/getvariables.m  % Shadowed constraint method
+/Users/work/Documents/MATLAB/yalmip/extras/@lmi/getvariables.m         % Shadowed lmi method
+/Users/work/Documents/MATLAB/yalmip/extras/@ncvar/getvariables.m       % Shadowed ncvar method
+/Users/work/Documents/MATLAB/yalmip/extras/@ndsdpvar/getvariables.m    % Shadowed ndsdpvar method
+
+/Users/work/Documents/MATLAB/yalmip/extras/gmset.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/hessian/@hessian/hessian.m  % hessian constructor
+/Users/work/Documents/MATLAB/Intlab_V9/intval/@intval/hessian.m    % Shadowed intval method
+/Users/work/Documents/MATLAB/Intlab_V9/affari/@affari/hessian.m    % Shadowed affari method
+/Users/work/Documents/MATLAB/yalmip/extras/hessian.m               % Shadowed
+
+/Users/work/Documents/MATLAB/yalmip/extras/imagemodel.m
+/Users/work/Documents/MATLAB/yalmip/extras/@lmi/imagemodel.m  % Shadowed lmi method
+
+/Users/work/Documents/MATLAB/yalmip/extras/int_sdpvar.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/integer.m
+/Users/work/Documents/MATLAB/yalmip/@sdpvar/integer.m           % Shadowed sdpvar method
+/Users/work/Documents/MATLAB/yalmip/extras/@ncvar/integer.m     % Shadowed ncvar method
+/Users/work/Documents/MATLAB/yalmip/extras/@ndsdpvar/integer.m  % Shadowed ndsdpvar method
+
+/Users/work/Documents/MATLAB/yalmip/extras/intvar.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/invsathub.m
+/Users/work/Documents/MATLAB/yalmip/@sdpvar/invsathub.m  % Shadowed sdpvar method
+
+/Users/work/Documents/MATLAB/yalmip/extras/ipopt_callback_df.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/ipopt_callback_dg.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/ipopt_callback_f.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/ipopt_callback_g.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/ipoptgp_callback_df.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/ipoptgp_callback_dg.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/ipoptgp_callback_f.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/ipoptgp_callback_g.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/isconvexmeshdata.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/isessentiallyhermitian.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/isessentiallysymmetric.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/isinterval.m
+/Users/work/Documents/MATLAB/yalmip/@sdpvar/isinterval.m      % Shadowed sdpvar method
+/Users/work/Documents/MATLAB/yalmip/extras/@lmi/isinterval.m  % Shadowed lmi method
+
+/Users/work/Documents/MATLAB/yalmip/extras/islinear.m
+/Users/work/Documents/MATLAB/yalmip/@sdpvar/islinear.m        % Shadowed sdpvar method
+/Users/work/Documents/MATLAB/yalmip/extras/@lmi/islinear.m    % Shadowed lmi method
+/Users/work/Documents/MATLAB/yalmip/extras/@ncvar/islinear.m  % Shadowed ncvar method
+
+/Users/work/Documents/MATLAB/yalmip/extras/ismembcYALMIP.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/jacSparsity.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/jacSparsityGeometric.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/jacobiansparsityfromnonlinear.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/lifted.m
+/Users/work/Documents/MATLAB/yalmip/extras/@lmi/lifted.m  % Shadowed lmi method
+
+/Users/work/Documents/MATLAB/yalmip/extras/lindo_fun.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/lindo_fungp.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/lindosparse.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/loadsdpafile.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/loadsedumidata.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/map_to_original.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/matrixcoefficients.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/mergeNumericalModels.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/intval/mid.m
+/Users/work/Documents/MATLAB/Intlab_V9/intval/@intval/mid.m      % Shadowed intval method
+/Users/work/Documents/MATLAB/Intlab_V9/affari/@affari/mid.m      % Shadowed affari method
+/Users/work/Documents/MATLAB/Intlab_V9/gradient/@gradient/mid.m  % Shadowed gradient method
+/Users/work/Documents/MATLAB/Intlab_V9/hessian/@hessian/mid.m    % Shadowed hessian method
+/Users/work/Documents/MATLAB/Intlab_V9/taylor/@taylor/mid.m      % Shadowed taylor method
+/Users/work/Documents/MATLAB/Intlab_V9/polynom/@polynom/mid.m    % Shadowed polynom method
+/Users/work/Documents/MATLAB/Intlab_V9/fl/@fl/mid.m              % Shadowed fl method
+/Users/work/Documents/MATLAB/Intlab_V9/long/@long/mid.m          % Shadowed long method
+/Users/work/Documents/MATLAB/yalmip/@sdpvar/mid.m                % Shadowed sdpvar method
+/Users/work/Documents/MATLAB/yalmip/extras/mid.m                 % Shadowed
+
+/Users/work/Documents/MATLAB/yalmip/extras/milpalreadydone.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/milppresolve.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/milpsubsref.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/minimize.m
+/Users/work/Documents/MATLAB/yalmip/@sdpvar/minimize.m             % Shadowed sdpvar method
+/Users/work/Documents/MATLAB/yalmip/extras/@optproblem/minimize.m  % Shadowed optproblem method
+
+/Users/work/Documents/MATLAB/yalmip/extras/modelComplementarityConstraints.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/monolist.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/monolistcoeff.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/monpowers.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/mytestNEW.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/mytestOLD.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/ncvar_coefficients.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/ncvar_replace.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/negateNegativeSemiContVariables.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/newvariabletypegen.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/nonconvexQuadratic.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/nonlinearreplace.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/openopt_fun.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/optimize.m
+/Users/work/Documents/MATLAB/yalmip/extras/@optproblem/optimize.m  % Shadowed optproblem method
+
+/Users/work/Documents/MATLAB/yalmip/extras/parseLMI.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/parvar.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/penlab_callback_con.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/penlab_callback_dcon.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/penlab_callback_dcon2.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/penlab_callback_df.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/penlab_callback_df2.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/penlab_callback_dff.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/penlab_callback_f.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/penlab_callback_matrixG.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/penlab_callback_matrixdG.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/pennlp_con.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/pennlp_congrad.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/pennlp_conhess.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/pennlp_fun.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/pennlp_fungrad.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/pennlp_funhess.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/pennonm_callback_df.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/pennonm_callback_dg.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/pennonm_callback_f.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/pennonm_callback_g.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/plotInternalModel.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/plothyperplanes.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/plottruss.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/polyprint.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/precalcgpstruct.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/precomputeDerivative.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/presolve_fixvariables.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/presolve_probebinary.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/primalize.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/problemclass.m
+/Users/work/Documents/MATLAB/yalmip/extras/@constraint/problemclass.m  % Shadowed constraint method
+/Users/work/Documents/MATLAB/yalmip/extras/@lmi/problemclass.m         % Shadowed lmi method
+
+/Users/work/Documents/MATLAB/yalmip/extras/prunecplexoptions.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/pwasos2.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/pwf.m
+
+/Users/work/Documents/MATLAB/Intlab_V9/intval/rad.m
+/Users/work/Documents/MATLAB/Intlab_V9/intval/@intval/rad.m      % Shadowed intval method
+/Users/work/Documents/MATLAB/Intlab_V9/affari/@affari/rad.m      % Shadowed affari method
+/Users/work/Documents/MATLAB/Intlab_V9/gradient/@gradient/rad.m  % Shadowed gradient method
+/Users/work/Documents/MATLAB/Intlab_V9/hessian/@hessian/rad.m    % Shadowed hessian method
+/Users/work/Documents/MATLAB/Intlab_V9/taylor/@taylor/rad.m      % Shadowed taylor method
+/Users/work/Documents/MATLAB/Intlab_V9/polynom/@polynom/rad.m    % Shadowed polynom method
+/Users/work/Documents/MATLAB/Intlab_V9/fl/@fl/rad.m              % Shadowed fl method
+/Users/work/Documents/MATLAB/Intlab_V9/long/@long/rad.m          % Shadowed long method
+/Users/work/Documents/MATLAB/yalmip/@sdpvar/rad.m                % Shadowed sdpvar method
+/Users/work/Documents/MATLAB/yalmip/extras/rad.m                 % Shadowed
+
+/Users/work/Documents/MATLAB/yalmip/extras/rand_hash.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/randpolytope.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/randpsd.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/reDeclareForBinaryMax.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/recdef.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/recover.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/recovermonoms.m
+/Users/work/Documents/MATLAB/yalmip/@sdpvar/recovermonoms.m        % Shadowed sdpvar method
+/Users/work/Documents/MATLAB/yalmip/extras/@ncvar/recovermonoms.m  % Shadowed ncvar method
+
+/Users/work/Documents/MATLAB/yalmip/extras/recovernc.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/relaxdouble.m
+/Users/work/Documents/MATLAB/yalmip/@sdpvar/relaxdouble.m        % Shadowed sdpvar method
+/Users/work/Documents/MATLAB/yalmip/extras/@ncvar/relaxdouble.m  % Shadowed ncvar method
+
+/Users/work/Documents/MATLAB/yalmip/extras/relaxvalue.m
+/Users/work/Documents/MATLAB/yalmip/@sdpvar/relaxvalue.m  % Shadowed sdpvar method
+
+/Users/work/Documents/MATLAB/yalmip/extras/remove_bounds_from_Ab.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/remove_bounds_from_Aeqbeq.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/removenonlinearity.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/save_model_expansion.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/saveampl.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/savecplexlp.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/savesdpafile.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/schurgateway.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/sdd.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/sdisplay.m
+/Users/work/Documents/MATLAB/yalmip/extras/@blkvar/sdisplay.m  % Shadowed blkvar method
+
+/Users/work/Documents/MATLAB/yalmip/extras/sdisplay2.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/sdpsettings.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/sdpt3data.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/sdpt3struct2sdpt3block.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/sdpvar2str.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/sdpvarremap.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/sedumi2dsdp.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/sedumi2dsdp5.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/sedumi2maxdet.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/sedumi2pen.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/sedumi2penbmi.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/sedumi2sdpa.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/sedumi2sdpt3.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/sedumi2yalmip.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/see.m
+/Users/work/Documents/MATLAB/yalmip/@sdpvar/see.m           % Shadowed sdpvar method
+/Users/work/Documents/MATLAB/yalmip/extras/@lmi/see.m       % Shadowed lmi method
+/Users/work/Documents/MATLAB/yalmip/extras/@ncvar/see.m     % Shadowed ncvar method
+/Users/work/Documents/MATLAB/yalmip/extras/@ndsdpvar/see.m  % Shadowed ndsdpvar method
+
+/Users/work/Documents/MATLAB/yalmip/extras/selectsolution.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/selectsolver.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/separable.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/setdiff1D.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/setduals.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/setnonlinearvariables.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/setpolynomials.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/setupBMIBNB.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/setupBNB.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/setupBounds.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/setup_fmincon_params.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/shadowjacobian.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/showprogress.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/snopt_callback.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/snoptgp_callback.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/solveequalities.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/solverCapable.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/solver_can_solve.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/solvesdp.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/solvesdp_multiple.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/splitAndDiagonalize.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/sqplab_con.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/sqplab_fun.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/sqplab_simul.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/sqrtm_internal.m
+/Users/work/Documents/MATLAB/yalmip/@sdpvar/sqrtm_internal.m  % Shadowed sdpvar method
+
+/Users/work/Documents/MATLAB/yalmip/extras/stableunique.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/tplus.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/ttimes.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/unblkdiag.m
+/Users/work/Documents/MATLAB/yalmip/extras/@constraint/unblkdiag.m  % Shadowed constraint method
+
+/Users/work/Documents/MATLAB/yalmip/extras/uncvar.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/unionstripped.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/uniquesafe.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/uniquestripped.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/value.m
+/Users/work/Documents/MATLAB/cvx/lib/@cvx/value.m               % Shadowed cvx method
+/Users/work/Documents/MATLAB/cvx/lib/@cvxdual/value.m           % Shadowed cvxdual method
+/Users/work/Documents/MATLAB/yalmip/@sdpvar/value.m             % Shadowed sdpvar method
+/Users/work/Documents/MATLAB/yalmip/extras/@constraint/value.m  % Shadowed constraint method
+/Users/work/Documents/MATLAB/yalmip/extras/@lmi/value.m         % Shadowed lmi method
+/Users/work/Documents/MATLAB/yalmip/extras/@ndsdpvar/value.m    % Shadowed ndsdpvar method
+
+/Users/work/Documents/MATLAB/yalmip/extras/variable_replace.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/variablechange.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/vecquaddecomp.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/vectorizedlogic.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/ventropy.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/yalmip.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/yalmip2geometric.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/yalmip2mpt.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/yalmip2nonlinearsolver.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/yalmip_default_output.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/yalmipbandwidth.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/yalmiperror.m
+
+/Users/work/Documents/MATLAB/yalmip/extras/yalmiptable.m
+
+FOLDER: /Users/work/Documents/MATLAB/yalmip/modules
+=======
+'du' not found.
+
+FOLDER: /Users/work/Documents/MATLAB/yalmip/modules/bilevel
+=======
+/Users/work/Documents/MATLAB/yalmip/modules/bilevel/solvebilevel.m
+/Users/work/Documents/MATLAB/yalmip/extras/@optproblem/solvebilevel.m  % Shadowed optproblem method
+
+FOLDER: /Users/work/Documents/MATLAB/yalmip/modules/global
+=======
+/Users/work/Documents/MATLAB/yalmip/modules/global/addBilinearVariableCuts.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/global/addComplementarityCuts.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/global/addConvexityCuts.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/global/addEvalVariableCuts.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/global/addMonomialCuts.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/global/addMultipliedEqualityCuts.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/global/bmibnb.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/global/bnb.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/global/bnb_solvelower.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/global/boxreduce.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/global/branch_and_bound.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/global/clean_bounds.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/global/compileQuadratic.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/global/compile_nonlinear_table.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/global/completeInitial.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/global/computecost.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/global/constraint_residuals.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/global/convexhullConcave.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/global/convexhullConcave2D.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/global/convexhullConvex.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/global/convexhullConvex2D.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/global/convexhullFromSampled.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/global/convexhullGeneral.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/global/cutsdp.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/global/decide_branch_variables.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/global/dmpermblockeig.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/global/domain_reduction.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/global/evaluate_nonlinear.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/global/feaspump.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/global/fixer.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/global/global_solve_upper.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/global/initializesolution.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/global/intvmul.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/global/intvpower.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/global/iterative_refinement.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/global/kktqp.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/global/lpbmitighten.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/global/powerbound.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/global/preprocess_bilinear_bounds.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/global/presolveOneMagicRound.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/global/presolve_bounds_from_domains.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/global/presolve_bounds_from_inequalities.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/global/presolve_bounds_from_modelbounds.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/global/presolve_bounds_from_quadratics.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/global/presolve_eliminatelinearratios.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/global/presolve_quadratic_psdbound.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/global/presolve_sortrows.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/global/propagate_bounds_from_complementary.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/global/propagate_bounds_from_equalities.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/global/propagatequadratics.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/global/reduce_bilinear_branching_variables.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/global/root_node_tighten.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/global/rounder.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/global/solve_upper_in_node.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/global/solvelower.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/global/sosfixer.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/global/tightenbounds.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/global/update_eval_bounds.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/global/update_integer_bounds.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/global/update_monomial_bounds.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/global/update_one_eval_bound.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/global/update_one_inverseeval_bound.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/global/update_sumsepquad_bounds.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/global/updatebounds_recursive_evaluation.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/global/updateboundsfromupper.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/global/updatemonomialbounds.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/global/updatenonlinearbounds.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/global/updateonenonlinearbound.m
+
+FOLDER: /Users/work/Documents/MATLAB/yalmip/modules/moment
+=======
+/Users/work/Documents/MATLAB/yalmip/modules/moment/extractsolution.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/moment/momentmodel.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/moment/solvemoment.m
+
+FOLDER: /Users/work/Documents/MATLAB/yalmip/modules/parametric
+=======
+'pt2pop' not found.
+
+/Users/work/Documents/MATLAB/yalmip/modules/parametric/mpt_appendmodel.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/parametric/mpt_clean_optmizer.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/parametric/mpt_collect_equalities.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/parametric/mpt_de_mpmilp.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/parametric/mpt_derive_bounds.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/parametric/mpt_detect_and_improve_bounds.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/parametric/mpt_detect_fixed_rows.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/parametric/mpt_detect_sos.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/parametric/mpt_enumerate_binary.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/parametric/mpt_enumeration_mpmilp.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/parametric/mpt_parbb.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/parametric/mpt_project_back_equality.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/parametric/mpt_project_on_equality.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/parametric/mpt_reduce.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/parametric/mpt_remove_equalities.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/parametric/mpt_select_rows.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/parametric/mpt_solvenode.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/parametric/removeExplorationConstraints.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/parametric/solvemp.m
+/Users/work/Documents/MATLAB/yalmip/extras/@optimizer/solvemp.m   % Shadowed optimizer method
+/Users/work/Documents/MATLAB/yalmip/extras/@optproblem/solvemp.m  % Shadowed optproblem method
+
+FOLDER: /Users/work/Documents/MATLAB/yalmip/modules/robust
+=======
+'createDualPara' not found.
+
+/Users/work/Documents/MATLAB/yalmip/modules/robust/decomposeUncertain.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/robust/deriveBilinearizing.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/robust/dilate.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/robust/dilate2.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/robust/dualtososrobustness.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/robust/filter_2boxmodel.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/robust/filter_boxmodel.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/robust/filter_duality.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/robust/filter_eliminatation.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/robust/filter_enumeration.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/robust/filter_norm_1.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/robust/filter_norm_2.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/robust/filter_norm_inf.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/robust/filter_normball.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/robust/filter_polya.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/robust/filter_sprocedure.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/robust/find_simple_variable_bounds.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/robust/find_simplex_models.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/robust/getEFfromSET.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/robust/getFzxfromSET.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/robust/parameterizedW.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/robust/robust_classify_variables.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/robust/robust_classify_variables_new.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/robust/robust_classify_variables_newest.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/robust/robustify.m
+/Users/work/Documents/MATLAB/yalmip/extras/@optproblem/robustify.m  % Shadowed optproblem method
+
+/Users/work/Documents/MATLAB/yalmip/modules/robust/robustmodel.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/robust/solverobust.m
+
+FOLDER: /Users/work/Documents/MATLAB/yalmip/modules/sos
+=======
+'block' not found.
+
+/Users/work/Documents/MATLAB/yalmip/modules/sos/compilesos.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/sos/congruenceblocks.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/sos/consistent.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/sos/corrsparsity.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/sos/create_imagemodel.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/sos/create_kernelmodel.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/sos/create_lrmodel.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/sos/deriveBasis.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/sos/generate_kernel_representation_data.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/sos/genmonoms.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/sos/monomialgeneration.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/sos/monomialproducts.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/sos/monomialreduction.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/sos/newtonmonoms.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/sos/newtonpolytope.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/sos/newtonreduce.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/sos/parameterizedbase.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/sos/postprocesssos.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/sos/selectSOSmodel.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/sos/solveranksos.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/sos/solvesos.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/sos/solvesos_find_blocks.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/sos/sosmodel.m
+
+/Users/work/Documents/MATLAB/yalmip/modules/sos/sparsenull.m
+
+FOLDER: /Users/work/Documents/MATLAB/yalmip/operators
+=======
+/Users/work/Documents/MATLAB/yalmip/operators/absexp.m
+
+/Users/work/Documents/MATLAB/yalmip/operators/acos_internal.m
+
+/Users/work/Documents/MATLAB/yalmip/operators/alldifferent.m
+/Users/work/Documents/MATLAB/yalmip/extras/@ndsdpvar/alldifferent.m  % Shadowed ndsdpvar method
+
+/Users/work/Documents/MATLAB/yalmip/operators/binary_implies_linearequality.m
+
+/Users/work/Documents/MATLAB/yalmip/operators/binary_implies_linearnegativeconstraint.m
+
+/Users/work/Documents/MATLAB/yalmip/operators/cabs.m
+
+/Users/work/Documents/MATLAB/yalmip/operators/cpower.m
+
+/Users/work/Documents/MATLAB/yalmip/operators/crossentropy_internal.m
+
+/Users/work/Documents/MATLAB/yalmip/operators/eig_yalmip_internal.m
+
+/Users/work/Documents/MATLAB/yalmip/operators/entropy.m
+
+/Users/work/Documents/MATLAB/yalmip/operators/expexpintinv.m
+
+/Users/work/Documents/MATLAB/yalmip/operators/find_internal.m
+
+/Users/work/Documents/MATLAB/yalmip/operators/fraction_internal2.m
+
+/Users/work/Documents/MATLAB/yalmip/operators/geomean2.m
+
+/Users/work/Documents/MATLAB/yalmip/operators/hinge.m
+
+/Users/work/Documents/MATLAB/cvx/functions/huber.m
+/Users/work/Documents/MATLAB/yalmip/operators/huber.m  % Shadowed
+
+/Users/work/Documents/MATLAB/yalmip/operators/iff.m
+
+/Users/work/Documents/MATLAB/yalmip/operators/iff_internal.m
+
+/Users/work/Documents/MATLAB/yalmip/operators/implies.m
+
+/Users/work/Documents/MATLAB/yalmip/operators/implies_internal.m
+
+/Users/work/Documents/MATLAB/yalmip/operators/interp1_internal.m
+
+/Users/work/Documents/MATLAB/yalmip/operators/interp2_internal.m
+
+/Users/work/Documents/MATLAB/yalmip/operators/inverse_internal2.m
+
+/Users/work/Documents/MATLAB/yalmip/operators/invpos.m
+
+/Users/work/Documents/MATLAB/yalmip/operators/kullbackleibler.m
+
+/Users/work/Documents/MATLAB/cvx/functions/lambda_max.m
+/Users/work/Documents/MATLAB/cvx/functions/@cvx/lambda_max.m  % Shadowed cvx method
+/Users/work/Documents/MATLAB/yalmip/operators/lambda_max.m    % Shadowed
+
+/Users/work/Documents/MATLAB/cvx/functions/lambda_min.m
+/Users/work/Documents/MATLAB/yalmip/operators/lambda_min.m  % Shadowed
+
+/Users/work/Documents/MATLAB/yalmip/operators/linearnegativeconstraint_iff_binary.m
+
+/Users/work/Documents/MATLAB/yalmip/operators/linearnegativeconstraint_implies_binary.m
+
+/Users/work/Documents/MATLAB/yalmip/operators/logistic.m
+
+/Users/work/Documents/MATLAB/cvx/functions/logsumexp.m
+/Users/work/Documents/MATLAB/yalmip/operators/logsumexp.m  % Shadowed
+
+/Users/work/Documents/MATLAB/yalmip/operators/matrix_sdpvar_sort.m
+
+/Users/work/Documents/MATLAB/yalmip/operators/max_integer_model.m
+
+/Users/work/Documents/MATLAB/yalmip/operators/max_internal.m
+
+/Users/work/Documents/MATLAB/yalmip/operators/max_with_loc.m
+
+/Users/work/Documents/MATLAB/yalmip/operators/min_internal.m
+
+/Users/work/Documents/MATLAB/yalmip/operators/mpower_internal.m
+
+/Users/work/Documents/MATLAB/yalmip/operators/mvtest.m
+
+/Users/work/Documents/MATLAB/yalmip/operators/negated_perspective_log.m
+
+/Users/work/Documents/MATLAB/yalmip/operators/nnz_internal.m
+
+/Users/work/Documents/MATLAB/yalmip/operators/norm_nuclear.m
+
+/Users/work/Documents/MATLAB/yalmip/operators/norm_tv.m
+
+/Users/work/Documents/MATLAB/yalmip/operators/optimizer_operator.m
+
+/Users/work/Documents/MATLAB/yalmip/operators/pexp.m
+
+/Users/work/Documents/MATLAB/yalmip/operators/plog.m
+
+/Users/work/Documents/MATLAB/yalmip/operators/pnorm.m
+
+/Users/work/Documents/MATLAB/yalmip/operators/pow10.m
+/Users/work/Documents/MATLAB/yalmip/@sdpvar/pow10.m        % Shadowed sdpvar method
+/Users/work/Documents/MATLAB/yalmip/extras/@ncvar/pow10.m  % Shadowed ncvar method
+
+/Users/work/Documents/MATLAB/yalmip/operators/power_internal1.m
+
+/Users/work/Documents/MATLAB/yalmip/operators/power_internal2.m
+
+/Users/work/Documents/MATLAB/yalmip/operators/powerinternalhelper.m
+
+/Users/work/Documents/MATLAB/yalmip/operators/pwa_yalmip.m
+
+/Users/work/Documents/MATLAB/yalmip/operators/pwadynamics_internal.m
+
+/Users/work/Documents/MATLAB/yalmip/operators/pwq_yalmip.m
+
+/Users/work/Documents/MATLAB/yalmip/operators/quadratic_over_affine.m
+
+/Users/work/Documents/MATLAB/yalmip/operators/quadratic_over_affine_expanded.m
+
+/Users/work/Documents/MATLAB/yalmip/operators/sdpfun.m
+
+/Users/work/Documents/MATLAB/yalmip/operators/semivar.m
+
+/Users/work/Documents/MATLAB/yalmip/operators/slog.m
+
+/Users/work/Documents/MATLAB/yalmip/operators/slogfrac.m
+
+/Users/work/Documents/MATLAB/yalmip/operators/sort_internal.m
+
+/Users/work/Documents/MATLAB/cvx/functions/sum_square.m
+/Users/work/Documents/MATLAB/cvx/functions/@cvx/sum_square.m  % Shadowed cvx method
+/Users/work/Documents/MATLAB/yalmip/operators/sum_square.m    % Shadowed
+
+/Users/work/Documents/MATLAB/yalmip/operators/sumabsk.m
+
+/Users/work/Documents/MATLAB/yalmip/operators/sumk.m
+
+/Users/work/Documents/MATLAB/yalmip/operators/sumk_generator.m
+
+/Users/work/Documents/MATLAB/yalmip/operators/xexpintinv.m
+
+FOLDER: /Users/work/Documents/MATLAB/yalmip/solvers
+=======
+/Users/work/Documents/MATLAB/yalmip/solvers/callPOP.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/call_cplexibm_miqp.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/call_cplexibm_qcmiqp.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/call_xpressfico_milp.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/call_xpressfico_miqp.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/call_xpressfico_qcmip.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/callbaron.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/callbintprog.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/callbonmin.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/callbpmpd.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/callcbc.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/callcdcs.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/callcdd.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/callclp.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/callcplexint.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/callcplexmex.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/callcsdp.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/calldsdp.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/calldsdp5.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/callecos.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/callfiltersd.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/callfiltersdsp.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/callfmincon.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/callfmincongp.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/callfminsearch.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/callfrlib.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/callglpk.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/callglpkcc.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/callglpkoctave.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/callgpposy.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/callgurobi.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/callgurobimex.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/callintlinprog.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/callipopt.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/callipoptgp.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/callipqp.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/callknitro.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/callkypd.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/calllindo.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/calllindo_geo.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/calllindo_miqp.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/calllindo_nlp.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/calllinprog.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/calllmilab.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/calllmirank.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/calllogdetppa.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/calllpsolve.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/calllsqlin.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/calllsqnonneg.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/callmaxdet.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/callmexpress.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/callmexpress11.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/callmosek.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/callmpcvx.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/callmplcp.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/callmpt.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/callmpt3.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/callnage04mbf.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/callnage04naf.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/callnomad.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/callnone.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/callooqp.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/callopenopt.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/callopticlp.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/callopticsdp.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/calloptidsdp.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/calloptiooqp.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/calloptiqsopt.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/calloslprog.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/callosqp.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/callpenbmi.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/callpenbmim.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/callpenlab.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/callpenlabbmi.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/callpennlp.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/callpennonm.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/callpensdp.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/callpensdpm.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/callpowersolver.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/callqpas.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/callqpip.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/callqpoases.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/callqsopt.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/callquadprog.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/callquadprogbb.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/callscipmex.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/callscipnl.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/callscs.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/callsdpa.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/callsdplr.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/callsdpnal.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/callsdpt330.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/callsdpt3302.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/callsdpt331.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/callsdpt34.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/callsedumi.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/callsievesdp.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/callsnopt.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/callsnoptgp.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/callsparsecolo.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/callsparsepop.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/callspecsdp.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/callsqplab.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/callstrul.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/callvsdp.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/cplex2yalmip.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/create_lp_solve_model.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/definesolvers.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/getavailablesolvers.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/mpcvx.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/yalmip2SDPmosek.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/yalmip2cbc.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/yalmip2cplex.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/yalmip2csdp.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/yalmip2dsdp.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/yalmip2ecos.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/yalmip2glpkmex.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/yalmip2gurobi.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/yalmip2gurobimex.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/yalmip2intlinprog.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/yalmip2mosek.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/yalmip2opticsdp.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/yalmip2optidsdp.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/yalmip2pensdp.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/yalmip2powersolver.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/yalmip2quadprog.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/yalmip2scs.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/yalmip2sdpa.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/yalmip2sdpt3.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/yalmip2sedumi.m
+
+/Users/work/Documents/MATLAB/yalmip/solvers/yalmip2xpress.m
+
