@@ -1,10 +1,10 @@
-function [constraint_A, constraint_b] = get_spiral_form(ctype, basis, P_ABC)
+function [constraint_A, constraint_b] = get_spiral_form(const_type, basis, P_ABC)
 % GET_SPIRAL_FORM returns formulation for the spiral inflation, given
 % the constraint type {'eq', 'ineq'} and basis {'full', 'CG', 'corr'}
 
 % For easy debugging
 if nargin == 0
-    ctype = 'eq'; basis = 'CG'; P_ABC = ones(8,1)/8;
+    const_type = 'eq'; basis = 'CG'; P_ABC = ones(8,1)/8;
 end
 
 % Constants
@@ -194,10 +194,10 @@ A=1; B=2; C=3;
     end
 
 %% -----------------MAIN--------------------
-if exist([ctype '_' basis])~=2
+if exist([const_type '_' basis])~=2
     error('Not implemented');
 end
-[constraint_A, constraint_b] = eval([ctype '_' basis]);
+[constraint_A, constraint_b] = eval([const_type '_' basis]);
 
 end
 
