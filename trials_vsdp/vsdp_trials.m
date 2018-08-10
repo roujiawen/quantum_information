@@ -10,8 +10,8 @@ nout = 4;
 dist_A = low2high_dist('W-type', 4, use_interval, 0);%infea
 dist_B = get_dist('EJM', use_interval);%fea
 
-start_point = 0.035;
-stop_point =  0.045;
+start_point = 0.0;
+stop_point =  1;
 
 % start_point = 0.005;
 % stop_point =  0.006;
@@ -19,7 +19,7 @@ stop_point =  0.045;
 % start_point = 0.3333333;
 % stop_point =  0.3333336;
 
-steps = 5;
+steps = 1;
 
 %% I/O
 dt = datestr(datetime('now'), 'mmm-dd-yyyy_HH.MM');
@@ -46,4 +46,4 @@ save(results_path, 'data');
 
 
 %% Call plotting function
-vsdp_plot(results_path);
+vsdp_plot(results_path, false);
