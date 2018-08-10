@@ -56,19 +56,19 @@ else
             nout = 2;
             feasibility = true;
         case 'fail1'
-            load('logs/test_data_100trials/test_data_4.mat', 'test_data');
+            load('/Users/work/Documents/MATLAB/logs/test_data_100trials/test_data_4.mat', 'test_data');
             trial = 10;
             P = test_data(:,trial);
             nout = 4;
             feasibility = true;
         case 'fail2'
-            load('logs/test_data_100trials/test_data_4.mat', 'test_data');
+            load('/Users/work/Documents/MATLAB/logs/test_data_100trials/test_data_4.mat', 'test_data');
             trial = 73;
             P = test_data(:,trial);
             nout = 4;
             feasibility = true;
         case 'fail3'
-            load('logs/test_data_100trials/test_data_4.mat', 'test_data');
+            load('/Users/work/Documents/MATLAB/logs/test_data_100trials/test_data_4.mat', 'test_data');
             trial = 88;
             P = test_data(:,trial);
             nout = 4;
