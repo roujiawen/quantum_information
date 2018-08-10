@@ -34,7 +34,7 @@ function S = switch_basis_mat(from, to, nout, nvar, use_interval)
 %
 % -------------------------------------------------------
 
-if nargin < 2
+if nargin < 5
     use_interval = false;%default
 end
 
