@@ -41,26 +41,30 @@ for k = 1:n_sample
         end
         % Certified?
         if fea && strcmp(info, 'Certified Feasible')
-            certified = true;
+            % Try again with mid values
+            [info, best_ub, best_ub_info, best_lb, best_lb_info] =...
+                verify_spiral_fea(h_out, mid(out4_dist), false);
+            if strcmp(info, 'Certified Feasible')
+                certified = true;
+            else
+                error('VSDP catastrophy');
+            end
         elseif ~fea && strcmp(info, 'Certified Infeasible')
-            certified = true;
+            % Try again with mid values
+            [info, best_ub, best_ub_info, best_lb, best_lb_info] =...
+                verify_spiral_fea(h_out, mid(out4_dist), false);
+            if strcmp(info, 'Certified Infeasible')
+                certified = true;
+            else
+                error('VSDP catastrophy');
+            end
         else %Otherwise not certified
             if verbose>0
                 disp('Failed to certify generated test case');
             end
         end
     end
-    [info, best_ub, best_ub_info, best_lb, best_lb_info] =...
-            verify_spiral_fea(h_out, mid(out4_dist), false);
-    if fea
-        if ~strcmp(info, 'Certified Feasible')
-            error('BAD');
-        end
-    else
-        if ~strcmp(info, 'Certified Infeasible')
-            error('BAD');
-        end
-    end
+    
     disp(k);
     samples(:, k) = out4_dist;
 end
