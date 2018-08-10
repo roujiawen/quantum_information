@@ -1,18 +1,42 @@
-function mosek_wrapper(A, b)
+function mosek_wrapper(A, b, const_type)
 
-[m, n] = size(A);
-K.l = n;
-c = zeros(n,1);
-A = A';
-
-
+if nargin < 3
+    const_type = 'eq';
+end
 clear mosek_prob;
-mosek_prob.c = full(c);
-mosek_prob.a = sparse(A)';
-mosek_prob.blc = full(b);
-mosek_prob.buc = full(b);
-mosek_prob.blx = zeros(length(c),1);
-mosek_prob.bux = inf(length(c),1);
+clear K;
+switch const_type
+    case 'eq'
+        % A * x = b
+        % x > 0
+        [m, n] = size(A);
+        K.l = n;
+        c = zeros(n,1);
+        
+        mosek_prob.c = full(c);
+        mosek_prob.a = sparse(A);
+        mosek_prob.blc = full(b);
+        mosek_prob.buc = full(b);
+        mosek_prob.blx = zeros(n,1);
+        mosek_prob.bux = inf(n,1);
+    case 'ineq'
+        % A * x > b
+        [m, n] = size(A);
+        K.f = n;
+        c = zeros(n,1);
+        
+        mosek_prob.c = full(c);
+        mosek_prob.a = sparse(A);
+        mosek_prob.blc = full(b);
+        mosek_prob.buc = inf(m, 1);
+        mosek_prob.blx = -inf(n,1);
+        mosek_prob.bux = inf(n,1);
+end
+
+
+
+
+
 param = struct();
 
 %-----------VERBOSE------------
