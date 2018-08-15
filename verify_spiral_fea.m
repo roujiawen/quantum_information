@@ -1,9 +1,13 @@
 function [info, best_ub, best_ub_info, best_lb, best_lb_info] =...
     verify_spiral_fea(nout, P_ABC, use_interval)
-solvers = {'mosek' 'sedumi'};
-basis = 'CG_red';
+solvers = {'mosek' 'sdpt3' 'sedumi'};
+bases = {'full' 'CG' 'corr'};
+solvers = solvers(randperm(numel(solvers)));
+bases = bases(randperm(numel(bases)));
+
+const_type = 'eq';
 slacks = {'slack(z=x+t-1)' 'slack(z=x-t)'};
-total_run = length(solvers) * length(slacks);
+total_run = length(solvers) * length(slacks) * length(bases);
 run_count = 0;
 verbose = 0;
 
@@ -21,94 +25,58 @@ end
 % TOLERANCE
 OPTIONS.SEDUMI_OPTIONS.eps = 0;
 
-%% 
+%%
 best_ub = inf;
 best_lb = -inf;
 best_ub_info = '';
 best_lb_info = '';
 
 %% Formulation
-for solver_tmp = solvers
+for basis_tmp = bases
     for slack_tmp = slacks
-        solver = solver_tmp{1};
-        slack = slack_tmp{1};
-        run_count = run_count + 1;
-        if verbose > 0
-            fprintf('(%d/%d)Running %s %s\n', run_count, total_run, solver, slack);
-        end
-        [A_, b_, tmp, tmp] = get_spiral_constraints(nout, P_ABC, basis, use_interval);
-        K = struct();
-        switch slack
-            case {0, 'noslack'}
-                %-------------no slack---------------
-                A = A_;
-                b = b_;
-                [m, n] = size(A);
-                K.l = n;
-                c = zeros(n,1);
-            case {11, 'slack(x>=t)_old'}
-                %-------------slack(x>=t) old redundant-------------------
-                [m_, n_] = size(A_);
-                A = [A_ zeros(m_, n_+1);
-                     eye(n_) -ones(n_, 1) -eye(n_)];
-                b = [b_;
-                    zeros(n_, 1)];
-                K.f = n_+1;
-                K.l = n_;
-                c = [zeros(n_,1);
-                     -1;
-                     zeros(n_,1)];
-            case {1, 'slack(z=x-t)'}
-                %-------------slack(x>=t/z=x-t)-------------------
-                A_sum = sum(A_, 2);
-                A = [A_sum A_];
-                b = b_;
-                [m, n] = size(A);
-                K.f = 1;
-                K.l = n-1;
-                c = [-1; %maximize t
-                    zeros(n-1,1);];
-            case {3, 'slack(z=x+t-1)'}
-                %--------------slack(z=x+t-1)---------------
-                A_sum = sum(A_, 2);
-                A = [A_ -A_sum];
-                b = b_ - A_sum;
-                [m, n] = size(A);
-                K.l = n;
-                c = [zeros(n-1, 1);
-                    1];%minimize t
-        end
-
-        % Call VSDP
-        vsdpinit(solver, 0);
-
-        [objt,xt,yt,zt,info] = mysdps(A,b,c,K,[],[],[],OPTIONS);
-        if info ~= 0
-            fprintf('#%d#\n', info);
-        end
-
-        % Calculate verified bounds
-        [fL,y,dl] = vsdplow(A,b,c,K,xt,yt,zt,[],OPTIONS);
-        [fU,x,lb] = vsdpup(A,b,c,K,xt,yt,zt,[],OPTIONS);
-        
-        % Standardize
-        if strcmp(slack, 'slack(z=x+t-1)')
-            fL = fL - 1;
-            fU = fU - 1;
-        end
-        
-        if fL > best_lb
-            best_lb = fL;
-            best_lb_info = [solver ' ' slack];
-        end
-        if fU < best_ub
-            best_ub = fU;
-            best_ub_info = [solver ' ' slack];
-        end
-        
-        [if_stop, info] = check_stop(best_lb, best_ub);
-        if if_stop
-            return;
+        for solver_tmp = solvers
+            solver = solver_tmp{1};
+            basis = basis_tmp{1};
+            slack = slack_tmp{1};
+            run_count = run_count + 1;
+            if verbose > 0
+                fprintf('(%d/%d)Running %s %s\n', run_count, total_run, solver, slack);
+            end
+            
+            [A_, b_] = get_spiral_form(const_type, basis, P_ABC, use_interval);
+            [A, b, c, K] = get_slack_vsdp_form(A_, b_, slack);
+            
+            % Call VSDP
+            vsdpinit(solver, 0);
+            
+            [objt,xt,yt,zt,info] = mysdps(A,b,c,K,[],[],[],OPTIONS);
+            if info ~= 0
+                fprintf('#%d#\n', info);
+            end
+            
+            % Calculate verified bounds
+            [fL,y,dl] = vsdplow(A,b,c,K,xt,yt,zt,[],OPTIONS);
+            [fU,x,lb] = vsdpup(A,b,c,K,xt,yt,zt,[],OPTIONS);
+            
+            % Standardize
+            if strcmp(slack, 'slack(z=x+t-1)')
+                fL = fL - 1;
+                fU = fU - 1;
+            end
+            
+            if fL > best_lb
+                best_lb = fL;
+                best_lb_info = [solver ' ' basis ' ' slack];
+            end
+            if fU < best_ub
+                best_ub = fU;
+                best_ub_info = [solver ' ' basis ' ' slack];
+            end
+            
+            [if_stop, info] = check_stop(best_lb, best_ub);
+            if if_stop
+                return;
+            end
         end
     end
 end
