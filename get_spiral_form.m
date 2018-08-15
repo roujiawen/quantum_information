@@ -7,11 +7,6 @@ if nargin < 4
     use_interval = false;
 end
 
-% For easy debugging
-if nargin == 0
-    const_type = 'eq'; basis = 'CG'; P_ABC = ones(8,1)/8;
-end
-
 % Constants
 nvar = 3;
 nout = round(length(P_ABC)^(1/nvar));
