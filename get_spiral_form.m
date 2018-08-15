@@ -1,6 +1,11 @@
-function [constraint_A, constraint_b] = get_spiral_form(const_type, basis, P_ABC)
+function [constraint_A, constraint_b] = get_spiral_form(const_type, basis, P_ABC, use_interval)
 % GET_SPIRAL_FORM returns formulation for the spiral inflation, given
 % the constraint type {'eq', 'ineq'} and basis {'full', 'CG', 'corr'}
+
+% Default input args
+if nargin < 4
+    use_interval = false;
+end
 
 % For easy debugging
 if nargin == 0
@@ -12,9 +17,9 @@ nvar = 3;
 nout = round(length(P_ABC)^(1/nvar));
 P_ABC = P_ABC(:);
 if strcmp(basis, 'CG')
-    G_ABC = switch_basis_mat('full', 'CG', nout, nvar) * P_ABC;
+    G_ABC = switch_basis_mat('full', 'CG', nout, nvar, use_interval) * P_ABC;
 elseif strcmp(basis, 'corr')
-    C_ABC = switch_basis_mat('full', 'corr', nout, nvar) * P_ABC;
+    C_ABC = switch_basis_mat('full', 'corr', nout, nvar, use_interval) * P_ABC;
 end
 
 % Aliases for readibility
@@ -22,7 +27,7 @@ A1=1; B1=2; C1=3; A2=4; B2=5; C2=6;
 A=1; B=2; C=3;
 
 %% -----------------EQUALITY CONSTRAINTS--------------------
-    function [constraint_A, constraint_b] = eq_full
+    function [constraint_A, constraint_b] = eq_full()
         % M_inf * x = P_ABC  =>  A * x = b
         % where x = P(A1,B1,C1,A2,B2,C2)
         % M_inf : matrix that sums over the marginal of inflation
@@ -44,7 +49,7 @@ A=1; B=2; C=3;
         % K_inf * S_CG * x = G_ABC  =>  A * x = b
         % where x = P(A1,B1,C1,A2,B2,C2)
         % K_inf : matrix that picks the marginal of inflation
-        S_CG = switch_basis_mat('full', 'CG', nout, 6);
+        S_CG = switch_basis_mat('full', 'CG', nout, 6, use_interval);
         
         constraint_A = ...
             [K_inf(A1,B1,C1);
@@ -66,7 +71,7 @@ A=1; B=2; C=3;
         % K_inf * S_corr * x = C_ABC  =>  A * x = b
         % where x = P(A1,B1,C1,A2,B2,C2)
         % K_inf : matrix that picks the marginal of inflation
-        S_corr = switch_basis_mat('full', 'corr', nout, 6);
+        S_corr = switch_basis_mat('full', 'corr', nout, 6, use_interval);
         
         constraint_A = ...
             [K_inf(A1,B1,C1);
@@ -110,7 +115,7 @@ A=1; B=2; C=3;
         
         % Substitute fixed x elements
         [fixed_indices, tmp] = find(A_eq'==1);%column-major
-        S_CG_inv = switch_basis_mat('CG', 'full', nout, 6);
+        S_CG_inv = switch_basis_mat('CG', 'full', nout, 6, use_interval);
         fixed_coefs = S_CG_inv(:, fixed_indices);
         
         constraint_A = S_CG_inv(:, ...
@@ -143,7 +148,7 @@ A=1; B=2; C=3;
         
         % Substitute fixed x elements
         [fixed_indices, tmp] = find(A_eq'==1);%column-major
-        S_corr_inv = switch_basis_mat('corr', 'full', nout, 6);
+        S_corr_inv = switch_basis_mat('corr', 'full', nout, 6, use_interval);
         fixed_coefs = S_corr_inv(:, fixed_indices);
         
         constraint_A = S_corr_inv(:, ...
@@ -194,9 +199,6 @@ A=1; B=2; C=3;
     end
 
 %% -----------------MAIN--------------------
-if exist([const_type '_' basis])~=2
-    error('Not implemented');
-end
 [constraint_A, constraint_b] = eval([const_type '_' basis]);
 
 end
