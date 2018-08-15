@@ -11,7 +11,7 @@ stop_point = data.stop_point;
 steps = data.steps; 
 nout = data.nout;
 basis = data.basis;
-slack = data.slack;
+const_type = data.const_type;
 
 interval = (stop_point-start_point)/steps;
 range_ = start_point:interval:stop_point;
@@ -35,7 +35,6 @@ for idx = 1:length(solvers)
     fprintf('##########%s##########\n',solver);
     fprintf('Number of +Inf = %d\n', sum(lbs == inf));
     fprintf('Number of -Inf = %d\n', sum(lbs == -inf));
-    
     plot(range_, lbs, 'LineWidth', 1, 'Marker', '+');
     xlim([start_point stop_point]);
     %ylim([min_ max_]);
@@ -44,7 +43,7 @@ legend(solvers);
 hold('off');
 
 grid('on');
-title(['basis:' basis '   ' slack], 'Interpreter','none');
+title(['basis:' basis '   ' const_type], 'Interpreter','none');
 xlabel('eta');
 ylabel('primal obj. bounds');
 
