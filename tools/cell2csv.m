@@ -47,7 +47,7 @@ for z=1:size(cellArray, 1)
         end
         % If numeric -> String
         if isnumeric(var)
-            var = num2str(var);
+            var = num2str(var, 20);
             % Conversion of decimal separator (4 Europe & South America)
             % http://commons.wikimedia.org/wiki/File:DecimalSeparator.svg
             if decimal ~= '.'
