@@ -120,7 +120,6 @@ end
 fU = Inf;
 lb = NaN;
 info.iter = 0;
-info.mysdps_iter = 0;
 
 % rounding mode
 rnd = getround();
@@ -294,7 +293,6 @@ while info.iter<=ITER_MAX
     %% 5.step: solve the perturbed problem
     clear lbi ind vx x xrad;  % free some memory before calling solver
     [objt,x0,y0,z0,INFO] = mysdps(A,b+(xeps'*A)',c,K,x0,y0,z0,opts);
-    info.mysdps_iter = info.mysdps_iter + 1;
     % if could not find solution or primal infeasible: break
     if isempty(x0) || any(isnan(x0) | isinf(x0)) || any(INFO(1)==[1 (2) 3])
         disp('VSDPUP: could not find solution for perturbed problem');
